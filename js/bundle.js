@@ -19447,24 +19447,39 @@ babelHelpers;
 				this.on('queryChanged', this.handleQueryChange_.bind(this));
 			}
 		}, {
-			key: 'filterResults_',
-			value: function filterResults_(data, query) {
-				var _this2 = this;
-
-				var children = data.children,
-				    content = data.content,
+			key: 'matchesQuery_',
+			value: function matchesQuery_(data, query) {
+				var childrenOnly = this.childrenOnly;
+				var _location = location,
+				    pathname = _location.pathname;
+				var content = data.content,
 				    description = data.description,
 				    hidden = data.hidden,
-				    title = data.title;
+				    title = data.title,
+				    url = data.url;
 
 
-				var results = [];
+				if (childrenOnly && url.indexOf(pathname) !== 0) {
+					return false;
+				}
 
 				content = content ? content.toLowerCase() : '';
 				description = description ? description.toLowerCase() : '';
 				title = title ? title.toLowerCase() : '';
 
-				if (!hidden && title.indexOf(query) > -1 || description.indexOf(query) > -1 || content.indexOf(query) > -1) {
+				return !hidden && title.indexOf(query) > -1 || description.indexOf(query) > -1 || content.indexOf(query) > -1;
+			}
+		}, {
+			key: 'filterResults_',
+			value: function filterResults_(data, query) {
+				var _this2 = this;
+
+				var children = data.children;
+
+
+				var results = [];
+
+				if (this.matchesQuery_(data, query)) {
 					results.push(data);
 				}
 
@@ -19530,6 +19545,11 @@ babelHelpers;
 	;
 
 	ElectricSearchBase.STATE = {
+		childrenOnly: {
+			validator: core.isBoolean,
+			value: true
+		},
+
 		data: {
 			validator: core.isObject
 		},
@@ -21582,20 +21602,20 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s14_d34389eb(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s127_d34389eb(opt_data, opt_ignored, opt_ijData) {
       ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
       ie_open('span');
-      var dyn0 = opt_data.page.title;
-      if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
+      var dyn14 = opt_data.page.title;
+      if (typeof dyn14 == 'function') dyn14();else if (dyn14 != null) itext(dyn14);
       ie_close('span');
       ie_close('a');
     }
-    exports.__deltemplate_s14_d34389eb = __deltemplate_s14_d34389eb;
+    exports.__deltemplate_s127_d34389eb = __deltemplate_s127_d34389eb;
     if (goog.DEBUG) {
-      __deltemplate_s14_d34389eb.soyTemplateName = 'SideBar.__deltemplate_s14_d34389eb';
+      __deltemplate_s127_d34389eb.soyTemplateName = 'SideBar.__deltemplate_s127_d34389eb';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s14_d34389eb);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s127_d34389eb);
 
     exports.render.params = ["section"];
     exports.render.types = { "section": "any" };
@@ -21705,13 +21725,13 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var param26 = function param26() {
+      var param29 = function param29() {
         ie_open('div', null, null, 'class', 'blog');
         $mainPost(opt_data, null, opt_ijData);
         $olderPosts(opt_data, null, opt_ijData);
         ie_close('div');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param26 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param29 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21730,23 +21750,23 @@ babelHelpers;
       ie_open('header');
       ie_open('small');
       itext('By ');
-      var dyn1 = opt_data.page.author;
-      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+      var dyn2 = opt_data.page.author;
+      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
       itext(' ');
       ie_open('span');
       itext('| ');
-      var dyn2 = opt_data.page.date;
-      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+      var dyn3 = opt_data.page.date;
+      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
       ie_close('span');
       ie_close('small');
       ie_open('h3');
-      var dyn3 = opt_data.page.title;
-      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+      var dyn4 = opt_data.page.title;
+      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
       ie_close('h3');
       ie_close('header');
       ie_open('div', null, null, 'class', 'content');
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+      var dyn5 = opt_data.content;
+      if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
       ie_close('div');
       ie_close('article');
     }
@@ -21765,26 +21785,26 @@ babelHelpers;
     function $olderPosts(opt_data, opt_ignored, opt_ijData) {
       ie_open('div', null, null, 'class', 'posts-list');
       ie_open('div', null, null, 'class', 'container');
-      var pageList53 = opt_data.site.index.children[0].children;
-      var pageListLen53 = pageList53.length;
-      for (var pageIndex53 = 0; pageIndex53 < pageListLen53; pageIndex53++) {
-        var pageData53 = pageList53[pageIndex53];
+      var pageList56 = opt_data.site.index.children[0].children;
+      var pageListLen56 = pageList56.length;
+      for (var pageIndex56 = 0; pageIndex56 < pageListLen56; pageIndex56++) {
+        var pageData56 = pageList56[pageIndex56];
         ie_open('div', null, null, 'class', 'post-item container-blog');
-        ie_open('a', null, null, 'class', 'post-item__link', 'href', pageData53.url);
+        ie_open('a', null, null, 'class', 'post-item__link', 'href', pageData56.url);
         ie_open('small');
         itext('By ');
-        var dyn5 = pageData53.author;
-        if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
+        var dyn6 = pageData56.author;
+        if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
         itext(' ');
         ie_open('span');
         itext('| ');
-        var dyn6 = pageData53.date;
-        if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
+        var dyn7 = pageData56.date;
+        if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
         ie_close('span');
         ie_close('small');
         ie_open('h4', null, null, 'class', 'post-item__title');
-        var dyn7 = pageData53.title;
-        if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
+        var dyn8 = pageData56.title;
+        if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
         ie_close('h4');
         ie_close('a');
         ie_close('div');
@@ -21902,11 +21922,11 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param59 = function param59() {
+      var param62 = function param62() {
         $templateAlias2({ section: opt_data.site.index.children[1] }, null, opt_ijData);
         $guide(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param59 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param62 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -21925,8 +21945,8 @@ babelHelpers;
       ie_open('header', null, null, 'class', 'guide-header');
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('h1', null, null, 'class', 'guide-header-title');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
+      var dyn9 = opt_data.page.title;
+      if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
       itext(' Guide');
       ie_close('h1');
       ie_close('div');
@@ -21934,8 +21954,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'container-hybrid');
       ie_open('div', null, null, 'class', 'docs-guide row');
       ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
+      var dyn10 = opt_data.content;
+      if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
       $feedback(opt_data, null, opt_ijData);
       ie_close('div');
       ie_open('nav', null, null, 'class', 'col-xs-16 col-md-offset-2 col-md-5');
@@ -22099,8 +22119,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
       $topbar(opt_data, null, opt_ijData);
-      var dyn10 = opt_data.content;
-      if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
+      var dyn11 = opt_data.content;
+      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
       ie_close('main');
       ie_close('div');
     }
@@ -22139,8 +22159,8 @@ babelHelpers;
       ie_open('a', null, null, 'class', 'topbar-logo-link', 'href', '/');
       ie_void('span', null, null, 'class', 'icon icon-16-hammer');
       ie_open('span', null, null, 'class', 'name');
-      var dyn11 = opt_data.site.title;
-      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
+      var dyn12 = opt_data.site.title;
+      if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
       ie_close('span');
       ie_open('span', null, null, 'class', 'by');
       itext('by Awesome Company');
@@ -22272,8 +22292,8 @@ babelHelpers;
       var $$temp;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
-      var dyn12 = opt_data.content;
-      if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
+      var dyn13 = opt_data.content;
+      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
       ie_close('main');
       ie_close('div');
     }
@@ -22379,7 +22399,7 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param113 = function param113() {
+      var param3 = function param3() {
         $header(opt_data, null, opt_ijData);
         $why(null, null, opt_ijData);
         $features(null, null, opt_ijData);
@@ -22387,7 +22407,7 @@ babelHelpers;
         $highlights(null, null, opt_ijData);
         $footer(null, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param113 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param3 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -22405,12 +22425,12 @@ babelHelpers;
       ie_open('header', null, null, 'class', 'header');
       ie_open('div', null, null, 'class', 'container');
       ie_open('h1', null, null, 'class', 'header-title');
-      var dyn13 = opt_data.site.title;
-      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
+      var dyn0 = opt_data.site.title;
+      if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
       ie_close('h1');
       ie_open('h2', null, null, 'class', 'header-subtitle');
-      var dyn14 = opt_data.site.index.description;
-      if (typeof dyn14 == 'function') dyn14();else if (dyn14 != null) itext(dyn14);
+      var dyn1 = opt_data.site.index.description;
+      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
       ie_close('h2');
       ie_open('div', null, null, 'class', 'header-cta');
       ie_open('a', null, null, 'href', '#', 'class', 'btn btn-accent');
@@ -24557,334 +24577,6 @@ babelHelpers;
   Soy.register(updatesIndex, templates);
 
   this['metal']['updatesIndex'] = updatesIndex;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from alert.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace docsComponentsAlertHtml.
-     * @public
-     */
-
-    goog.module('docsComponentsAlertHtml.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param258 = function param258() {
-        ie_open('h6');
-        itext('Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis. A ordem dos tratores n\xE3o altera o p\xE3o duris Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Ta deprimidis, eu conhe\xE7o uma cachacis que pode alegrar sua vidis.');
-        ie_close('h6');
-        ie_open('article', null, null, 'id', 'article1');
-        ie_open('h2');
-        itext('Lorem ipsum dolor sit amet');
-        ie_close('h2');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_close('article');
-        ie_open('article', null, null, 'id', 'article2');
-        ie_open('h2');
-        itext('Lorem ipsum dolor sit amet');
-        ie_close('h2');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_close('article');
-        ie_open('article', null, null, 'id', 'article3');
-        ie_open('h2');
-        itext('Lorem ipsum dolor sit amet');
-        ie_close('h2');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_close('article');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param258 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'docsComponentsAlertHtml.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var docsComponentsAlertHtml = function (_Component) {
-    babelHelpers.inherits(docsComponentsAlertHtml, _Component);
-
-    function docsComponentsAlertHtml() {
-      babelHelpers.classCallCheck(this, docsComponentsAlertHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsComponentsAlertHtml.__proto__ || Object.getPrototypeOf(docsComponentsAlertHtml)).apply(this, arguments));
-    }
-
-    return docsComponentsAlertHtml;
-  }(Component);
-
-  Soy.register(docsComponentsAlertHtml, templates);
-  this['metalNamed']['alert'] = this['metalNamed']['alert'] || {};
-  this['metalNamed']['alert']['docsComponentsAlertHtml'] = docsComponentsAlertHtml;
-  this['metalNamed']['alert']['templates'] = templates;
-  this['metal']['alert'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from index.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace docsComponents.
-     * @public
-     */
-
-    goog.module('docsComponents.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('guide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param268 = function param268() {
-        ie_open('h6');
-        itext('Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Todo mundo v\xEA os porris que eu tomo, mas ningu\xE9m v\xEA os tombis que eu levo! Quem num gosta di m\xE9, boa gente num \xE9.');
-        ie_close('h6');
-        ie_open('article', null, null, 'id', 'article1');
-        ie_open('h2');
-        itext('Lorem ipsum dolor sit amet');
-        ie_close('h2');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        $templateAlias2({ code: 'var hello = function() {\n    console.log(\'Hello, World!\');\n};', mode: 'javascript' }, null, opt_ijData);
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_close('article');
-        ie_open('article', null, null, 'id', 'article2');
-        ie_open('h2');
-        itext('Lorem ipsum dolor sit amet');
-        ie_close('h2');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_close('article');
-        ie_open('article', null, null, 'id', 'article3');
-        ie_open('h2');
-        itext('Lorem ipsum dolor sit amet');
-        ie_close('h2');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_open('p');
-        itext('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum. Fusce eros metus, hendrerit ut egestas nec, sagittis id velit.');
-        ie_close('p');
-        ie_close('article');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param268 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'docsComponents.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var docsComponents = function (_Component) {
-    babelHelpers.inherits(docsComponents, _Component);
-
-    function docsComponents() {
-      babelHelpers.classCallCheck(this, docsComponents);
-      return babelHelpers.possibleConstructorReturn(this, (docsComponents.__proto__ || Object.getPrototypeOf(docsComponents)).apply(this, arguments));
-    }
-
-    return docsComponents;
-  }(Component);
-
-  Soy.register(docsComponents, templates);
-  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
-  this['metalNamed']['index']['docsComponents'] = docsComponents;
-  this['metalNamed']['index']['templates'] = templates;
-  this['metal']['index'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['index'];
-
-  var docsComponents = function (_Component) {
-    babelHelpers.inherits(docsComponents, _Component);
-
-    function docsComponents() {
-      babelHelpers.classCallCheck(this, docsComponents);
-      return babelHelpers.possibleConstructorReturn(this, (docsComponents.__proto__ || Object.getPrototypeOf(docsComponents)).apply(this, arguments));
-    }
-
-    return docsComponents;
-  }(Component);
-
-  ;
-
-  Soy.register(docsComponents, templates);
-
-  this['metal']['docsComponents'] = docsComponents;
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['alert'];
-
-  var docsComponentsAlertHtml = function (_Component) {
-    babelHelpers.inherits(docsComponentsAlertHtml, _Component);
-
-    function docsComponentsAlertHtml() {
-      babelHelpers.classCallCheck(this, docsComponentsAlertHtml);
-      return babelHelpers.possibleConstructorReturn(this, (docsComponentsAlertHtml.__proto__ || Object.getPrototypeOf(docsComponentsAlertHtml)).apply(this, arguments));
-    }
-
-    return docsComponentsAlertHtml;
-  }(Component);
-
-  ;
-
-  Soy.register(docsComponentsAlertHtml, templates);
-
-  this['metal']['docsComponentsAlertHtml'] = docsComponentsAlertHtml;
 }).call(this);
 }).call(this);
 //# sourceMappingURL=bundle.js.map
