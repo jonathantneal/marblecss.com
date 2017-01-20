@@ -1,13 +1,13 @@
 {
-  "name": "Marble",
+  "name": "marblecss.com",
   "version": "0.0.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/wedeploy/marble"
+    "url": "https://github.com/wedeploy/marblecss.com"
   },
   "dependencies": {
-    "westyle": "wedeploy/westyle#master"
+    "marble": "wedeploy/marble#master"
   },
   "devDependencies": {
     "electric": "^1.1.0",
