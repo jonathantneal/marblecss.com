@@ -2780,7 +2780,8 @@ fieldset[disabled] .btn-link {
 .btn span[class*="icon-16-"] {
   margin-right: 10px;
   position: relative;
-  top: 2px; }
+  top: 2px;
+  color: inherit; }
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0 72px;
@@ -10282,16 +10283,16 @@ button.close {
   .blog .container small span {
     color: rgba(14, 20, 26, 0.6); }
 
-.blog .container ul:not(.dropdown-menu),
-.blog .container ol:not(.dropdown-menu) {
+.blog .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist),
+.blog .container ol:not(.dropdown-menu):not(.radio-group):not(.checklist) {
   list-style: none;
   padding: 0;
   margin-left: 2rem; }
 
-.blog .container ul:not(.dropdown-menu) li {
+.blog .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist) li {
   position: relative; }
 
-.blog .container ul:not(.dropdown-menu) li:before {
+.blog .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist) li:before {
   font-family: "Galano Bold", sans-serif;
   display: inline-block;
   content: '\2022';
@@ -10299,13 +10300,21 @@ button.close {
   position: absolute;
   left: -1.5rem; }
 
+.blog .container ul.checklist {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; }
+
 .blog .container ul.checklist li:before {
   color: #ffb700;
-  font-family: "icon-16";
   content: "\E017";
+  display: inline-block;
+  font-family: "icon-16";
   font-size: 16px;
+  left: 0;
+  position: relative;
   top: 2px;
-  left: -2rem; }
+  width: 2rem; }
 
 .blog .container ol li {
   counter-increment: list;
@@ -10414,16 +10423,18 @@ button.close {
     text-align: center;
     margin-top: 0.5rem; }
 
-.blog .container .radio-group {
+.blog .container ul.radio-group {
+  list-style: none;
+  padding: 0;
   margin-left: 0; }
 
-.blog .container .radio-group * {
+.blog .container ul.radio-group * {
   position: relative; }
 
-.blog .container .radio-group *:before {
+.blog .container ul.radio-group *:before {
   content: ""; }
 
-.blog .container .radio-group * label {
+.blog .container ul.radio-group * label {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -10434,10 +10445,10 @@ button.close {
   margin: 0;
   top: 0; }
 
-.blog .container .radio-group * input[type="radio"] {
+.blog .container ul.radio-group * input[type="radio"] {
   display: none; }
 
-.blog .container .radio-group * input[type="radio"] + label:before {
+.blog .container ul.radio-group * input[type="radio"] + label:before {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -10823,16 +10834,16 @@ button.close {
   .tutorial .container small span {
     color: rgba(14, 20, 26, 0.6); }
 
-.tutorial .container ul:not(.dropdown-menu),
-.tutorial .container ol:not(.dropdown-menu) {
+.tutorial .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist),
+.tutorial .container ol:not(.dropdown-menu):not(.radio-group):not(.checklist) {
   list-style: none;
   padding: 0;
   margin-left: 2rem; }
 
-.tutorial .container ul:not(.dropdown-menu) li {
+.tutorial .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist) li {
   position: relative; }
 
-.tutorial .container ul:not(.dropdown-menu) li:before {
+.tutorial .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist) li:before {
   font-family: "Galano Bold", sans-serif;
   display: inline-block;
   content: '\2022';
@@ -10840,13 +10851,21 @@ button.close {
   position: absolute;
   left: -1.5rem; }
 
+.tutorial .container ul.checklist {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; }
+
 .tutorial .container ul.checklist li:before {
   color: #ffb700;
-  font-family: "icon-16";
   content: "\E017";
+  display: inline-block;
+  font-family: "icon-16";
   font-size: 16px;
+  left: 0;
+  position: relative;
   top: 2px;
-  left: -2rem; }
+  width: 2rem; }
 
 .tutorial .container ol li {
   counter-increment: list;
@@ -10955,16 +10974,18 @@ button.close {
     text-align: center;
     margin-top: 0.5rem; }
 
-.tutorial .container .radio-group {
+.tutorial .container ul.radio-group {
+  list-style: none;
+  padding: 0;
   margin-left: 0; }
 
-.tutorial .container .radio-group * {
+.tutorial .container ul.radio-group * {
   position: relative; }
 
-.tutorial .container .radio-group *:before {
+.tutorial .container ul.radio-group *:before {
   content: ""; }
 
-.tutorial .container .radio-group * label {
+.tutorial .container ul.radio-group * label {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -10975,10 +10996,10 @@ button.close {
   margin: 0;
   top: 0; }
 
-.tutorial .container .radio-group * input[type="radio"] {
+.tutorial .container ul.radio-group * input[type="radio"] {
   display: none; }
 
-.tutorial .container .radio-group * input[type="radio"] + label:before {
+.tutorial .container ul.radio-group * input[type="radio"] + label:before {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -11087,10 +11108,6 @@ button.close {
 .tutorial .container .content a:hover {
   color: rgba(255, 183, 0, 0.6); }
 
-.tutorial .container .content ul.checklist li:before {
-  content: "\E017";
-  top: 1px; }
-
 .tutorial .container .content .aside {
   margin: calc(2rem * 1.5) 0; }
   .tutorial .container .content .aside p,
@@ -11177,16 +11194,16 @@ button.close {
   .styleguide .container small span {
     color: rgba(14, 20, 26, 0.6); }
 
-.styleguide .container ul:not(.dropdown-menu),
-.styleguide .container ol:not(.dropdown-menu) {
+.styleguide .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist),
+.styleguide .container ol:not(.dropdown-menu):not(.radio-group):not(.checklist) {
   list-style: none;
   padding: 0;
   margin-left: 2rem; }
 
-.styleguide .container ul:not(.dropdown-menu) li {
+.styleguide .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist) li {
   position: relative; }
 
-.styleguide .container ul:not(.dropdown-menu) li:before {
+.styleguide .container ul:not(.dropdown-menu):not(.radio-group):not(.checklist) li:before {
   font-family: "Galano Bold", sans-serif;
   display: inline-block;
   content: '\2022';
@@ -11194,13 +11211,21 @@ button.close {
   position: absolute;
   left: -1.5rem; }
 
+.styleguide .container ul.checklist {
+  list-style: none;
+  padding: 0;
+  margin-left: 0; }
+
 .styleguide .container ul.checklist li:before {
   color: #ffb700;
-  font-family: "icon-16";
   content: "\E017";
+  display: inline-block;
+  font-family: "icon-16";
   font-size: 16px;
+  left: 0;
+  position: relative;
   top: 2px;
-  left: -2rem; }
+  width: 2rem; }
 
 .styleguide .container ol li {
   counter-increment: list;
@@ -11309,16 +11334,18 @@ button.close {
     text-align: center;
     margin-top: 0.5rem; }
 
-.styleguide .container .radio-group {
+.styleguide .container ul.radio-group {
+  list-style: none;
+  padding: 0;
   margin-left: 0; }
 
-.styleguide .container .radio-group * {
+.styleguide .container ul.radio-group * {
   position: relative; }
 
-.styleguide .container .radio-group *:before {
+.styleguide .container ul.radio-group *:before {
   content: ""; }
 
-.styleguide .container .radio-group * label {
+.styleguide .container ul.radio-group * label {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -11329,10 +11356,10 @@ button.close {
   margin: 0;
   top: 0; }
 
-.styleguide .container .radio-group * input[type="radio"] {
+.styleguide .container ul.radio-group * input[type="radio"] {
   display: none; }
 
-.styleguide .container .radio-group * input[type="radio"] + label:before {
+.styleguide .container ul.radio-group * input[type="radio"] + label:before {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
