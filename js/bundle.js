@@ -21337,1131 +21337,6 @@ babelHelpers;
   var templates;
   goog.loadModule(function (exports) {
 
-    // This file was automatically generated from index.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageIndex.
-     * @public
-     */
-
-    goog.module('pageIndex.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      ie_open('!DOCTYPE', null, null, 'html', '');
-      ie_open('html', null, null, 'lang', 'en');
-      ie_open('head');
-      ie_open('meta', null, null, 'charset', 'UTF-8');
-      ie_close('meta');
-      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'/docs/components/avatar.html\'');
-      ie_close('meta');
-      ie_close('head');
-      ie_close('html');
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageIndex.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageIndex = function (_Component) {
-    babelHelpers.inherits(pageIndex, _Component);
-
-    function pageIndex() {
-      babelHelpers.classCallCheck(this, pageIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-    }
-
-    return pageIndex;
-  }(Component);
-
-  Soy.register(pageIndex, templates);
-  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
-  this['metalNamed']['index']['pageIndex'] = pageIndex;
-  this['metalNamed']['index']['templates'] = templates;
-  this['metal']['index'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['index'];
-
-  var pageIndex = function (_Component) {
-    babelHelpers.inherits(pageIndex, _Component);
-
-    function pageIndex() {
-      babelHelpers.classCallCheck(this, pageIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-    }
-
-    return pageIndex;
-  }(Component);
-
-  ;
-
-  Soy.register(pageIndex, templates);
-
-  this['metal']['pageIndex'] = pageIndex;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from blog.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace blog.
-     * @public
-     */
-
-    goog.module('blog.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var param96 = function param96() {
-        ie_open('div', null, null, 'class', 'blog');
-        $mainPost(opt_data, null, opt_ijData);
-        $olderPosts(opt_data, null, opt_ijData);
-        ie_close('div');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param96 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'blog.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $mainPost(opt_data, opt_ignored, opt_ijData) {
-      ie_open('article', null, null, 'class', 'container');
-      ie_open('header');
-      ie_open('small');
-      itext('By ');
-      var dyn1 = opt_data.page.author;
-      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
-      itext(' ');
-      ie_open('span');
-      itext('| ');
-      var dyn2 = opt_data.page.date;
-      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
-      ie_close('span');
-      ie_close('small');
-      ie_open('h3');
-      var dyn3 = opt_data.page.title;
-      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
-      ie_close('h3');
-      ie_close('header');
-      ie_open('div', null, null, 'class', 'content');
-      var dyn4 = opt_data.content;
-      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
-      ie_close('div');
-      ie_close('article');
-    }
-    exports.mainPost = $mainPost;
-    if (goog.DEBUG) {
-      $mainPost.soyTemplateName = 'blog.mainPost';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $olderPosts(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'posts-list');
-      ie_open('div', null, null, 'class', 'container');
-      var pageList123 = opt_data.site.index.children[0].children;
-      var pageListLen123 = pageList123.length;
-      for (var pageIndex123 = 0; pageIndex123 < pageListLen123; pageIndex123++) {
-        var pageData123 = pageList123[pageIndex123];
-        ie_open('div', null, null, 'class', 'post-item container-blog');
-        ie_open('a', null, null, 'class', 'post-item__link', 'href', pageData123.url);
-        ie_open('small');
-        itext('By ');
-        var dyn5 = pageData123.author;
-        if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
-        itext(' ');
-        ie_open('span');
-        itext('| ');
-        var dyn6 = pageData123.date;
-        if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
-        ie_close('span');
-        ie_close('small');
-        ie_open('h4', null, null, 'class', 'post-item__title');
-        var dyn7 = pageData123.title;
-        if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
-        ie_close('h4');
-        ie_close('a');
-        ie_close('div');
-      }
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.olderPosts = $olderPosts;
-    if (goog.DEBUG) {
-      $olderPosts.soyTemplateName = 'blog.olderPosts';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    exports.mainPost.params = ["content", "page"];
-    exports.mainPost.types = { "content": "any", "page": "any" };
-    exports.olderPosts.params = ["site"];
-    exports.olderPosts.types = { "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var blog = function (_Component) {
-    babelHelpers.inherits(blog, _Component);
-
-    function blog() {
-      babelHelpers.classCallCheck(this, blog);
-      return babelHelpers.possibleConstructorReturn(this, (blog.__proto__ || Object.getPrototypeOf(blog)).apply(this, arguments));
-    }
-
-    return blog;
-  }(Component);
-
-  Soy.register(blog, templates);
-  this['metalNamed']['blog'] = this['metalNamed']['blog'] || {};
-  this['metalNamed']['blog']['blog'] = blog;
-  this['metalNamed']['blog']['templates'] = templates;
-  this['metal']['blog'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['blog'];
-
-  var blog = function (_Component) {
-    babelHelpers.inherits(blog, _Component);
-
-    function blog() {
-      babelHelpers.classCallCheck(this, blog);
-      return babelHelpers.possibleConstructorReturn(this, (blog.__proto__ || Object.getPrototypeOf(blog)).apply(this, arguments));
-    }
-
-    return blog;
-  }(Component);
-
-  ;
-
-  Soy.register(blog, templates);
-
-  this['metal']['blog'] = blog;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from guide.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace guide.
-     * @public
-     */
-
-    goog.module('guide.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias3 = Soy.getTemplate('ElectricReadingProgress.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('SideBar.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param129 = function param129() {
-        $templateAlias2({ section: opt_data.site.index.children[1] }, null, opt_ijData);
-        $guide(opt_data, null, opt_ijData);
-      };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param129 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'guide.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $guide(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'sidebar-offset');
-      ie_open('header', null, null, 'class', 'guide-header');
-      ie_open('div', null, null, 'class', 'container-hybrid');
-      ie_open('h1', null, null, 'class', 'guide-header-title');
-      var dyn8 = opt_data.page.title;
-      if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
-      itext(' Guide');
-      ie_close('h1');
-      ie_close('div');
-      ie_close('header');
-      ie_open('div', null, null, 'class', 'container-hybrid');
-      ie_open('div', null, null, 'class', 'docs-guide row');
-      ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
-      var dyn9 = opt_data.content;
-      if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
-      $feedback(opt_data, null, opt_ijData);
-      ie_close('div');
-      ie_open('nav', null, null, 'class', 'col-xs-16 col-md-offset-2 col-md-5');
-      ie_open('div', null, null, 'class', 'docs-nav-container');
-      $templateAlias3({ elementClasses: 'docs-nav' }, null, opt_ijData);
-      ie_close('div');
-      ie_close('nav');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.guide = $guide;
-    if (goog.DEBUG) {
-      $guide.soyTemplateName = 'guide.guide';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $feedback(opt_data, opt_ignored, opt_ijData) {
-      var $$temp;
-      ie_open('div');
-      ie_open('div', null, null, 'class', 'guide-feedback');
-      ie_open('p');
-      itext('Was this section helpful?');
-      ie_close('p');
-      ie_open('button', null, null, 'class', 'btn btn-accent guide-feedback-btn guide-feedback-btn-yes');
-      itext('Yes');
-      ie_close('button');
-      ie_open('button', null, null, 'class', 'btn btn-accent guide-feedback-btn guide-feedback-btn-no');
-      itext('No');
-      ie_close('button');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'guide-github');
-      ie_open('div', null, null, 'class', 'guide-github-img');
-      ie_void('span', null, null, 'class', 'icon-16-github');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'guide-github-text');
-      ie_open('p');
-      itext('Contribute on Github! ');
-      ie_open('a', null, null, 'href', (($$temp = opt_data.site.repo) == null ? '' : $$temp) + '/tree/master/' + opt_data.page.srcFilePath, 'class', 'docs-github-link', 'target', '_blank');
-      itext('Edit this section');
-      ie_close('a');
-      itext('.');
-      ie_close('p');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.feedback = $feedback;
-    if (goog.DEBUG) {
-      $feedback.soyTemplateName = 'guide.feedback';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    exports.guide.params = ["page", "content"];
-    exports.guide.types = { "page": "any", "content": "any" };
-    exports.feedback.params = ["page", "site"];
-    exports.feedback.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var guide = function (_Component) {
-    babelHelpers.inherits(guide, _Component);
-
-    function guide() {
-      babelHelpers.classCallCheck(this, guide);
-      return babelHelpers.possibleConstructorReturn(this, (guide.__proto__ || Object.getPrototypeOf(guide)).apply(this, arguments));
-    }
-
-    return guide;
-  }(Component);
-
-  Soy.register(guide, templates);
-  this['metalNamed']['guide'] = this['metalNamed']['guide'] || {};
-  this['metalNamed']['guide']['guide'] = guide;
-  this['metalNamed']['guide']['templates'] = templates;
-  this['metal']['guide'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['guide'];
-
-  var guide = function (_Component) {
-    babelHelpers.inherits(guide, _Component);
-
-    function guide() {
-      babelHelpers.classCallCheck(this, guide);
-      return babelHelpers.possibleConstructorReturn(this, (guide.__proto__ || Object.getPrototypeOf(guide)).apply(this, arguments));
-    }
-
-    return guide;
-  }(Component);
-
-  ;
-
-  Soy.register(guide, templates);
-
-  this['metal']['guide'] = guide;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from main.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace main.
-     * @public
-     */
-
-    goog.module('main.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('ElectricNavigation.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var $$temp;
-      ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
-      ie_open('main', null, null, 'class', 'content');
-      $topbar(opt_data, null, opt_ijData);
-      var dyn10 = opt_data.content;
-      if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
-      ie_close('main');
-      ie_close('div');
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'main.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $topbar(opt_data, opt_ignored, opt_ijData) {
-      ie_open('nav', null, null, 'class', 'topbar topbar-fixed');
-      $logo(opt_data, null, opt_ijData);
-      $menu(opt_data, null, opt_ijData);
-      ie_close('nav');
-    }
-    exports.topbar = $topbar;
-    if (goog.DEBUG) {
-      $topbar.soyTemplateName = 'main.topbar';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $logo(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'topbar-logo');
-      ie_open('a', null, null, 'class', 'topbar-logo-link', 'href', '/');
-      ie_void('span', null, null, 'class', 'icon icon-16-hammer');
-      ie_open('span', null, null, 'class', 'name');
-      var dyn11 = opt_data.site.title;
-      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
-      ie_close('span');
-      ie_open('span', null, null, 'class', 'by');
-      itext('by Awesome Company');
-      ie_close('span');
-      ie_close('a');
-      ie_close('div');
-    }
-    exports.logo = $logo;
-    if (goog.DEBUG) {
-      $logo.soyTemplateName = 'main.logo';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $menu(opt_data, opt_ignored, opt_ijData) {
-      $templateAlias1({ depth: 1, elementClasses: 'topbar-list', linkClasses: 'topbar-link', listItemClasses: 'topbar-item', section: opt_data.site.index }, null, opt_ijData);
-    }
-    exports.menu = $menu;
-    if (goog.DEBUG) {
-      $menu.soyTemplateName = 'main.menu';
-    }
-
-    exports.render.params = ["content", "elementClasses"];
-    exports.render.types = { "content": "any", "elementClasses": "any" };
-    exports.topbar.params = ["site"];
-    exports.topbar.types = { "site": "any" };
-    exports.logo.params = ["site"];
-    exports.logo.types = { "site": "any" };
-    exports.menu.params = ["site"];
-    exports.menu.types = { "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var main = function (_Component) {
-    babelHelpers.inherits(main, _Component);
-
-    function main() {
-      babelHelpers.classCallCheck(this, main);
-      return babelHelpers.possibleConstructorReturn(this, (main.__proto__ || Object.getPrototypeOf(main)).apply(this, arguments));
-    }
-
-    return main;
-  }(Component);
-
-  Soy.register(main, templates);
-  this['metalNamed']['main'] = this['metalNamed']['main'] || {};
-  this['metalNamed']['main']['main'] = main;
-  this['metalNamed']['main']['templates'] = templates;
-  this['metal']['main'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['main'];
-
-  var main = function (_Component) {
-    babelHelpers.inherits(main, _Component);
-
-    function main() {
-      babelHelpers.classCallCheck(this, main);
-      return babelHelpers.possibleConstructorReturn(this, (main.__proto__ || Object.getPrototypeOf(main)).apply(this, arguments));
-    }
-
-    return main;
-  }(Component);
-
-  ;
-
-  Soy.register(main, templates);
-
-  this['metal']['main'] = main;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from styleguide.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace styleguide.
-     * @public
-     */
-
-    goog.module('styleguide.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('SideBar.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param177 = function param177() {
-        $templateAlias2({ section: opt_data.site.index.children[1] }, null, opt_ijData);
-        $styleguide(opt_data, null, opt_ijData);
-      };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param177 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'styleguide.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $styleguide(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'sidebar-offset');
-      ie_open('div', null, null, 'class', 'container');
-      ie_open('div', null, null, 'class', 'docs-guide row card');
-      ie_open('div', null, null, 'class', 'docs-content col-xs-16');
-      var dyn12 = opt_data.content;
-      if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
-      $styleguideFeedback(opt_data, null, opt_ijData);
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.styleguide = $styleguide;
-    if (goog.DEBUG) {
-      $styleguide.soyTemplateName = 'styleguide.styleguide';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $styleguideFeedback(opt_data, opt_ignored, opt_ijData) {
-      var $$temp;
-      ie_open('div');
-      ie_open('div', null, null, 'class', 'guide-github');
-      ie_open('div', null, null, 'class', 'guide-github-img');
-      ie_void('span', null, null, 'class', 'icon-16-github');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'guide-github-text');
-      ie_open('p');
-      itext('Contribute on Github! ');
-      ie_open('a', null, null, 'href', (($$temp = opt_data.site.repo) == null ? '' : $$temp) + '/tree/master/' + opt_data.page.srcFilePath, 'class', 'docs-github-link', 'target', '_blank');
-      itext('Edit this section');
-      ie_close('a');
-      itext('.');
-      ie_close('p');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.styleguideFeedback = $styleguideFeedback;
-    if (goog.DEBUG) {
-      $styleguideFeedback.soyTemplateName = 'styleguide.styleguideFeedback';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    exports.styleguide.params = ["page", "content"];
-    exports.styleguide.types = { "page": "any", "content": "any" };
-    exports.styleguideFeedback.params = ["page", "site"];
-    exports.styleguideFeedback.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var styleguide = function (_Component) {
-    babelHelpers.inherits(styleguide, _Component);
-
-    function styleguide() {
-      babelHelpers.classCallCheck(this, styleguide);
-      return babelHelpers.possibleConstructorReturn(this, (styleguide.__proto__ || Object.getPrototypeOf(styleguide)).apply(this, arguments));
-    }
-
-    return styleguide;
-  }(Component);
-
-  Soy.register(styleguide, templates);
-  this['metalNamed']['styleguide'] = this['metalNamed']['styleguide'] || {};
-  this['metalNamed']['styleguide']['styleguide'] = styleguide;
-  this['metalNamed']['styleguide']['templates'] = templates;
-  this['metal']['styleguide'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['styleguide'];
-
-  var styleguide = function (_Component) {
-    babelHelpers.inherits(styleguide, _Component);
-
-    function styleguide() {
-      babelHelpers.classCallCheck(this, styleguide);
-      return babelHelpers.possibleConstructorReturn(this, (styleguide.__proto__ || Object.getPrototypeOf(styleguide)).apply(this, arguments));
-    }
-
-    return styleguide;
-  }(Component);
-
-  ;
-
-  Soy.register(styleguide, templates);
-
-  this['metal']['styleguide'] = styleguide;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from styleguideFull.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace styleguideFull.
-     * @public
-     */
-
-    goog.module('styleguideFull.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('SideBar.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param196 = function param196() {
-        $templateAlias2({ section: opt_data.site.index.children[1] }, null, opt_ijData);
-        $styleguideFull(opt_data, null, opt_ijData);
-      };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param196 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'styleguideFull.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $styleguideFull(opt_data, opt_ignored, opt_ijData) {
-      ie_open('div', null, null, 'class', 'sidebar-offset');
-      ie_open('div', null, null, 'class', 'container container-hybrid');
-      ie_open('div', null, null, 'class', 'docs-guide row card');
-      ie_open('div', null, null, 'class', 'docs-content col-xs-16');
-      var dyn13 = opt_data.content;
-      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
-      $styleguideFullFeedback(opt_data, null, opt_ijData);
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.styleguideFull = $styleguideFull;
-    if (goog.DEBUG) {
-      $styleguideFull.soyTemplateName = 'styleguideFull.styleguideFull';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $styleguideFullFeedback(opt_data, opt_ignored, opt_ijData) {
-      var $$temp;
-      ie_open('div');
-      ie_open('div', null, null, 'class', 'guide-github');
-      ie_open('div', null, null, 'class', 'guide-github-img');
-      ie_void('span', null, null, 'class', 'icon-16-github');
-      ie_close('div');
-      ie_open('div', null, null, 'class', 'guide-github-text');
-      ie_open('p');
-      itext('Contribute on Github! ');
-      ie_open('a', null, null, 'href', (($$temp = opt_data.site.repo) == null ? '' : $$temp) + '/tree/master/' + opt_data.page.srcFilePath, 'class', 'docs-github-link', 'target', '_blank');
-      itext('Edit this section');
-      ie_close('a');
-      itext('.');
-      ie_close('p');
-      ie_close('div');
-      ie_close('div');
-      ie_close('div');
-    }
-    exports.styleguideFullFeedback = $styleguideFullFeedback;
-    if (goog.DEBUG) {
-      $styleguideFullFeedback.soyTemplateName = 'styleguideFull.styleguideFullFeedback';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    exports.styleguideFull.params = ["page", "content"];
-    exports.styleguideFull.types = { "page": "any", "content": "any" };
-    exports.styleguideFullFeedback.params = ["page", "site"];
-    exports.styleguideFullFeedback.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var styleguideFull = function (_Component) {
-    babelHelpers.inherits(styleguideFull, _Component);
-
-    function styleguideFull() {
-      babelHelpers.classCallCheck(this, styleguideFull);
-      return babelHelpers.possibleConstructorReturn(this, (styleguideFull.__proto__ || Object.getPrototypeOf(styleguideFull)).apply(this, arguments));
-    }
-
-    return styleguideFull;
-  }(Component);
-
-  Soy.register(styleguideFull, templates);
-  this['metalNamed']['styleguideFull'] = this['metalNamed']['styleguideFull'] || {};
-  this['metalNamed']['styleguideFull']['styleguideFull'] = styleguideFull;
-  this['metalNamed']['styleguideFull']['templates'] = templates;
-  this['metal']['styleguideFull'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['styleguideFull'];
-
-  var styleguideFull = function (_Component) {
-    babelHelpers.inherits(styleguideFull, _Component);
-
-    function styleguideFull() {
-      babelHelpers.classCallCheck(this, styleguideFull);
-      return babelHelpers.possibleConstructorReturn(this, (styleguideFull.__proto__ || Object.getPrototypeOf(styleguideFull)).apply(this, arguments));
-    }
-
-    return styleguideFull;
-  }(Component);
-
-  ;
-
-  Soy.register(styleguideFull, templates);
-
-  this['metal']['styleguideFull'] = styleguideFull;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from tutorial.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace tutorial.
-     * @public
-     */
-
-    goog.module('tutorial.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var $$temp;
-      ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
-      ie_open('main', null, null, 'class', 'content');
-      var dyn14 = opt_data.content;
-      if (typeof dyn14 == 'function') dyn14();else if (dyn14 != null) itext(dyn14);
-      ie_close('main');
-      ie_close('div');
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'tutorial.render';
-    }
-
-    exports.render.params = ["content", "elementClasses"];
-    exports.render.types = { "content": "any", "elementClasses": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var tutorial = function (_Component) {
-    babelHelpers.inherits(tutorial, _Component);
-
-    function tutorial() {
-      babelHelpers.classCallCheck(this, tutorial);
-      return babelHelpers.possibleConstructorReturn(this, (tutorial.__proto__ || Object.getPrototypeOf(tutorial)).apply(this, arguments));
-    }
-
-    return tutorial;
-  }(Component);
-
-  Soy.register(tutorial, templates);
-  this['metalNamed']['tutorial'] = this['metalNamed']['tutorial'] || {};
-  this['metalNamed']['tutorial']['tutorial'] = tutorial;
-  this['metalNamed']['tutorial']['templates'] = templates;
-  this['metal']['tutorial'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['tutorial'];
-
-  var tutorial = function (_Component) {
-    babelHelpers.inherits(tutorial, _Component);
-
-    function tutorial() {
-      babelHelpers.classCallCheck(this, tutorial);
-      return babelHelpers.possibleConstructorReturn(this, (tutorial.__proto__ || Object.getPrototypeOf(tutorial)).apply(this, arguments));
-    }
-
-    return tutorial;
-  }(Component);
-
-  ;
-
-  Soy.register(tutorial, templates);
-
-  this['metal']['tutorial'] = tutorial;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
     // This file was automatically generated from Dropdown.soy.
     // Please don't edit this file by hand.
 
@@ -28169,6 +27044,1131 @@ babelHelpers;
     // Please don't edit this file by hand.
 
     /**
+     * @fileoverview Templates in namespace pageIndex.
+     * @public
+     */
+
+    goog.module('pageIndex.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      ie_open('!DOCTYPE', null, null, 'html', '');
+      ie_open('html', null, null, 'lang', 'en');
+      ie_open('head');
+      ie_open('meta', null, null, 'charset', 'UTF-8');
+      ie_close('meta');
+      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'/docs/components/avatar.html\'');
+      ie_close('meta');
+      ie_close('head');
+      ie_close('html');
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageIndex.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageIndex = function (_Component) {
+    babelHelpers.inherits(pageIndex, _Component);
+
+    function pageIndex() {
+      babelHelpers.classCallCheck(this, pageIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    }
+
+    return pageIndex;
+  }(Component);
+
+  Soy.register(pageIndex, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['pageIndex'] = pageIndex;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var pageIndex = function (_Component) {
+    babelHelpers.inherits(pageIndex, _Component);
+
+    function pageIndex() {
+      babelHelpers.classCallCheck(this, pageIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    }
+
+    return pageIndex;
+  }(Component);
+
+  ;
+
+  Soy.register(pageIndex, templates);
+
+  this['metal']['pageIndex'] = pageIndex;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from blog.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace blog.
+     * @public
+     */
+
+    goog.module('blog.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var param96 = function param96() {
+        ie_open('div', null, null, 'class', 'blog');
+        $mainPost(opt_data, null, opt_ijData);
+        $olderPosts(opt_data, null, opt_ijData);
+        ie_close('div');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param96 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'blog.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $mainPost(opt_data, opt_ignored, opt_ijData) {
+      ie_open('article', null, null, 'class', 'container');
+      ie_open('header');
+      ie_open('small');
+      itext('By ');
+      var dyn1 = opt_data.page.author;
+      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+      itext(' ');
+      ie_open('span');
+      itext('| ');
+      var dyn2 = opt_data.page.date;
+      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+      ie_close('span');
+      ie_close('small');
+      ie_open('h3');
+      var dyn3 = opt_data.page.title;
+      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+      ie_close('h3');
+      ie_close('header');
+      ie_open('div', null, null, 'class', 'content');
+      var dyn4 = opt_data.content;
+      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+      ie_close('div');
+      ie_close('article');
+    }
+    exports.mainPost = $mainPost;
+    if (goog.DEBUG) {
+      $mainPost.soyTemplateName = 'blog.mainPost';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $olderPosts(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'posts-list');
+      ie_open('div', null, null, 'class', 'container');
+      var pageList123 = opt_data.site.index.children[0].children;
+      var pageListLen123 = pageList123.length;
+      for (var pageIndex123 = 0; pageIndex123 < pageListLen123; pageIndex123++) {
+        var pageData123 = pageList123[pageIndex123];
+        ie_open('div', null, null, 'class', 'post-item container-blog');
+        ie_open('a', null, null, 'class', 'post-item__link', 'href', pageData123.url);
+        ie_open('small');
+        itext('By ');
+        var dyn5 = pageData123.author;
+        if (typeof dyn5 == 'function') dyn5();else if (dyn5 != null) itext(dyn5);
+        itext(' ');
+        ie_open('span');
+        itext('| ');
+        var dyn6 = pageData123.date;
+        if (typeof dyn6 == 'function') dyn6();else if (dyn6 != null) itext(dyn6);
+        ie_close('span');
+        ie_close('small');
+        ie_open('h4', null, null, 'class', 'post-item__title');
+        var dyn7 = pageData123.title;
+        if (typeof dyn7 == 'function') dyn7();else if (dyn7 != null) itext(dyn7);
+        ie_close('h4');
+        ie_close('a');
+        ie_close('div');
+      }
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.olderPosts = $olderPosts;
+    if (goog.DEBUG) {
+      $olderPosts.soyTemplateName = 'blog.olderPosts';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    exports.mainPost.params = ["content", "page"];
+    exports.mainPost.types = { "content": "any", "page": "any" };
+    exports.olderPosts.params = ["site"];
+    exports.olderPosts.types = { "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var blog = function (_Component) {
+    babelHelpers.inherits(blog, _Component);
+
+    function blog() {
+      babelHelpers.classCallCheck(this, blog);
+      return babelHelpers.possibleConstructorReturn(this, (blog.__proto__ || Object.getPrototypeOf(blog)).apply(this, arguments));
+    }
+
+    return blog;
+  }(Component);
+
+  Soy.register(blog, templates);
+  this['metalNamed']['blog'] = this['metalNamed']['blog'] || {};
+  this['metalNamed']['blog']['blog'] = blog;
+  this['metalNamed']['blog']['templates'] = templates;
+  this['metal']['blog'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['blog'];
+
+  var blog = function (_Component) {
+    babelHelpers.inherits(blog, _Component);
+
+    function blog() {
+      babelHelpers.classCallCheck(this, blog);
+      return babelHelpers.possibleConstructorReturn(this, (blog.__proto__ || Object.getPrototypeOf(blog)).apply(this, arguments));
+    }
+
+    return blog;
+  }(Component);
+
+  ;
+
+  Soy.register(blog, templates);
+
+  this['metal']['blog'] = blog;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from guide.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace guide.
+     * @public
+     */
+
+    goog.module('guide.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias3 = Soy.getTemplate('ElectricReadingProgress.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('SideBar.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param129 = function param129() {
+        $templateAlias2({ section: opt_data.site.index.children[1] }, null, opt_ijData);
+        $guide(opt_data, null, opt_ijData);
+      };
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs', content: param129 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'guide.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $guide(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'sidebar-offset');
+      ie_open('header', null, null, 'class', 'guide-header');
+      ie_open('div', null, null, 'class', 'container-hybrid');
+      ie_open('h1', null, null, 'class', 'guide-header-title');
+      var dyn8 = opt_data.page.title;
+      if (typeof dyn8 == 'function') dyn8();else if (dyn8 != null) itext(dyn8);
+      itext(' Guide');
+      ie_close('h1');
+      ie_close('div');
+      ie_close('header');
+      ie_open('div', null, null, 'class', 'container-hybrid');
+      ie_open('div', null, null, 'class', 'docs-guide row');
+      ie_open('div', null, null, 'class', 'docs-content col-xs-16 col-md-9');
+      var dyn9 = opt_data.content;
+      if (typeof dyn9 == 'function') dyn9();else if (dyn9 != null) itext(dyn9);
+      $feedback(opt_data, null, opt_ijData);
+      ie_close('div');
+      ie_open('nav', null, null, 'class', 'col-xs-16 col-md-offset-2 col-md-5');
+      ie_open('div', null, null, 'class', 'docs-nav-container');
+      $templateAlias3({ elementClasses: 'docs-nav' }, null, opt_ijData);
+      ie_close('div');
+      ie_close('nav');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.guide = $guide;
+    if (goog.DEBUG) {
+      $guide.soyTemplateName = 'guide.guide';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $feedback(opt_data, opt_ignored, opt_ijData) {
+      var $$temp;
+      ie_open('div');
+      ie_open('div', null, null, 'class', 'guide-feedback');
+      ie_open('p');
+      itext('Was this section helpful?');
+      ie_close('p');
+      ie_open('button', null, null, 'class', 'btn btn-accent guide-feedback-btn guide-feedback-btn-yes');
+      itext('Yes');
+      ie_close('button');
+      ie_open('button', null, null, 'class', 'btn btn-accent guide-feedback-btn guide-feedback-btn-no');
+      itext('No');
+      ie_close('button');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'guide-github');
+      ie_open('div', null, null, 'class', 'guide-github-img');
+      ie_void('span', null, null, 'class', 'icon-16-github');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'guide-github-text');
+      ie_open('p');
+      itext('Contribute on Github! ');
+      ie_open('a', null, null, 'href', (($$temp = opt_data.site.repo) == null ? '' : $$temp) + '/tree/master/' + opt_data.page.srcFilePath, 'class', 'docs-github-link', 'target', '_blank');
+      itext('Edit this section');
+      ie_close('a');
+      itext('.');
+      ie_close('p');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.feedback = $feedback;
+    if (goog.DEBUG) {
+      $feedback.soyTemplateName = 'guide.feedback';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    exports.guide.params = ["page", "content"];
+    exports.guide.types = { "page": "any", "content": "any" };
+    exports.feedback.params = ["page", "site"];
+    exports.feedback.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var guide = function (_Component) {
+    babelHelpers.inherits(guide, _Component);
+
+    function guide() {
+      babelHelpers.classCallCheck(this, guide);
+      return babelHelpers.possibleConstructorReturn(this, (guide.__proto__ || Object.getPrototypeOf(guide)).apply(this, arguments));
+    }
+
+    return guide;
+  }(Component);
+
+  Soy.register(guide, templates);
+  this['metalNamed']['guide'] = this['metalNamed']['guide'] || {};
+  this['metalNamed']['guide']['guide'] = guide;
+  this['metalNamed']['guide']['templates'] = templates;
+  this['metal']['guide'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['guide'];
+
+  var guide = function (_Component) {
+    babelHelpers.inherits(guide, _Component);
+
+    function guide() {
+      babelHelpers.classCallCheck(this, guide);
+      return babelHelpers.possibleConstructorReturn(this, (guide.__proto__ || Object.getPrototypeOf(guide)).apply(this, arguments));
+    }
+
+    return guide;
+  }(Component);
+
+  ;
+
+  Soy.register(guide, templates);
+
+  this['metal']['guide'] = guide;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from main.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace main.
+     * @public
+     */
+
+    goog.module('main.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('ElectricNavigation.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var $$temp;
+      ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
+      ie_open('main', null, null, 'class', 'content');
+      $topbar(opt_data, null, opt_ijData);
+      var dyn10 = opt_data.content;
+      if (typeof dyn10 == 'function') dyn10();else if (dyn10 != null) itext(dyn10);
+      ie_close('main');
+      ie_close('div');
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'main.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $topbar(opt_data, opt_ignored, opt_ijData) {
+      ie_open('nav', null, null, 'class', 'topbar topbar-fixed');
+      $logo(opt_data, null, opt_ijData);
+      $menu(opt_data, null, opt_ijData);
+      ie_close('nav');
+    }
+    exports.topbar = $topbar;
+    if (goog.DEBUG) {
+      $topbar.soyTemplateName = 'main.topbar';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $logo(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'topbar-logo');
+      ie_open('a', null, null, 'class', 'topbar-logo-link', 'href', '/');
+      ie_void('span', null, null, 'class', 'icon icon-16-hammer');
+      ie_open('span', null, null, 'class', 'name');
+      var dyn11 = opt_data.site.title;
+      if (typeof dyn11 == 'function') dyn11();else if (dyn11 != null) itext(dyn11);
+      ie_close('span');
+      ie_open('span', null, null, 'class', 'by');
+      itext('by WeDeploy');
+      ie_close('span');
+      ie_close('a');
+      ie_close('div');
+    }
+    exports.logo = $logo;
+    if (goog.DEBUG) {
+      $logo.soyTemplateName = 'main.logo';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $menu(opt_data, opt_ignored, opt_ijData) {
+      $templateAlias1({ depth: 1, elementClasses: 'topbar-list', linkClasses: 'topbar-link', listItemClasses: 'topbar-item', section: opt_data.site.index }, null, opt_ijData);
+    }
+    exports.menu = $menu;
+    if (goog.DEBUG) {
+      $menu.soyTemplateName = 'main.menu';
+    }
+
+    exports.render.params = ["content", "elementClasses"];
+    exports.render.types = { "content": "any", "elementClasses": "any" };
+    exports.topbar.params = ["site"];
+    exports.topbar.types = { "site": "any" };
+    exports.logo.params = ["site"];
+    exports.logo.types = { "site": "any" };
+    exports.menu.params = ["site"];
+    exports.menu.types = { "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var main = function (_Component) {
+    babelHelpers.inherits(main, _Component);
+
+    function main() {
+      babelHelpers.classCallCheck(this, main);
+      return babelHelpers.possibleConstructorReturn(this, (main.__proto__ || Object.getPrototypeOf(main)).apply(this, arguments));
+    }
+
+    return main;
+  }(Component);
+
+  Soy.register(main, templates);
+  this['metalNamed']['main'] = this['metalNamed']['main'] || {};
+  this['metalNamed']['main']['main'] = main;
+  this['metalNamed']['main']['templates'] = templates;
+  this['metal']['main'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['main'];
+
+  var main = function (_Component) {
+    babelHelpers.inherits(main, _Component);
+
+    function main() {
+      babelHelpers.classCallCheck(this, main);
+      return babelHelpers.possibleConstructorReturn(this, (main.__proto__ || Object.getPrototypeOf(main)).apply(this, arguments));
+    }
+
+    return main;
+  }(Component);
+
+  ;
+
+  Soy.register(main, templates);
+
+  this['metal']['main'] = main;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from styleguide.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace styleguide.
+     * @public
+     */
+
+    goog.module('styleguide.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('SideBar.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param177 = function param177() {
+        $templateAlias2({ section: opt_data.site.index.children[1] }, null, opt_ijData);
+        $styleguide(opt_data, null, opt_ijData);
+      };
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param177 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'styleguide.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $styleguide(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'sidebar-offset');
+      ie_open('div', null, null, 'class', 'container');
+      ie_open('div', null, null, 'class', 'docs-guide row card');
+      ie_open('div', null, null, 'class', 'docs-content col-xs-16');
+      var dyn12 = opt_data.content;
+      if (typeof dyn12 == 'function') dyn12();else if (dyn12 != null) itext(dyn12);
+      $styleguideFeedback(opt_data, null, opt_ijData);
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.styleguide = $styleguide;
+    if (goog.DEBUG) {
+      $styleguide.soyTemplateName = 'styleguide.styleguide';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $styleguideFeedback(opt_data, opt_ignored, opt_ijData) {
+      var $$temp;
+      ie_open('div');
+      ie_open('div', null, null, 'class', 'guide-github');
+      ie_open('div', null, null, 'class', 'guide-github-img');
+      ie_void('span', null, null, 'class', 'icon-16-github');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'guide-github-text');
+      ie_open('p');
+      itext('Contribute on Github! ');
+      ie_open('a', null, null, 'href', (($$temp = opt_data.site.repo) == null ? '' : $$temp) + '/tree/master/' + opt_data.page.srcFilePath, 'class', 'docs-github-link', 'target', '_blank');
+      itext('Edit this section');
+      ie_close('a');
+      itext('.');
+      ie_close('p');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.styleguideFeedback = $styleguideFeedback;
+    if (goog.DEBUG) {
+      $styleguideFeedback.soyTemplateName = 'styleguide.styleguideFeedback';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    exports.styleguide.params = ["page", "content"];
+    exports.styleguide.types = { "page": "any", "content": "any" };
+    exports.styleguideFeedback.params = ["page", "site"];
+    exports.styleguideFeedback.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var styleguide = function (_Component) {
+    babelHelpers.inherits(styleguide, _Component);
+
+    function styleguide() {
+      babelHelpers.classCallCheck(this, styleguide);
+      return babelHelpers.possibleConstructorReturn(this, (styleguide.__proto__ || Object.getPrototypeOf(styleguide)).apply(this, arguments));
+    }
+
+    return styleguide;
+  }(Component);
+
+  Soy.register(styleguide, templates);
+  this['metalNamed']['styleguide'] = this['metalNamed']['styleguide'] || {};
+  this['metalNamed']['styleguide']['styleguide'] = styleguide;
+  this['metalNamed']['styleguide']['templates'] = templates;
+  this['metal']['styleguide'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['styleguide'];
+
+  var styleguide = function (_Component) {
+    babelHelpers.inherits(styleguide, _Component);
+
+    function styleguide() {
+      babelHelpers.classCallCheck(this, styleguide);
+      return babelHelpers.possibleConstructorReturn(this, (styleguide.__proto__ || Object.getPrototypeOf(styleguide)).apply(this, arguments));
+    }
+
+    return styleguide;
+  }(Component);
+
+  ;
+
+  Soy.register(styleguide, templates);
+
+  this['metal']['styleguide'] = styleguide;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from styleguideFull.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace styleguideFull.
+     * @public
+     */
+
+    goog.module('styleguideFull.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('SideBar.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('main.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param196 = function param196() {
+        $templateAlias2({ section: opt_data.site.index.children[1] }, null, opt_ijData);
+        $styleguideFull(opt_data, null, opt_ijData);
+      };
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param196 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'styleguideFull.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $styleguideFull(opt_data, opt_ignored, opt_ijData) {
+      ie_open('div', null, null, 'class', 'sidebar-offset');
+      ie_open('div', null, null, 'class', 'container container-hybrid');
+      ie_open('div', null, null, 'class', 'docs-guide row card');
+      ie_open('div', null, null, 'class', 'docs-content col-xs-16');
+      var dyn13 = opt_data.content;
+      if (typeof dyn13 == 'function') dyn13();else if (dyn13 != null) itext(dyn13);
+      $styleguideFullFeedback(opt_data, null, opt_ijData);
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.styleguideFull = $styleguideFull;
+    if (goog.DEBUG) {
+      $styleguideFull.soyTemplateName = 'styleguideFull.styleguideFull';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $styleguideFullFeedback(opt_data, opt_ignored, opt_ijData) {
+      var $$temp;
+      ie_open('div');
+      ie_open('div', null, null, 'class', 'guide-github');
+      ie_open('div', null, null, 'class', 'guide-github-img');
+      ie_void('span', null, null, 'class', 'icon-16-github');
+      ie_close('div');
+      ie_open('div', null, null, 'class', 'guide-github-text');
+      ie_open('p');
+      itext('Contribute on Github! ');
+      ie_open('a', null, null, 'href', (($$temp = opt_data.site.repo) == null ? '' : $$temp) + '/tree/master/' + opt_data.page.srcFilePath, 'class', 'docs-github-link', 'target', '_blank');
+      itext('Edit this section');
+      ie_close('a');
+      itext('.');
+      ie_close('p');
+      ie_close('div');
+      ie_close('div');
+      ie_close('div');
+    }
+    exports.styleguideFullFeedback = $styleguideFullFeedback;
+    if (goog.DEBUG) {
+      $styleguideFullFeedback.soyTemplateName = 'styleguideFull.styleguideFullFeedback';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    exports.styleguideFull.params = ["page", "content"];
+    exports.styleguideFull.types = { "page": "any", "content": "any" };
+    exports.styleguideFullFeedback.params = ["page", "site"];
+    exports.styleguideFullFeedback.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var styleguideFull = function (_Component) {
+    babelHelpers.inherits(styleguideFull, _Component);
+
+    function styleguideFull() {
+      babelHelpers.classCallCheck(this, styleguideFull);
+      return babelHelpers.possibleConstructorReturn(this, (styleguideFull.__proto__ || Object.getPrototypeOf(styleguideFull)).apply(this, arguments));
+    }
+
+    return styleguideFull;
+  }(Component);
+
+  Soy.register(styleguideFull, templates);
+  this['metalNamed']['styleguideFull'] = this['metalNamed']['styleguideFull'] || {};
+  this['metalNamed']['styleguideFull']['styleguideFull'] = styleguideFull;
+  this['metalNamed']['styleguideFull']['templates'] = templates;
+  this['metal']['styleguideFull'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['styleguideFull'];
+
+  var styleguideFull = function (_Component) {
+    babelHelpers.inherits(styleguideFull, _Component);
+
+    function styleguideFull() {
+      babelHelpers.classCallCheck(this, styleguideFull);
+      return babelHelpers.possibleConstructorReturn(this, (styleguideFull.__proto__ || Object.getPrototypeOf(styleguideFull)).apply(this, arguments));
+    }
+
+    return styleguideFull;
+  }(Component);
+
+  ;
+
+  Soy.register(styleguideFull, templates);
+
+  this['metal']['styleguideFull'] = styleguideFull;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from tutorial.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace tutorial.
+     * @public
+     */
+
+    goog.module('tutorial.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var $$temp;
+      ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
+      ie_open('main', null, null, 'class', 'content');
+      var dyn14 = opt_data.content;
+      if (typeof dyn14 == 'function') dyn14();else if (dyn14 != null) itext(dyn14);
+      ie_close('main');
+      ie_close('div');
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'tutorial.render';
+    }
+
+    exports.render.params = ["content", "elementClasses"];
+    exports.render.types = { "content": "any", "elementClasses": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var tutorial = function (_Component) {
+    babelHelpers.inherits(tutorial, _Component);
+
+    function tutorial() {
+      babelHelpers.classCallCheck(this, tutorial);
+      return babelHelpers.possibleConstructorReturn(this, (tutorial.__proto__ || Object.getPrototypeOf(tutorial)).apply(this, arguments));
+    }
+
+    return tutorial;
+  }(Component);
+
+  Soy.register(tutorial, templates);
+  this['metalNamed']['tutorial'] = this['metalNamed']['tutorial'] || {};
+  this['metalNamed']['tutorial']['tutorial'] = tutorial;
+  this['metalNamed']['tutorial']['templates'] = templates;
+  this['metal']['tutorial'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['tutorial'];
+
+  var tutorial = function (_Component) {
+    babelHelpers.inherits(tutorial, _Component);
+
+    function tutorial() {
+      babelHelpers.classCallCheck(this, tutorial);
+      return babelHelpers.possibleConstructorReturn(this, (tutorial.__proto__ || Object.getPrototypeOf(tutorial)).apply(this, arguments));
+    }
+
+    return tutorial;
+  }(Component);
+
+  ;
+
+  Soy.register(tutorial, templates);
+
+  this['metal']['tutorial'] = tutorial;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
      * @fileoverview Templates in namespace pageDocsIndex.
      * @public
      */
@@ -28264,6 +28264,1042 @@ babelHelpers;
   Soy.register(pageDocsIndex, templates);
 
   this['metal']['pageDocsIndex'] = pageDocsIndex;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from dropdown.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageMetalComponentsDropdown.
+     * @public
+     */
+
+    goog.module('pageMetalComponentsDropdown.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('MarbleDropdown.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var dropdown__soy605 = function dropdown__soy605() {
+        ie_open('h5');
+        itext('Dropdown Settings');
+        ie_close('h5');
+        $templateAlias1({ type: 'settings' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Dropdown Filter');
+        ie_close('h5');
+        $templateAlias1({ type: 'filter' }, null, opt_ijData);
+      };
+      $templateAlias2(soy.$$assignDefaults({ content: dropdown__soy605 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageMetalComponentsDropdown.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageMetalComponentsDropdown = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsDropdown, _Component);
+
+    function pageMetalComponentsDropdown() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsDropdown);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsDropdown.__proto__ || Object.getPrototypeOf(pageMetalComponentsDropdown)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsDropdown;
+  }(Component);
+
+  Soy.register(pageMetalComponentsDropdown, templates);
+  this['metalNamed']['dropdown'] = this['metalNamed']['dropdown'] || {};
+  this['metalNamed']['dropdown']['pageMetalComponentsDropdown'] = pageMetalComponentsDropdown;
+  this['metalNamed']['dropdown']['templates'] = templates;
+  this['metal']['dropdown'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageDocsMetalComponentsIndex.
+     * @public
+     */
+
+    goog.module('pageDocsMetalComponentsIndex.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      ie_open('!DOCTYPE', null, null, 'html', '');
+      ie_open('html', null, null, 'lang', 'en');
+      ie_open('head');
+      ie_open('meta', null, null, 'charset', 'UTF-8');
+      ie_close('meta');
+      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'dropdown.html\'');
+      ie_close('meta');
+      ie_close('head');
+      ie_close('html');
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageDocsMetalComponentsIndex.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageDocsMetalComponentsIndex = function (_Component) {
+    babelHelpers.inherits(pageDocsMetalComponentsIndex, _Component);
+
+    function pageDocsMetalComponentsIndex() {
+      babelHelpers.classCallCheck(this, pageDocsMetalComponentsIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageDocsMetalComponentsIndex.__proto__ || Object.getPrototypeOf(pageDocsMetalComponentsIndex)).apply(this, arguments));
+    }
+
+    return pageDocsMetalComponentsIndex;
+  }(Component);
+
+  Soy.register(pageDocsMetalComponentsIndex, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['pageDocsMetalComponentsIndex'] = pageDocsMetalComponentsIndex;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from input-matrix.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageMetalComponentsInputMatrix.
+     * @public
+     */
+
+    goog.module('pageMetalComponentsInputMatrix.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('MarbleInputMatrix.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var progressBar__soy619 = function progressBar__soy619() {
+        ie_open('h5');
+        itext('Single Field');
+        ie_close('h5');
+        $templateAlias1({ fieldsConfig: [{ label: '', name: 'customDomains', placeholder: 'myproject.com', isArray: true, maxLength: 263, autocomplete: 'off' }] }, null, opt_ijData);
+        ie_open('h5');
+        itext('Double Fields');
+        ie_close('h5');
+        $templateAlias1({ elementClasses: 'input-matrix--inline', fieldsConfig: [{ label: '', name: 'key', placeholder: 'Key', isArray: true, maxLength: 255, autocomplete: false }, { label: '', name: 'value', placeholder: 'Value', isArray: true, maxLength: 255, autocomplete: false }] }, null, opt_ijData);
+      };
+      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy619 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageMetalComponentsInputMatrix.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageMetalComponentsInputMatrix = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsInputMatrix, _Component);
+
+    function pageMetalComponentsInputMatrix() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsInputMatrix);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsInputMatrix.__proto__ || Object.getPrototypeOf(pageMetalComponentsInputMatrix)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsInputMatrix;
+  }(Component);
+
+  Soy.register(pageMetalComponentsInputMatrix, templates);
+  this['metalNamed']['input-matrix'] = this['metalNamed']['input-matrix'] || {};
+  this['metalNamed']['input-matrix']['pageMetalComponentsInputMatrix'] = pageMetalComponentsInputMatrix;
+  this['metalNamed']['input-matrix']['templates'] = templates;
+  this['metal']['input-matrix'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var pageDocsMetalComponentsIndex = function (_Component) {
+    babelHelpers.inherits(pageDocsMetalComponentsIndex, _Component);
+
+    function pageDocsMetalComponentsIndex() {
+      babelHelpers.classCallCheck(this, pageDocsMetalComponentsIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageDocsMetalComponentsIndex.__proto__ || Object.getPrototypeOf(pageDocsMetalComponentsIndex)).apply(this, arguments));
+    }
+
+    return pageDocsMetalComponentsIndex;
+  }(Component);
+
+  ;
+
+  Soy.register(pageDocsMetalComponentsIndex, templates);
+
+  this['metal']['pageDocsMetalComponentsIndex'] = pageDocsMetalComponentsIndex;
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['dropdown'];
+
+  var pageMetalComponentsDropdown = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsDropdown, _Component);
+
+    function pageMetalComponentsDropdown() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsDropdown);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsDropdown.__proto__ || Object.getPrototypeOf(pageMetalComponentsDropdown)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsDropdown;
+  }(Component);
+
+  ;
+
+  Soy.register(pageMetalComponentsDropdown, templates);
+
+  this['metal']['pageMetalComponentsDropdown'] = pageMetalComponentsDropdown;
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['input-matrix'];
+
+  var pageMetalComponentsInputMatrix = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsInputMatrix, _Component);
+
+    function pageMetalComponentsInputMatrix() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsInputMatrix);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsInputMatrix.__proto__ || Object.getPrototypeOf(pageMetalComponentsInputMatrix)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsInputMatrix;
+  }(Component);
+
+  ;
+
+  Soy.register(pageMetalComponentsInputMatrix, templates);
+
+  this['metal']['pageMetalComponentsInputMatrix'] = pageMetalComponentsInputMatrix;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from progressbar.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageMetalComponentsProgressBar.
+     * @public
+     */
+
+    goog.module('pageMetalComponentsProgressBar.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('MarbleProgressBar.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var progressBar__soy631 = function progressBar__soy631() {
+        ie_open('h5');
+        itext('Types / States');
+        ie_close('h5');
+        ie_open('p');
+        itext('ProgressBar Success');
+        ie_close('p');
+        $templateAlias1({ barClass: 'progress-bar-success', min: 0, max: 5, value: 3 }, null, opt_ijData);
+        ie_open('p');
+        itext('ProgressBar Info');
+        ie_close('p');
+        $templateAlias1({ barClass: 'progress-bar-info', min: 0, max: 5, value: 4 }, null, opt_ijData);
+        ie_open('p');
+        itext('ProgressBar Warning');
+        ie_close('p');
+        $templateAlias1({ barClass: 'progress-bar-warning', min: 0, max: 5, value: 1 }, null, opt_ijData);
+        ie_open('p');
+        itext('ProgressBar Danger');
+        ie_close('p');
+        $templateAlias1({ barClass: 'progress-bar-danger', min: 0, max: 5, value: 2 }, null, opt_ijData);
+      };
+      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy631 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageMetalComponentsProgressBar.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageMetalComponentsProgressBar = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsProgressBar, _Component);
+
+    function pageMetalComponentsProgressBar() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsProgressBar);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsProgressBar.__proto__ || Object.getPrototypeOf(pageMetalComponentsProgressBar)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsProgressBar;
+  }(Component);
+
+  Soy.register(pageMetalComponentsProgressBar, templates);
+  this['metalNamed']['progressbar'] = this['metalNamed']['progressbar'] || {};
+  this['metalNamed']['progressbar']['pageMetalComponentsProgressBar'] = pageMetalComponentsProgressBar;
+  this['metalNamed']['progressbar']['templates'] = templates;
+  this['metal']['progressbar'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['progressbar'];
+
+  var pageMetalComponentsProgressBar = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsProgressBar, _Component);
+
+    function pageMetalComponentsProgressBar() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsProgressBar);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsProgressBar.__proto__ || Object.getPrototypeOf(pageMetalComponentsProgressBar)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsProgressBar;
+  }(Component);
+
+  ;
+
+  Soy.register(pageMetalComponentsProgressBar, templates);
+
+  this['metal']['pageMetalComponentsProgressBar'] = pageMetalComponentsProgressBar;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from select.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageMetalComponentsSelect.
+     * @public
+     */
+
+    goog.module('pageMetalComponentsSelect.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('Select.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var select__soy660 = function select__soy660() {
+        ie_open('h5');
+        itext('Types');
+        ie_close('h5');
+        ie_open('p');
+        itext('Using String List as Content');
+        ie_close('p');
+        $templateAlias1({ arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'browser', items: ['Chrome', 'Safari', 'Firefox', 'Internet Explorer', 'Opera'], ref: 'browserSelector', values: ['chrome', 'safari', 'firefox', 'internet-explorer', 'opera'], selectedIndex: 0 }, null, opt_ijData);
+        ie_open('p');
+        itext('WeDeploy Dashboard: Deployment > Github Account ');
+        ie_close('p');
+        var item1__soy671 = function item1__soy671() {
+          ie_open('img', null, null, 'src', 'https://avatars.githubusercontent.com/u/19154228?v=3', 'width', '24', 'height', '24');
+          ie_close('img');
+          itext(' ygorcosta');
+        };
+        var item2__soy673 = function item2__soy673() {
+          ie_open('img', null, null, 'src', 'https://avatars.githubusercontent.com/u/10002920?v=3', 'width', '24', 'height', '24');
+          ie_close('img');
+          itext(' wedeploy');
+        };
+        $templateAlias1({ arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [item1__soy671, item2__soy673], ref: 'githubRepository', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
+        ie_open('p');
+        itext('WeDeploy Dashboard: Settings > Home Container');
+        ie_close('p');
+        var selectDown1__soy684 = function selectDown1__soy684() {
+          ie_open('span', null, null, 'class', 'none');
+          ie_open('span', null, null, 'class', 'avatar avatar-white avatar-squared');
+          ie_void('span', null, null, 'class', 'icon-16-house');
+          ie_close('span');
+          itext('none');
+          ie_close('span');
+        };
+        var selectDown2__soy686 = function selectDown2__soy686() {
+          ie_open('img', null, null, 'src', 'http://api.dashboard.wedeploy.com/static/registry/wedeploy-hosting/icon.png', 'width', '36', 'height', '36');
+          ie_close('img');
+          itext('images');
+        };
+        $templateAlias1({ elementClasses: 'select-large', arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [selectDown1__soy684, selectDown2__soy686], ref: 'homeContainer', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
+      };
+      $templateAlias2(soy.$$assignDefaults({ content: select__soy660 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageMetalComponentsSelect.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageMetalComponentsSelect = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsSelect, _Component);
+
+    function pageMetalComponentsSelect() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsSelect);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSelect.__proto__ || Object.getPrototypeOf(pageMetalComponentsSelect)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsSelect;
+  }(Component);
+
+  Soy.register(pageMetalComponentsSelect, templates);
+  this['metalNamed']['select'] = this['metalNamed']['select'] || {};
+  this['metalNamed']['select']['pageMetalComponentsSelect'] = pageMetalComponentsSelect;
+  this['metalNamed']['select']['templates'] = templates;
+  this['metal']['select'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['select'];
+
+  var pageMetalComponentsSelect = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsSelect, _Component);
+
+    function pageMetalComponentsSelect() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsSelect);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSelect.__proto__ || Object.getPrototypeOf(pageMetalComponentsSelect)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsSelect;
+  }(Component);
+
+  ;
+
+  Soy.register(pageMetalComponentsSelect, templates);
+
+  this['metal']['pageMetalComponentsSelect'] = pageMetalComponentsSelect;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from slider.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageMetalComponentsSlider.
+     * @public
+     */
+
+    goog.module('pageMetalComponentsSlider.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('MarbleSlider.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var slider__soy701 = function slider__soy701() {
+        ie_open('h5');
+        itext('Default Slider');
+        ie_close('h5');
+        $templateAlias1({ elementClasses: 'hidden-xs hidden-sm', events: { valueChanged: opt_data.scaleValueChanged }, max: 5, value: 1 }, null, opt_ijData);
+      };
+      $templateAlias2(soy.$$assignDefaults({ content: slider__soy701 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageMetalComponentsSlider.render';
+    }
+
+    exports.render.params = ["scaleValueChanged"];
+    exports.render.types = { "scaleValueChanged": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var pageMetalComponentsSlider = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsSlider, _Component);
+
+    function pageMetalComponentsSlider() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsSlider);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSlider.__proto__ || Object.getPrototypeOf(pageMetalComponentsSlider)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsSlider;
+  }(Component);
+
+  Soy.register(pageMetalComponentsSlider, templates);
+  this['metalNamed']['slider'] = this['metalNamed']['slider'] || {};
+  this['metalNamed']['slider']['pageMetalComponentsSlider'] = pageMetalComponentsSlider;
+  this['metalNamed']['slider']['templates'] = templates;
+  this['metal']['slider'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['slider'];
+
+  var pageMetalComponentsSlider = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsSlider, _Component);
+
+    function pageMetalComponentsSlider() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsSlider);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSlider.__proto__ || Object.getPrototypeOf(pageMetalComponentsSlider)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsSlider;
+  }(Component);
+
+  ;
+
+  Soy.register(pageMetalComponentsSlider, templates);
+
+  this['metal']['pageMetalComponentsSlider'] = pageMetalComponentsSlider;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from toast.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageMetalComponentsToast.
+     * @public
+     */
+
+    goog.module('pageMetalComponentsToast.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('MarbleToast.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      opt_data = opt_data || {};
+      var animClasses__soy712 = { show: 'animated slideInBottom', hide: 'hidden' };
+      var tootlip__soy713 = function tootlip__soy713() {
+        ie_open('h5');
+        itext('Default Tooltip');
+        ie_close('h5');
+        $templateAlias1({ animClasses: animClasses__soy712, body: 'User was deleted successfully<button class="alert-undo-link">undo</button>', dismissible: true, elementClasses: 'hidden alert-danger', hideDelay: 6000, visible: true, spinner: true, spinnerDone: true, spinnerClasses: 'spinner-danger' }, null, opt_ijData);
+      };
+      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy713 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageMetalComponentsToast.render';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageMetalComponentsToast = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsToast, _Component);
+
+    function pageMetalComponentsToast() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsToast);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsToast.__proto__ || Object.getPrototypeOf(pageMetalComponentsToast)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsToast;
+  }(Component);
+
+  Soy.register(pageMetalComponentsToast, templates);
+  this['metalNamed']['toast'] = this['metalNamed']['toast'] || {};
+  this['metalNamed']['toast']['pageMetalComponentsToast'] = pageMetalComponentsToast;
+  this['metalNamed']['toast']['templates'] = templates;
+  this['metal']['toast'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['toast'];
+
+  var pageMetalComponentsToast = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsToast, _Component);
+
+    function pageMetalComponentsToast() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsToast);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsToast.__proto__ || Object.getPrototypeOf(pageMetalComponentsToast)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsToast;
+  }(Component);
+
+  ;
+
+  Soy.register(pageMetalComponentsToast, templates);
+
+  this['metal']['pageMetalComponentsToast'] = pageMetalComponentsToast;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from tooltip.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageMetalComponentsTooltip.
+     * @public
+     */
+
+    goog.module('pageMetalComponentsTooltip.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias1 = Soy.getTemplate('MarbleTooltip.incrementaldom', 'render');
+
+    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var tootlip__soy729 = function tootlip__soy729() {
+        ie_open('h5');
+        itext('Default Tooltip');
+        ie_close('h5');
+        ie_open('p');
+        itext('Home Service ');
+        ie_void('span', null, null, 'class', 'icon-12-info show-tooltip icon-info', 'alt', 'Select the service that will respond to requests made on project main domain.');
+        ie_close('p');
+        $templateAlias1({ elementClasses: 'fade', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip', selector: '.show-tooltip', visible: false, title: 'Select the service that will respond to requests made on project main domain.' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Default Tooltip - Text Align Left');
+        ie_close('h5');
+        ie_open('p');
+        itext('Home Service ');
+        ie_void('span', null, null, 'class', 'icon-12-info show-tooltip-2 icon-info', 'alt', 'Select the service that will respond to requests made on project main domain.');
+        ie_close('p');
+        $templateAlias1({ elementClasses: 'fade text-left', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip2', selector: '.show-tooltip-2', visible: false, title: 'Select the service that will respond to requests made on project main domain.' }, null, opt_ijData);
+      };
+      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy729 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageMetalComponentsTooltip.render';
+    }
+
+    exports.render.params = ["tooltipAlignElementChanged"];
+    exports.render.types = { "tooltipAlignElementChanged": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var pageMetalComponentsTooltip = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsTooltip, _Component);
+
+    function pageMetalComponentsTooltip() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsTooltip);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsTooltip.__proto__ || Object.getPrototypeOf(pageMetalComponentsTooltip)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsTooltip;
+  }(Component);
+
+  Soy.register(pageMetalComponentsTooltip, templates);
+  this['metalNamed']['tooltip'] = this['metalNamed']['tooltip'] || {};
+  this['metalNamed']['tooltip']['pageMetalComponentsTooltip'] = pageMetalComponentsTooltip;
+  this['metalNamed']['tooltip']['templates'] = templates;
+  this['metal']['tooltip'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['tooltip'];
+
+  var pageMetalComponentsTooltip = function (_Component) {
+    babelHelpers.inherits(pageMetalComponentsTooltip, _Component);
+
+    function pageMetalComponentsTooltip() {
+      babelHelpers.classCallCheck(this, pageMetalComponentsTooltip);
+      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsTooltip.__proto__ || Object.getPrototypeOf(pageMetalComponentsTooltip)).apply(this, arguments));
+    }
+
+    return pageMetalComponentsTooltip;
+  }(Component);
+
+  ;
+
+  Soy.register(pageMetalComponentsTooltip, templates);
+
+  this['metal']['pageMetalComponentsTooltip'] = pageMetalComponentsTooltip;
+}).call(this);
+'use strict';
+
+(function () {
+	var core = this['metalNamed']['metal']['core'];
+	var string = this['metalNamed']['metal']['string'];
+	var Component = this['metal']['component'];
+	var Soy = this['metal']['Soy'];
+	var templates = this['metal']['slider'];
+
+	var Slider = function (_Component) {
+		babelHelpers.inherits(Slider, _Component);
+
+		function Slider() {
+			babelHelpers.classCallCheck(this, Slider);
+			return babelHelpers.possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).apply(this, arguments));
+		}
+
+		babelHelpers.createClass(Slider, [{
+			key: 'scaleValueChanged',
+			value: function scaleValueChanged(event, payload) {
+				console.log("scaleValueChanged: " + event.newVal);
+			}
+		}]);
+		return Slider;
+	}(Component);
+
+	;
+
+	Soy.register(Slider, templates);
+
+	this['metal']['slider'] = Slider;
+}).call(this);
+'use strict';
+
+(function () {
+	var core = this['metalNamed']['metal']['core'];
+	var string = this['metalNamed']['metal']['string'];
+	var Component = this['metal']['component'];
+	var Soy = this['metal']['Soy'];
+	var templates = this['metal']['tooltip'];
+
+	var Tooltip = function (_Component) {
+		babelHelpers.inherits(Tooltip, _Component);
+
+		function Tooltip() {
+			babelHelpers.classCallCheck(this, Tooltip);
+			return babelHelpers.possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).apply(this, arguments));
+		}
+
+		babelHelpers.createClass(Tooltip, [{
+			key: 'tooltipAlignElementChanged',
+			value: function tooltipAlignElementChanged(event) {
+				var value = event.newVal.getAttribute('alt');
+				if (value) {
+					this.components.tooltip.title = unescape(value);
+				}
+			}
+		}]);
+		return Tooltip;
+	}(Component);
+
+	;
+
+	Soy.register(Tooltip, templates);
+
+	this['metal']['tooltip'] = Tooltip;
 }).call(this);
 'use strict';
 
@@ -30932,1042 +31968,6 @@ babelHelpers;
   Soy.register(pageDocsComponentsIndex, templates);
 
   this['metal']['pageDocsComponentsIndex'] = pageDocsComponentsIndex;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from dropdown.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageMetalComponentsDropdown.
-     * @public
-     */
-
-    goog.module('pageMetalComponentsDropdown.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('MarbleDropdown.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var dropdown__soy605 = function dropdown__soy605() {
-        ie_open('h5');
-        itext('Dropdown Settings');
-        ie_close('h5');
-        $templateAlias1({ type: 'settings' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Dropdown Filter');
-        ie_close('h5');
-        $templateAlias1({ type: 'filter' }, null, opt_ijData);
-      };
-      $templateAlias2(soy.$$assignDefaults({ content: dropdown__soy605 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageMetalComponentsDropdown.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageMetalComponentsDropdown = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsDropdown, _Component);
-
-    function pageMetalComponentsDropdown() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsDropdown);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsDropdown.__proto__ || Object.getPrototypeOf(pageMetalComponentsDropdown)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsDropdown;
-  }(Component);
-
-  Soy.register(pageMetalComponentsDropdown, templates);
-  this['metalNamed']['dropdown'] = this['metalNamed']['dropdown'] || {};
-  this['metalNamed']['dropdown']['pageMetalComponentsDropdown'] = pageMetalComponentsDropdown;
-  this['metalNamed']['dropdown']['templates'] = templates;
-  this['metal']['dropdown'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from index.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageDocsMetalComponentsIndex.
-     * @public
-     */
-
-    goog.module('pageDocsMetalComponentsIndex.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      ie_open('!DOCTYPE', null, null, 'html', '');
-      ie_open('html', null, null, 'lang', 'en');
-      ie_open('head');
-      ie_open('meta', null, null, 'charset', 'UTF-8');
-      ie_close('meta');
-      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'dropdown.html\'');
-      ie_close('meta');
-      ie_close('head');
-      ie_close('html');
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageDocsMetalComponentsIndex.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageDocsMetalComponentsIndex = function (_Component) {
-    babelHelpers.inherits(pageDocsMetalComponentsIndex, _Component);
-
-    function pageDocsMetalComponentsIndex() {
-      babelHelpers.classCallCheck(this, pageDocsMetalComponentsIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageDocsMetalComponentsIndex.__proto__ || Object.getPrototypeOf(pageDocsMetalComponentsIndex)).apply(this, arguments));
-    }
-
-    return pageDocsMetalComponentsIndex;
-  }(Component);
-
-  Soy.register(pageDocsMetalComponentsIndex, templates);
-  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
-  this['metalNamed']['index']['pageDocsMetalComponentsIndex'] = pageDocsMetalComponentsIndex;
-  this['metalNamed']['index']['templates'] = templates;
-  this['metal']['index'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from input-matrix.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageMetalComponentsInputMatrix.
-     * @public
-     */
-
-    goog.module('pageMetalComponentsInputMatrix.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('MarbleInputMatrix.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var progressBar__soy619 = function progressBar__soy619() {
-        ie_open('h5');
-        itext('Single Field');
-        ie_close('h5');
-        $templateAlias1({ fieldsConfig: [{ label: '', name: 'customDomains', placeholder: 'myproject.com', isArray: true, maxLength: 263, autocomplete: 'off' }] }, null, opt_ijData);
-        ie_open('h5');
-        itext('Double Fields');
-        ie_close('h5');
-        $templateAlias1({ elementClasses: 'input-matrix--inline', fieldsConfig: [{ label: '', name: 'key', placeholder: 'Key', isArray: true, maxLength: 255, autocomplete: false }, { label: '', name: 'value', placeholder: 'Value', isArray: true, maxLength: 255, autocomplete: false }] }, null, opt_ijData);
-      };
-      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy619 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageMetalComponentsInputMatrix.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageMetalComponentsInputMatrix = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsInputMatrix, _Component);
-
-    function pageMetalComponentsInputMatrix() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsInputMatrix);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsInputMatrix.__proto__ || Object.getPrototypeOf(pageMetalComponentsInputMatrix)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsInputMatrix;
-  }(Component);
-
-  Soy.register(pageMetalComponentsInputMatrix, templates);
-  this['metalNamed']['input-matrix'] = this['metalNamed']['input-matrix'] || {};
-  this['metalNamed']['input-matrix']['pageMetalComponentsInputMatrix'] = pageMetalComponentsInputMatrix;
-  this['metalNamed']['input-matrix']['templates'] = templates;
-  this['metal']['input-matrix'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['index'];
-
-  var pageDocsMetalComponentsIndex = function (_Component) {
-    babelHelpers.inherits(pageDocsMetalComponentsIndex, _Component);
-
-    function pageDocsMetalComponentsIndex() {
-      babelHelpers.classCallCheck(this, pageDocsMetalComponentsIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageDocsMetalComponentsIndex.__proto__ || Object.getPrototypeOf(pageDocsMetalComponentsIndex)).apply(this, arguments));
-    }
-
-    return pageDocsMetalComponentsIndex;
-  }(Component);
-
-  ;
-
-  Soy.register(pageDocsMetalComponentsIndex, templates);
-
-  this['metal']['pageDocsMetalComponentsIndex'] = pageDocsMetalComponentsIndex;
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['dropdown'];
-
-  var pageMetalComponentsDropdown = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsDropdown, _Component);
-
-    function pageMetalComponentsDropdown() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsDropdown);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsDropdown.__proto__ || Object.getPrototypeOf(pageMetalComponentsDropdown)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsDropdown;
-  }(Component);
-
-  ;
-
-  Soy.register(pageMetalComponentsDropdown, templates);
-
-  this['metal']['pageMetalComponentsDropdown'] = pageMetalComponentsDropdown;
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['input-matrix'];
-
-  var pageMetalComponentsInputMatrix = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsInputMatrix, _Component);
-
-    function pageMetalComponentsInputMatrix() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsInputMatrix);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsInputMatrix.__proto__ || Object.getPrototypeOf(pageMetalComponentsInputMatrix)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsInputMatrix;
-  }(Component);
-
-  ;
-
-  Soy.register(pageMetalComponentsInputMatrix, templates);
-
-  this['metal']['pageMetalComponentsInputMatrix'] = pageMetalComponentsInputMatrix;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from progressbar.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageMetalComponentsProgressBar.
-     * @public
-     */
-
-    goog.module('pageMetalComponentsProgressBar.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('MarbleProgressBar.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var progressBar__soy631 = function progressBar__soy631() {
-        ie_open('h5');
-        itext('Types / States');
-        ie_close('h5');
-        ie_open('p');
-        itext('ProgressBar Success');
-        ie_close('p');
-        $templateAlias1({ barClass: 'progress-bar-success', min: 0, max: 5, value: 3 }, null, opt_ijData);
-        ie_open('p');
-        itext('ProgressBar Info');
-        ie_close('p');
-        $templateAlias1({ barClass: 'progress-bar-info', min: 0, max: 5, value: 4 }, null, opt_ijData);
-        ie_open('p');
-        itext('ProgressBar Warning');
-        ie_close('p');
-        $templateAlias1({ barClass: 'progress-bar-warning', min: 0, max: 5, value: 1 }, null, opt_ijData);
-        ie_open('p');
-        itext('ProgressBar Danger');
-        ie_close('p');
-        $templateAlias1({ barClass: 'progress-bar-danger', min: 0, max: 5, value: 2 }, null, opt_ijData);
-      };
-      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy631 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageMetalComponentsProgressBar.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageMetalComponentsProgressBar = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsProgressBar, _Component);
-
-    function pageMetalComponentsProgressBar() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsProgressBar);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsProgressBar.__proto__ || Object.getPrototypeOf(pageMetalComponentsProgressBar)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsProgressBar;
-  }(Component);
-
-  Soy.register(pageMetalComponentsProgressBar, templates);
-  this['metalNamed']['progressbar'] = this['metalNamed']['progressbar'] || {};
-  this['metalNamed']['progressbar']['pageMetalComponentsProgressBar'] = pageMetalComponentsProgressBar;
-  this['metalNamed']['progressbar']['templates'] = templates;
-  this['metal']['progressbar'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['progressbar'];
-
-  var pageMetalComponentsProgressBar = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsProgressBar, _Component);
-
-    function pageMetalComponentsProgressBar() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsProgressBar);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsProgressBar.__proto__ || Object.getPrototypeOf(pageMetalComponentsProgressBar)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsProgressBar;
-  }(Component);
-
-  ;
-
-  Soy.register(pageMetalComponentsProgressBar, templates);
-
-  this['metal']['pageMetalComponentsProgressBar'] = pageMetalComponentsProgressBar;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from select.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageMetalComponentsSelect.
-     * @public
-     */
-
-    goog.module('pageMetalComponentsSelect.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('Select.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var select__soy660 = function select__soy660() {
-        ie_open('h5');
-        itext('Types');
-        ie_close('h5');
-        ie_open('p');
-        itext('Using String List as Content');
-        ie_close('p');
-        $templateAlias1({ arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'browser', items: ['Chrome', 'Safari', 'Firefox', 'Internet Explorer', 'Opera'], ref: 'browserSelector', values: ['chrome', 'safari', 'firefox', 'internet-explorer', 'opera'], selectedIndex: 0 }, null, opt_ijData);
-        ie_open('p');
-        itext('WeDeploy Dashboard: Deployment > Github Account ');
-        ie_close('p');
-        var item1__soy671 = function item1__soy671() {
-          ie_open('img', null, null, 'src', 'https://avatars.githubusercontent.com/u/19154228?v=3', 'width', '24', 'height', '24');
-          ie_close('img');
-          itext(' ygorcosta');
-        };
-        var item2__soy673 = function item2__soy673() {
-          ie_open('img', null, null, 'src', 'https://avatars.githubusercontent.com/u/10002920?v=3', 'width', '24', 'height', '24');
-          ie_close('img');
-          itext(' wedeploy');
-        };
-        $templateAlias1({ arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [item1__soy671, item2__soy673], ref: 'githubRepository', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
-        ie_open('p');
-        itext('WeDeploy Dashboard: Settings > Home Container');
-        ie_close('p');
-        var selectDown1__soy684 = function selectDown1__soy684() {
-          ie_open('span', null, null, 'class', 'none');
-          ie_open('span', null, null, 'class', 'avatar avatar-white avatar-squared');
-          ie_void('span', null, null, 'class', 'icon-16-house');
-          ie_close('span');
-          itext('none');
-          ie_close('span');
-        };
-        var selectDown2__soy686 = function selectDown2__soy686() {
-          ie_open('img', null, null, 'src', 'http://api.dashboard.wedeploy.com/static/registry/wedeploy-hosting/icon.png', 'width', '36', 'height', '36');
-          ie_close('img');
-          itext('images');
-        };
-        $templateAlias1({ elementClasses: 'select-large', arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [selectDown1__soy684, selectDown2__soy686], ref: 'homeContainer', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
-      };
-      $templateAlias2(soy.$$assignDefaults({ content: select__soy660 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageMetalComponentsSelect.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageMetalComponentsSelect = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsSelect, _Component);
-
-    function pageMetalComponentsSelect() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsSelect);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSelect.__proto__ || Object.getPrototypeOf(pageMetalComponentsSelect)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsSelect;
-  }(Component);
-
-  Soy.register(pageMetalComponentsSelect, templates);
-  this['metalNamed']['select'] = this['metalNamed']['select'] || {};
-  this['metalNamed']['select']['pageMetalComponentsSelect'] = pageMetalComponentsSelect;
-  this['metalNamed']['select']['templates'] = templates;
-  this['metal']['select'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['select'];
-
-  var pageMetalComponentsSelect = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsSelect, _Component);
-
-    function pageMetalComponentsSelect() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsSelect);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSelect.__proto__ || Object.getPrototypeOf(pageMetalComponentsSelect)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsSelect;
-  }(Component);
-
-  ;
-
-  Soy.register(pageMetalComponentsSelect, templates);
-
-  this['metal']['pageMetalComponentsSelect'] = pageMetalComponentsSelect;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from slider.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageMetalComponentsSlider.
-     * @public
-     */
-
-    goog.module('pageMetalComponentsSlider.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('MarbleSlider.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var slider__soy701 = function slider__soy701() {
-        ie_open('h5');
-        itext('Default Slider');
-        ie_close('h5');
-        $templateAlias1({ elementClasses: 'hidden-xs hidden-sm', events: { valueChanged: opt_data.scaleValueChanged }, max: 5, value: 1 }, null, opt_ijData);
-      };
-      $templateAlias2(soy.$$assignDefaults({ content: slider__soy701 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageMetalComponentsSlider.render';
-    }
-
-    exports.render.params = ["scaleValueChanged"];
-    exports.render.types = { "scaleValueChanged": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var pageMetalComponentsSlider = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsSlider, _Component);
-
-    function pageMetalComponentsSlider() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsSlider);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSlider.__proto__ || Object.getPrototypeOf(pageMetalComponentsSlider)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsSlider;
-  }(Component);
-
-  Soy.register(pageMetalComponentsSlider, templates);
-  this['metalNamed']['slider'] = this['metalNamed']['slider'] || {};
-  this['metalNamed']['slider']['pageMetalComponentsSlider'] = pageMetalComponentsSlider;
-  this['metalNamed']['slider']['templates'] = templates;
-  this['metal']['slider'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['slider'];
-
-  var pageMetalComponentsSlider = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsSlider, _Component);
-
-    function pageMetalComponentsSlider() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsSlider);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsSlider.__proto__ || Object.getPrototypeOf(pageMetalComponentsSlider)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsSlider;
-  }(Component);
-
-  ;
-
-  Soy.register(pageMetalComponentsSlider, templates);
-
-  this['metal']['pageMetalComponentsSlider'] = pageMetalComponentsSlider;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from toast.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageMetalComponentsToast.
-     * @public
-     */
-
-    goog.module('pageMetalComponentsToast.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('MarbleToast.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      opt_data = opt_data || {};
-      var animClasses__soy712 = { show: 'animated slideInBottom', hide: 'hidden' };
-      var tootlip__soy713 = function tootlip__soy713() {
-        ie_open('h5');
-        itext('Default Tooltip');
-        ie_close('h5');
-        $templateAlias1({ animClasses: animClasses__soy712, body: 'User was deleted successfully<button class="alert-undo-link">undo</button>', dismissible: true, elementClasses: 'hidden alert-danger', hideDelay: 6000, visible: true, spinner: true, spinnerDone: true, spinnerClasses: 'spinner-danger' }, null, opt_ijData);
-      };
-      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy713 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageMetalComponentsToast.render';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageMetalComponentsToast = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsToast, _Component);
-
-    function pageMetalComponentsToast() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsToast);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsToast.__proto__ || Object.getPrototypeOf(pageMetalComponentsToast)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsToast;
-  }(Component);
-
-  Soy.register(pageMetalComponentsToast, templates);
-  this['metalNamed']['toast'] = this['metalNamed']['toast'] || {};
-  this['metalNamed']['toast']['pageMetalComponentsToast'] = pageMetalComponentsToast;
-  this['metalNamed']['toast']['templates'] = templates;
-  this['metal']['toast'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['toast'];
-
-  var pageMetalComponentsToast = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsToast, _Component);
-
-    function pageMetalComponentsToast() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsToast);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsToast.__proto__ || Object.getPrototypeOf(pageMetalComponentsToast)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsToast;
-  }(Component);
-
-  ;
-
-  Soy.register(pageMetalComponentsToast, templates);
-
-  this['metal']['pageMetalComponentsToast'] = pageMetalComponentsToast;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from tooltip.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageMetalComponentsTooltip.
-     * @public
-     */
-
-    goog.module('pageMetalComponentsTooltip.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias1 = Soy.getTemplate('MarbleTooltip.incrementaldom', 'render');
-
-    var $templateAlias2 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var tootlip__soy729 = function tootlip__soy729() {
-        ie_open('h5');
-        itext('Default Tooltip');
-        ie_close('h5');
-        ie_open('p');
-        itext('Home Service ');
-        ie_void('span', null, null, 'class', 'icon-12-info show-tooltip icon-info', 'alt', 'Select the service that will respond to requests made on project main domain.');
-        ie_close('p');
-        $templateAlias1({ elementClasses: 'fade', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip', selector: '.show-tooltip', visible: false, title: 'Select the service that will respond to requests made on project main domain.' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Default Tooltip - Text Align Left');
-        ie_close('h5');
-        ie_open('p');
-        itext('Home Service ');
-        ie_void('span', null, null, 'class', 'icon-12-info show-tooltip-2 icon-info', 'alt', 'Select the service that will respond to requests made on project main domain.');
-        ie_close('p');
-        $templateAlias1({ elementClasses: 'fade text-left', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip2', selector: '.show-tooltip-2', visible: false, title: 'Select the service that will respond to requests made on project main domain.' }, null, opt_ijData);
-      };
-      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy729 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageMetalComponentsTooltip.render';
-    }
-
-    exports.render.params = ["tooltipAlignElementChanged"];
-    exports.render.types = { "tooltipAlignElementChanged": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var pageMetalComponentsTooltip = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsTooltip, _Component);
-
-    function pageMetalComponentsTooltip() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsTooltip);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsTooltip.__proto__ || Object.getPrototypeOf(pageMetalComponentsTooltip)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsTooltip;
-  }(Component);
-
-  Soy.register(pageMetalComponentsTooltip, templates);
-  this['metalNamed']['tooltip'] = this['metalNamed']['tooltip'] || {};
-  this['metalNamed']['tooltip']['pageMetalComponentsTooltip'] = pageMetalComponentsTooltip;
-  this['metalNamed']['tooltip']['templates'] = templates;
-  this['metal']['tooltip'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['tooltip'];
-
-  var pageMetalComponentsTooltip = function (_Component) {
-    babelHelpers.inherits(pageMetalComponentsTooltip, _Component);
-
-    function pageMetalComponentsTooltip() {
-      babelHelpers.classCallCheck(this, pageMetalComponentsTooltip);
-      return babelHelpers.possibleConstructorReturn(this, (pageMetalComponentsTooltip.__proto__ || Object.getPrototypeOf(pageMetalComponentsTooltip)).apply(this, arguments));
-    }
-
-    return pageMetalComponentsTooltip;
-  }(Component);
-
-  ;
-
-  Soy.register(pageMetalComponentsTooltip, templates);
-
-  this['metal']['pageMetalComponentsTooltip'] = pageMetalComponentsTooltip;
-}).call(this);
-'use strict';
-
-(function () {
-	var core = this['metalNamed']['metal']['core'];
-	var string = this['metalNamed']['metal']['string'];
-	var Component = this['metal']['component'];
-	var Soy = this['metal']['Soy'];
-	var templates = this['metal']['slider'];
-
-	var Slider = function (_Component) {
-		babelHelpers.inherits(Slider, _Component);
-
-		function Slider() {
-			babelHelpers.classCallCheck(this, Slider);
-			return babelHelpers.possibleConstructorReturn(this, (Slider.__proto__ || Object.getPrototypeOf(Slider)).apply(this, arguments));
-		}
-
-		babelHelpers.createClass(Slider, [{
-			key: 'scaleValueChanged',
-			value: function scaleValueChanged(event, payload) {
-				console.log("scaleValueChanged: " + event.newVal);
-			}
-		}]);
-		return Slider;
-	}(Component);
-
-	;
-
-	Soy.register(Slider, templates);
-
-	this['metal']['slider'] = Slider;
-}).call(this);
-'use strict';
-
-(function () {
-	var core = this['metalNamed']['metal']['core'];
-	var string = this['metalNamed']['metal']['string'];
-	var Component = this['metal']['component'];
-	var Soy = this['metal']['Soy'];
-	var templates = this['metal']['tooltip'];
-
-	var Tooltip = function (_Component) {
-		babelHelpers.inherits(Tooltip, _Component);
-
-		function Tooltip() {
-			babelHelpers.classCallCheck(this, Tooltip);
-			return babelHelpers.possibleConstructorReturn(this, (Tooltip.__proto__ || Object.getPrototypeOf(Tooltip)).apply(this, arguments));
-		}
-
-		babelHelpers.createClass(Tooltip, [{
-			key: 'tooltipAlignElementChanged',
-			value: function tooltipAlignElementChanged(event) {
-				var value = event.newVal.getAttribute('alt');
-				if (value) {
-					this.components.tooltip.title = unescape(value);
-				}
-			}
-		}]);
-		return Tooltip;
-	}(Component);
-
-	;
-
-	Soy.register(Tooltip, templates);
-
-	this['metal']['tooltip'] = Tooltip;
 }).call(this);
 }).call(this);
 //# sourceMappingURL=bundle.js.map
