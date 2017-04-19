@@ -26953,8 +26953,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', ($$temp = opt_data.elementClasses) == null ? 'main' : $$temp);
       ie_open('main', null, null, 'class', 'content');
       $topbar(opt_data, null, opt_ijData);
-      var dyn0 = opt_data.content;
-      if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
+      var dyn1 = opt_data.content;
+      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
       ie_close('main');
       ie_close('div');
     }
@@ -26993,8 +26993,8 @@ babelHelpers;
       ie_open('a', null, null, 'class', 'topbar-logo-link', 'href', '/docs/components/avatar.html');
       ie_void('span', null, null, 'class', 'topbar-logo-icon icon-16-hammer');
       ie_open('span', null, null, 'class', 'topbar-logo-text');
-      var dyn1 = opt_data.site.title;
-      if (typeof dyn1 == 'function') dyn1();else if (dyn1 != null) itext(dyn1);
+      var dyn2 = opt_data.site.title;
+      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
       ie_close('span');
       ie_close('a');
       ie_close('div');
@@ -27100,11 +27100,11 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param28 = function param28() {
+      var param55 = function param55() {
         $templateAlias2({ section: opt_data.site.index.children['docs'] }, null, opt_ijData);
         $styleguide(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param28 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param55 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -27123,8 +27123,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'container');
       ie_open('div', null, null, 'class', 'docs-guide row card');
       ie_open('div', null, null, 'class', 'docs-content col-xs-16');
-      var dyn2 = opt_data.content;
-      if (typeof dyn2 == 'function') dyn2();else if (dyn2 != null) itext(dyn2);
+      var dyn3 = opt_data.content;
+      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
       $contribute(opt_data, null, opt_ijData);
       ie_close('div');
       ie_close('div');
@@ -27243,11 +27243,11 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param47 = function param47() {
+      var param74 = function param74() {
         $templateAlias2({ section: opt_data.site.index.children['docs'] }, null, opt_ijData);
         $styleguideFull(opt_data, null, opt_ijData);
       };
-      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param47 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ elementClasses: 'docs styleguide', content: param74 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -27266,8 +27266,8 @@ babelHelpers;
       ie_open('div', null, null, 'class', 'container container-hybrid');
       ie_open('div', null, null, 'class', 'docs-guide row card');
       ie_open('div', null, null, 'class', 'docs-content col-xs-16');
-      var dyn3 = opt_data.content;
-      if (typeof dyn3 == 'function') dyn3();else if (dyn3 != null) itext(dyn3);
+      var dyn4 = opt_data.content;
+      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
       $contribute(opt_data, null, opt_ijData);
       ie_close('div');
       ie_close('div');
@@ -27334,6 +27334,131 @@ babelHelpers;
   this['metalNamed']['styleguideFull']['templates'] = templates;
   this['metal']['styleguideFull'] = templates;
   /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageIndex.
+     * @public
+     */
+
+    goog.module('pageIndex.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {}
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageIndex.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $soyweb(opt_data, opt_ignored, opt_ijData) {
+      ie_open('!DOCTYPE', null, null, 'html', '');
+      ie_open('html', null, null, 'lang', 'en');
+      ie_open('head');
+      ie_open('meta', null, null, 'charset', 'UTF-8');
+      ie_close('meta');
+      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'/docs/components/avatar.html\'');
+      ie_close('meta');
+      ie_close('head');
+      ie_close('html');
+    }
+    exports.soyweb = $soyweb;
+    if (goog.DEBUG) {
+      $soyweb.soyTemplateName = 'pageIndex.soyweb';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    exports.soyweb.params = [];
+    exports.soyweb.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageIndex = function (_Component) {
+    babelHelpers.inherits(pageIndex, _Component);
+
+    function pageIndex() {
+      babelHelpers.classCallCheck(this, pageIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    }
+
+    return pageIndex;
+  }(Component);
+
+  Soy.register(pageIndex, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['pageIndex'] = pageIndex;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['index'];
+
+  var pageIndex = function (_Component) {
+    babelHelpers.inherits(pageIndex, _Component);
+
+    function pageIndex() {
+      babelHelpers.classCallCheck(this, pageIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
+    }
+
+    return pageIndex;
+  }(Component);
+
+  ;
+
+  Soy.register(pageIndex, templates);
+
+  this['metal']['pageIndex'] = pageIndex;
 }).call(this);
 'use strict';
 
@@ -27615,20 +27740,20 @@ babelHelpers;
      * @return {void}
      * @suppress {checkTypes}
      */
-    function __deltemplate_s80_d34389eb(opt_data, opt_ignored, opt_ijData) {
+    function __deltemplate_s18_d34389eb(opt_data, opt_ignored, opt_ijData) {
       ie_open('a', null, null, 'class', 'sidebar-link ' + (opt_data.page.active ? 'sidebar-link-selected' : ''), 'href', opt_data.page.url);
       ie_void('span', null, null, 'class', 'sidebar-icon icon-16-' + opt_data.page.icon);
       ie_open('span');
-      var dyn4 = opt_data.page.title;
-      if (typeof dyn4 == 'function') dyn4();else if (dyn4 != null) itext(dyn4);
+      var dyn0 = opt_data.page.title;
+      if (typeof dyn0 == 'function') dyn0();else if (dyn0 != null) itext(dyn0);
       ie_close('span');
       ie_close('a');
     }
-    exports.__deltemplate_s80_d34389eb = __deltemplate_s80_d34389eb;
+    exports.__deltemplate_s18_d34389eb = __deltemplate_s18_d34389eb;
     if (goog.DEBUG) {
-      __deltemplate_s80_d34389eb.soyTemplateName = 'SideBar.__deltemplate_s80_d34389eb';
+      __deltemplate_s18_d34389eb.soyTemplateName = 'SideBar.__deltemplate_s18_d34389eb';
     }
-    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s80_d34389eb);
+    soy.$$registerDelegateFn(soy.$$getDelTemplateId('ElectricNavigation.anchor.idom'), 'sidebar', 0, __deltemplate_s18_d34389eb);
 
     exports.render.params = ["section"];
     exports.render.types = { "section": "any" };
@@ -27687,131 +27812,6 @@ babelHelpers;
 	Soy.register(SideBar, templates);
 
 	this['metal']['SideBar'] = SideBar;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from index.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageIndex.
-     * @public
-     */
-
-    goog.module('pageIndex.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {}
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageIndex.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $soyweb(opt_data, opt_ignored, opt_ijData) {
-      ie_open('!DOCTYPE', null, null, 'html', '');
-      ie_open('html', null, null, 'lang', 'en');
-      ie_open('head');
-      ie_open('meta', null, null, 'charset', 'UTF-8');
-      ie_close('meta');
-      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'/docs/components/avatar.html\'');
-      ie_close('meta');
-      ie_close('head');
-      ie_close('html');
-    }
-    exports.soyweb = $soyweb;
-    if (goog.DEBUG) {
-      $soyweb.soyTemplateName = 'pageIndex.soyweb';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    exports.soyweb.params = [];
-    exports.soyweb.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageIndex = function (_Component) {
-    babelHelpers.inherits(pageIndex, _Component);
-
-    function pageIndex() {
-      babelHelpers.classCallCheck(this, pageIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-    }
-
-    return pageIndex;
-  }(Component);
-
-  Soy.register(pageIndex, templates);
-  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
-  this['metalNamed']['index']['pageIndex'] = pageIndex;
-  this['metalNamed']['index']['templates'] = templates;
-  this['metal']['index'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['index'];
-
-  var pageIndex = function (_Component) {
-    babelHelpers.inherits(pageIndex, _Component);
-
-    function pageIndex() {
-      babelHelpers.classCallCheck(this, pageIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageIndex.__proto__ || Object.getPrototypeOf(pageIndex)).apply(this, arguments));
-    }
-
-    return pageIndex;
-  }(Component);
-
-  ;
-
-  Soy.register(pageIndex, templates);
-
-  this['metal']['pageIndex'] = pageIndex;
 }).call(this);
 'use strict';
 
@@ -27975,14 +27975,14 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var dropdown__soy538 = function dropdown__soy538() {
+      var dropdown__soy95 = function dropdown__soy95() {
         ie_open('h5');
         itext('Dropdown Settings');
         ie_close('h5');
-        var param541 = function param541() {
+        var param98 = function param98() {
           ie_void('button', null, null, 'class', 'btn-icon icon-16-ellipsis', 'data-onclick', 'toggle', 'type', 'button');
         };
-        var param543 = function param543() {
+        var param100 = function param100() {
           ie_open('li');
           ie_open('a', null, null, 'href', 'javascript:;');
           ie_void('span', null, null, 'class', 'icon-12-spinner-double-arrow');
@@ -28014,17 +28014,17 @@ babelHelpers;
           ie_close('a');
           ie_close('li');
         };
-        $templateAlias1({ elementClasses: 'dropdown-settings', header: param541, body: param543 }, null, opt_ijData);
+        $templateAlias1({ elementClasses: 'dropdown-settings', header: param98, body: param100 }, null, opt_ijData);
         ie_open('h5');
         itext('Dropdown Filter');
         ie_close('h5');
-        var param548 = function param548() {
+        var param105 = function param105() {
           ie_open('button', null, null, 'class', 'btn btn-default', 'data-onclick', 'toggle', 'type', 'button');
           itext('Alphanumeric');
           ie_void('span', null, null, 'class', 'icon-12-arrow-down-short');
           ie_close('button');
         };
-        var param550 = function param550() {
+        var param107 = function param107() {
           ie_open('li');
           ie_open('a', null, null, 'href', 'javascript:;');
           itext('Last Activity');
@@ -28041,9 +28041,9 @@ babelHelpers;
           ie_close('a');
           ie_close('li');
         };
-        $templateAlias1({ elementClasses: 'dropdown-filter', header: param548, body: param550 }, null, opt_ijData);
+        $templateAlias1({ elementClasses: 'dropdown-filter', header: param105, body: param107 }, null, opt_ijData);
       };
-      $templateAlias2(soy.$$assignDefaults({ content: dropdown__soy538 }, opt_data), null, opt_ijData);
+      $templateAlias2(soy.$$assignDefaults({ content: dropdown__soy95 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -28227,7 +28227,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var progressBar__soy561 = function progressBar__soy561() {
+      var progressBar__soy118 = function progressBar__soy118() {
         ie_open('h5');
         itext('Single Field');
         ie_close('h5');
@@ -28237,7 +28237,7 @@ babelHelpers;
         ie_close('h5');
         $templateAlias1({ elementClasses: 'input-matrix--inline', fieldsConfig: [{ label: '', name: 'key', placeholder: 'Key', isArray: true, maxLength: 255, autocomplete: false }, { label: '', name: 'value', placeholder: 'Value', isArray: true, maxLength: 255, autocomplete: false }] }, null, opt_ijData);
       };
-      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy561 }, opt_data), null, opt_ijData);
+      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy118 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -28392,7 +28392,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var progressBar__soy573 = function progressBar__soy573() {
+      var progressBar__soy130 = function progressBar__soy130() {
         ie_open('h5');
         itext('Types / States');
         ie_close('h5');
@@ -28413,7 +28413,7 @@ babelHelpers;
         ie_close('p');
         $templateAlias1({ barClass: 'progress-bar-danger', min: 0, max: 5, value: 2 }, null, opt_ijData);
       };
-      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy573 }, opt_data), null, opt_ijData);
+      $templateAlias2(soy.$$assignDefaults({ content: progressBar__soy130 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -28520,7 +28520,7 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var select__soy602 = function select__soy602() {
+      var select__soy159 = function select__soy159() {
         ie_open('h5');
         itext('Types');
         ie_close('h5');
@@ -28531,21 +28531,21 @@ babelHelpers;
         ie_open('p');
         itext('WeDeploy Dashboard: Deployment > Github Account ');
         ie_close('p');
-        var item1__soy613 = function item1__soy613() {
+        var item1__soy170 = function item1__soy170() {
           ie_open('img', null, null, 'src', 'https://avatars.githubusercontent.com/u/19154228?v=3', 'width', '24', 'height', '24');
           ie_close('img');
           itext(' ygorcosta');
         };
-        var item2__soy615 = function item2__soy615() {
+        var item2__soy172 = function item2__soy172() {
           ie_open('img', null, null, 'src', 'https://avatars.githubusercontent.com/u/10002920?v=3', 'width', '24', 'height', '24');
           ie_close('img');
           itext(' wedeploy');
         };
-        $templateAlias1({ arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [item1__soy613, item2__soy615], ref: 'githubRepository', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
+        $templateAlias1({ arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [item1__soy170, item2__soy172], ref: 'githubRepository', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
         ie_open('p');
         itext('WeDeploy Dashboard: Settings > Home Container');
         ie_close('p');
-        var selectDown1__soy626 = function selectDown1__soy626() {
+        var selectDown1__soy183 = function selectDown1__soy183() {
           ie_open('span', null, null, 'class', 'none');
           ie_open('span', null, null, 'class', 'avatar avatar-white avatar-squared');
           ie_void('span', null, null, 'class', 'icon-16-house');
@@ -28553,14 +28553,14 @@ babelHelpers;
           itext('none');
           ie_close('span');
         };
-        var selectDown2__soy628 = function selectDown2__soy628() {
+        var selectDown2__soy185 = function selectDown2__soy185() {
           ie_open('img', null, null, 'src', 'http://api.dashboard.wedeploy.com/static/registry/wedeploy-hosting/icon.png', 'width', '36', 'height', '36');
           ie_close('img');
           itext('images');
         };
-        $templateAlias1({ elementClasses: 'select-large', arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [selectDown1__soy626, selectDown2__soy628], ref: 'homeContainer', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
+        $templateAlias1({ elementClasses: 'select-large', arrowClass: 'icon-16-arrow-down-short', buttonClass: 'btn btn-default btn-block', hiddenInputName: 'githubUser', items: [selectDown1__soy183, selectDown2__soy185], ref: 'homeContainer', values: ['1', '2'], selectedIndex: 0 }, null, opt_ijData);
       };
-      $templateAlias2(soy.$$assignDefaults({ content: select__soy602 }, opt_data), null, opt_ijData);
+      $templateAlias2(soy.$$assignDefaults({ content: select__soy159 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -28666,13 +28666,13 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var slider__soy643 = function slider__soy643() {
+      var slider__soy200 = function slider__soy200() {
         ie_open('h5');
         itext('Default Slider');
         ie_close('h5');
         $templateAlias1({ elementClasses: 'hidden-xs hidden-sm', events: { valueChanged: opt_data.scaleValueChanged }, max: 5, value: 1 }, null, opt_ijData);
       };
-      $templateAlias2(soy.$$assignDefaults({ content: slider__soy643 }, opt_data), null, opt_ijData);
+      $templateAlias2(soy.$$assignDefaults({ content: slider__soy200 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -28779,20 +28779,20 @@ babelHelpers;
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
       opt_data = opt_data || {};
-      var animClasses__soy654 = { show: 'animated slideInBottom', hide: 'hidden' };
-      var tootlip__soy655 = function tootlip__soy655() {
+      var animClasses__soy211 = { show: 'animated slideInBottom', hide: 'hidden' };
+      var tootlip__soy212 = function tootlip__soy212() {
         ie_open('h5');
         itext('Default Tooltip');
         ie_close('h5');
-        var param658 = function param658() {
+        var param215 = function param215() {
           itext('User was deleted successfully');
           ie_open('button', null, null, 'class', 'alert-undo-link');
           itext('undo');
           ie_close('button');
         };
-        $templateAlias1({ animClasses: animClasses__soy654, body: param658, dismissible: true, elementClasses: 'hidden alert-danger', hideDelay: 6000, visible: true, spinner: true, spinnerDone: true, spinnerClasses: 'spinner-danger' }, null, opt_ijData);
+        $templateAlias1({ animClasses: animClasses__soy211, body: param215, dismissible: true, elementClasses: 'hidden alert-danger', hideDelay: 6000, visible: true, spinner: true, spinnerDone: true, spinnerClasses: 'spinner-danger' }, null, opt_ijData);
       };
-      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy655 }, opt_data), null, opt_ijData);
+      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy212 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -28898,7 +28898,7 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var tootlip__soy672 = function tootlip__soy672() {
+      var tootlip__soy229 = function tootlip__soy229() {
         ie_open('h5');
         itext('Default Tooltip');
         ie_close('h5');
@@ -28906,10 +28906,10 @@ babelHelpers;
         itext('Home Service ');
         ie_void('span', null, null, 'class', 'icon-12-info show-tooltip icon-info', 'alt', 'Select the service that will respond to requests made on project main domain.');
         ie_close('p');
-        var param679 = function param679() {
+        var param236 = function param236() {
           itext('Select the service that will respond to requests made on project main domain.');
         };
-        $templateAlias1({ elementClasses: 'fade', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip', selector: '.show-tooltip', visible: false, title: param679 }, null, opt_ijData);
+        $templateAlias1({ elementClasses: 'fade', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip', selector: '.show-tooltip', visible: false, title: param236 }, null, opt_ijData);
         ie_open('h5');
         itext('Default Tooltip - Text Align Left');
         ie_close('h5');
@@ -28917,12 +28917,12 @@ babelHelpers;
         itext('Home Service ');
         ie_void('span', null, null, 'class', 'icon-12-info show-tooltip-2 icon-info', 'alt', 'Select the service that will respond to requests made on project main domain.');
         ie_close('p');
-        var param688 = function param688() {
+        var param245 = function param245() {
           itext('Select the service that will respond to requests made on project main domain.');
         };
-        $templateAlias1({ elementClasses: 'fade text-left', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip2', selector: '.show-tooltip-2', visible: false, title: param688 }, null, opt_ijData);
+        $templateAlias1({ elementClasses: 'fade text-left', events: { alignElementChanged: opt_data.tooltipAlignElementChanged }, ref: 'tooltip2', selector: '.show-tooltip-2', visible: false, title: param245 }, null, opt_ijData);
       };
-      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy672 }, opt_data), null, opt_ijData);
+      $templateAlias2(soy.$$assignDefaults({ content: tootlip__soy229 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
@@ -29054,15 +29054,15 @@ babelHelpers;
   var templates;
   goog.loadModule(function (exports) {
 
-    // This file was automatically generated from label.soy.
+    // This file was automatically generated from checkbox.soy.
     // Please don't edit this file by hand.
 
     /**
-     * @fileoverview Templates in namespace BLbAo.
+     * @fileoverview Templates in namespace BJbny.
      * @public
      */
 
-    goog.module('BLbAo.incrementaldom');
+    goog.module('BJbny.incrementaldom');
 
     /** @suppress {extraRequire} */
     var soy = goog.require('soy');
@@ -29095,133 +29095,86 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param432 = function param432() {
+      var param325 = function param325() {
         ie_open('h5');
-        itext('Label Types/States');
+        itext('Checkbox');
         ie_close('h5');
         ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('span', null, null, 'class', 'label label-default');
-        ie_open('span', null, null, 'class', 'label-text');
-        itext('Default');
-        ie_close('span');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-primary');
-        ie_open('span', null, null, 'class', 'label-text');
-        itext('Primary');
-        ie_close('span');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-success');
-        ie_open('span', null, null, 'class', 'label-text');
-        itext('Success');
-        ie_close('span');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-warning');
-        ie_open('span', null, null, 'class', 'label-text');
-        itext('Warning');
-        ie_close('span');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-danger');
-        ie_open('span', null, null, 'class', 'label-text');
-        itext('Danger');
-        ie_close('span');
-        ie_close('span');
+        ie_open('div', null, null, 'class', 'checkbox');
+        ie_open('input', null, null, 'type', 'checkbox', 'id', 'ck-1-1', 'name', 'check-1', 'value', 'ck-1-1');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'ck-1-1');
+        itext('Honda');
+        ie_close('label');
         ie_close('div');
-        $templateAlias2({ code: '<span class="label label-default">\n    <span class="label-text">Default</span>\n</span>\n<span class="label label-primary">\n    <span class="label-text">Primary</span>\n</span>\n<span class="label label-success">\n    <span class="label-text">Success</span>\n</span>\n<span class="label label-warning">\n    <span class="label-text">Warning</span>\n</span>\n<span class="label label-danger">\n    <span class="label-text">Danger</span>\n</span>', mode: 'xml' }, null, opt_ijData);
+        ie_open('div', null, null, 'class', 'checkbox');
+        ie_open('input', null, null, 'type', 'checkbox', 'id', 'ck-1-2', 'name', 'check-1', 'value', 'ck-1-2');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'ck-1-2');
+        itext('Toyota');
+        ie_close('label');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'checkbox');
+        ie_open('input', null, null, 'type', 'checkbox', 'id', 'ck-1-3', 'name', 'check-1', 'value', 'ck-1-3');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'ck-1-3');
+        itext('Jeep');
+        ie_close('label');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="checkbox">\n    <input type="checkbox" id="ck-1-1" name="check-1" value="ck-1-1">\n    <label for="ck-1-1">Honda</label>\n</div>\n<div class="checkbox">\n    <input type="checkbox" id="ck-1-2" name="check-1" value="ck-1-2">\n    <label for="ck-1-2">Toyota</label>\n</div>\n<div class="checkbox">\n    <input type="checkbox" id="ck-1-3" name="check-1" value="ck-1-3">\n    <label for="ck-1-3">Jeep</label>\n</div>', mode: 'xml' }, null, opt_ijData);
         ie_open('h5');
-        itext('Sizes');
+        itext('Checkbox inline');
         ie_close('h5');
         ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('span', null, null, 'class', 'label label-default label-sm');
-        itext('Small');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-primary label-sm');
-        itext('Small');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-default');
-        itext('Regular');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-primary');
-        itext('Regular');
-        ie_close('span');
+        ie_open('div', null, null, 'class', 'checkbox-group checkbox-group-inline');
+        ie_open('div', null, null, 'class', 'checkbox');
+        ie_open('input', null, null, 'type', 'checkbox', 'id', 'ck-2-1', 'name', 'check-2', 'value', 'ck-2-1');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'ck-2-1');
+        itext('Honda');
+        ie_close('label');
         ie_close('div');
-        $templateAlias2({ code: '<span class="label label-default label-sm">Small</span>\n<span class="label label-primary label-sm">Small</span>\n<span class="label label-default">Regular</span>\n<span class="label label-primary">Regular</span>', mode: 'xml' }, null, opt_ijData);
+        ie_open('div', null, null, 'class', 'checkbox');
+        ie_open('input', null, null, 'type', 'checkbox', 'id', 'ck-2-2', 'name', 'check-2', 'value', 'ck-2-2');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'ck-2-2');
+        itext('Toyota');
+        ie_close('label');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'checkbox');
+        ie_open('input', null, null, 'type', 'checkbox', 'id', 'ck-2-3', 'name', 'check-2', 'value', 'ck-2-3');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'ck-2-3');
+        itext('Jeep');
+        ie_close('label');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="checkbox-group checkbox-group-inline">\n    <div class="checkbox">\n        <input type="checkbox" id="ck-2-1" name="check-2" value="ck-2-1">\n        <label for="ck-2-1">Honda</label>\n    </div>\n    <div class="checkbox">\n        <input type="checkbox" id="ck-2-2" name="check-2" value="ck-2-2">\n        <label for="ck-2-2">Toyota</label>\n    </div>\n    <div class="checkbox">\n        <input type="checkbox" id="ck-2-3" name="check-2" value="ck-2-3">\n        <label for="ck-2-3">Jeep</label>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
         ie_open('h5');
-        itext('Icons');
+        itext('Checkbox indeterminate');
         ie_close('h5');
         ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('span', null, null, 'class', 'label label-default');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        itext('Default');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-primary');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        itext('Primary');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-success');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        itext('Success');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-warning');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        itext('Warning');
-        ie_close('span');
-        ie_open('span', null, null, 'class', 'label label-danger');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        itext('Danger');
-        ie_close('span');
+        ie_open('div', null, null, 'class', 'checkbox');
+        ie_open('input', null, null, 'type', 'checkbox', 'id', 'ck-3-1', 'name', 'check-3', 'value', 'ck-3-1');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'ck-3-1');
+        itext('Do you agree with the terms?');
+        ie_close('label');
         ie_close('div');
-        $templateAlias2({ code: '<span class="label label-default">\n    <span class="label-icon icon-12-person"></span>Default\n</span>\n<span class="label label-primary">\n    <span class="label-icon icon-12-person"></span>Primary\n</span>\n<span class="label label-success">\n    <span class="label-icon icon-12-person"></span>Success\n</span>\n<span class="label label-warning">\n    <span class="label-icon icon-12-person"></span>Warning\n</span>\n<span class="label label-danger">\n    <span class="label-icon icon-12-person"></span>Danger\n</span>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Clickable');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('button', null, null, 'class', 'btn-transparent label label-default label-clickable');
-        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        ie_open('span', null, null, 'class', 'label-content');
-        itext('Default');
-        ie_close('span');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn-transparent label label-primary label-clickable');
-        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        ie_open('span', null, null, 'class', 'label-content');
-        itext('Primary');
-        ie_close('span');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn-transparent label label-success label-clickable');
-        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        ie_open('span', null, null, 'class', 'label-content');
-        itext('Success');
-        ie_close('span');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn-transparent label label-warning label-clickable');
-        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        ie_open('span', null, null, 'class', 'label-content');
-        itext('Warning');
-        ie_close('span');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn-transparent label label-danger label-clickable');
-        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
-        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
-        ie_open('span', null, null, 'class', 'label-content');
-        itext('Danger');
-        ie_close('span');
-        ie_close('button');
         ie_close('div');
-        $templateAlias2({ code: '<button class="btn-transparent label label-default label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Default</span>\n</button>\n<button class="btn-transparent label label-primary label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Primary</span>\n</button>\n<button class="btn-transparent label label-success label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Success</span>\n</button>\n<button class="btn-transparent label label-warning label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Warning</span>\n</button>\n<button class="btn-transparent label label-danger label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Danger</span>\n</button>', mode: 'xml' }, null, opt_ijData);
+        $templateAlias2({ code: '<div class="checkbox">\n    <input type="checkbox" id="ck-3-1" name="check-3" value="ck-3-1">\n    <label for="ck-3-1">Do you agree with the terms?</label>\n</div>\n<script type="text/javascript">\n    var checkbox = document.getElementById(\'ck-3-1\');\n    checkbox.indeterminate = true;\n<\/script>', mode: 'xml' }, null, opt_ijData);
         ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
         ie_close('input');
         ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
         ie_close('input');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param432 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param325 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
-      $render.soyTemplateName = 'BLbAo.render';
+      $render.soyTemplateName = 'BJbny.render';
     }
 
     exports.render.params = ["page", "site"];
@@ -29230,22 +29183,22 @@ babelHelpers;
     return exports;
   });
 
-  var BLbAo = function (_Component) {
-    babelHelpers.inherits(BLbAo, _Component);
+  var BJbny = function (_Component) {
+    babelHelpers.inherits(BJbny, _Component);
 
-    function BLbAo() {
-      babelHelpers.classCallCheck(this, BLbAo);
-      return babelHelpers.possibleConstructorReturn(this, (BLbAo.__proto__ || Object.getPrototypeOf(BLbAo)).apply(this, arguments));
+    function BJbny() {
+      babelHelpers.classCallCheck(this, BJbny);
+      return babelHelpers.possibleConstructorReturn(this, (BJbny.__proto__ || Object.getPrototypeOf(BJbny)).apply(this, arguments));
     }
 
-    return BLbAo;
+    return BJbny;
   }(Component);
 
-  Soy.register(BLbAo, templates);
-  this['metalNamed']['label'] = this['metalNamed']['label'] || {};
-  this['metalNamed']['label']['BLbAo'] = BLbAo;
-  this['metalNamed']['label']['templates'] = templates;
-  this['metal']['label'] = templates;
+  Soy.register(BJbny, templates);
+  this['metalNamed']['checkbox'] = this['metalNamed']['checkbox'] || {};
+  this['metalNamed']['checkbox']['BJbny'] = BJbny;
+  this['metalNamed']['checkbox']['templates'] = templates;
+  this['metal']['checkbox'] = templates;
   /* jshint ignore:end */
 }).call(this);
 'use strict';
@@ -29253,2128 +29206,24 @@ babelHelpers;
 (function () {
   var Component = this['metal']['component'];
   var Soy = this['metal']['Soy'];
-  var templates = this['metal']['label'];
+  var templates = this['metal']['checkbox'];
 
-  var BLbAo = function (_Component) {
-    babelHelpers.inherits(BLbAo, _Component);
+  var BJbny = function (_Component) {
+    babelHelpers.inherits(BJbny, _Component);
 
-    function BLbAo() {
-      babelHelpers.classCallCheck(this, BLbAo);
-      return babelHelpers.possibleConstructorReturn(this, (BLbAo.__proto__ || Object.getPrototypeOf(BLbAo)).apply(this, arguments));
+    function BJbny() {
+      babelHelpers.classCallCheck(this, BJbny);
+      return babelHelpers.possibleConstructorReturn(this, (BJbny.__proto__ || Object.getPrototypeOf(BJbny)).apply(this, arguments));
     }
 
-    return BLbAo;
+    return BJbny;
   }(Component);
 
   ;
 
-  Soy.register(BLbAo, templates);
+  Soy.register(BJbny, templates);
 
-  this['metal']['BLbAo'] = BLbAo;
-}).call(this);
-'use strict';
-
-(function () {
-    /* jshint ignore:start */
-    var Component = this['metal']['component'];
-    var Soy = this['metal']['Soy'];
-
-    var templates;
-    goog.loadModule(function (exports) {
-
-        // This file was automatically generated from spinner.soy.
-        // Please don't edit this file by hand.
-
-        /**
-         * @fileoverview Templates in namespace BgOUE.
-         * @public
-         */
-
-        goog.module('BgOUE.incrementaldom');
-
-        /** @suppress {extraRequire} */
-        var soy = goog.require('soy');
-        /** @suppress {extraRequire} */
-        var soydata = goog.require('soydata');
-        /** @suppress {extraRequire} */
-        goog.require('goog.i18n.bidi');
-        /** @suppress {extraRequire} */
-        goog.require('goog.asserts');
-        /** @suppress {extraRequire} */
-        goog.require('goog.string');
-        var IncrementalDom = goog.require('incrementaldom');
-        var ie_open = IncrementalDom.elementOpen;
-        var ie_close = IncrementalDom.elementClose;
-        var ie_void = IncrementalDom.elementVoid;
-        var ie_open_start = IncrementalDom.elementOpenStart;
-        var ie_open_end = IncrementalDom.elementOpenEnd;
-        var itext = IncrementalDom.text;
-        var iattr = IncrementalDom.attr;
-
-        var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-        var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-        /**
-         * @param {Object<string, *>=} opt_data
-         * @param {(null|undefined)=} opt_ignored
-         * @param {Object<string, *>=} opt_ijData
-         * @return {void}
-         * @suppress {checkTypes}
-         */
-        function $render(opt_data, opt_ignored, opt_ijData) {
-            var param495 = function param495() {
-                ie_open('h5');
-                itext('Loading - Types');
-                ie_close('h5');
-                ie_open('div', null, null, 'class', 'group-demo');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-warning');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-danger');
-                ie_close('div');
-                $templateAlias2({ code: '<span class="spinner spinner-medium"></span>\n<span class="spinner spinner-medium spinner-warning"></span>\n<span class="spinner spinner-medium spinner-danger"></span>', mode: 'xml' }, null, opt_ijData);
-                ie_open('h5');
-                itext('Loading - Sizes');
-                ie_close('h5');
-                ie_open('div', null, null, 'class', 'group-demo');
-                ie_void('span', null, null, 'class', 'spinner spinner-large');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium');
-                ie_void('span', null, null, 'class', 'spinner spinner-small');
-                ie_close('div');
-                $templateAlias2({ code: '<span class="spinner spinner-large"></span>\n<span class="spinner spinner-medium"></span>\n<span class="spinner spinner-small"></span>', mode: 'xml' }, null, opt_ijData);
-                ie_open('h5');
-                itext('Done - Types');
-                ie_close('h5');
-                ie_open('div', null, null, 'class', 'group-demo');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-done');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-warning spinner-done');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-danger spinner-done');
-                ie_close('div');
-                $templateAlias2({ code: '<span class="spinner spinner-medium spinner-done"></span>\n<span class="spinner spinner-medium spinner-warning spinner-done"></span>\n<span class="spinner spinner-medium spinner-danger spinner-done"></span>', mode: 'xml' }, null, opt_ijData);
-                ie_open('h5');
-                itext('Done - Sizes');
-                ie_close('h5');
-                ie_open('div', null, null, 'class', 'group-demo');
-                ie_void('span', null, null, 'class', 'spinner spinner-large spinner-done');
-                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-done');
-                ie_void('span', null, null, 'class', 'spinner spinner-small spinner-done');
-                ie_close('div');
-                $templateAlias2({ code: '<span class="spinner spinner-large spinner-done"></span>\n<span class="spinner spinner-medium spinner-done"></span>\n<span class="spinner spinner-small spinner-done"></span>', mode: 'xml' }, null, opt_ijData);
-                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-                ie_close('input');
-                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-                ie_close('input');
-            };
-            $templateAlias1(soy.$$assignDefaults({ content: param495 }, opt_data), null, opt_ijData);
-        }
-        exports.render = $render;
-        if (goog.DEBUG) {
-            $render.soyTemplateName = 'BgOUE.render';
-        }
-
-        exports.render.params = ["page", "site"];
-        exports.render.types = { "page": "any", "site": "any" };
-        templates = exports;
-        return exports;
-    });
-
-    var BgOUE = function (_Component) {
-        babelHelpers.inherits(BgOUE, _Component);
-
-        function BgOUE() {
-            babelHelpers.classCallCheck(this, BgOUE);
-            return babelHelpers.possibleConstructorReturn(this, (BgOUE.__proto__ || Object.getPrototypeOf(BgOUE)).apply(this, arguments));
-        }
-
-        return BgOUE;
-    }(Component);
-
-    Soy.register(BgOUE, templates);
-    this['metalNamed']['spinner'] = this['metalNamed']['spinner'] || {};
-    this['metalNamed']['spinner']['BgOUE'] = BgOUE;
-    this['metalNamed']['spinner']['templates'] = templates;
-    this['metal']['spinner'] = templates;
-    /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['spinner'];
-
-  var BgOUE = function (_Component) {
-    babelHelpers.inherits(BgOUE, _Component);
-
-    function BgOUE() {
-      babelHelpers.classCallCheck(this, BgOUE);
-      return babelHelpers.possibleConstructorReturn(this, (BgOUE.__proto__ || Object.getPrototypeOf(BgOUE)).apply(this, arguments));
-    }
-
-    return BgOUE;
-  }(Component);
-
-  ;
-
-  Soy.register(BgOUE, templates);
-
-  this['metal']['BgOUE'] = BgOUE;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from avatar.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace EJVPw.
-     * @public
-     */
-
-    goog.module('EJVPw.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param95 = function param95() {
-        ie_open('h5');
-        itext('Avatar Photos');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-xlarge', 'href', '#');
-        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
-        ie_close('img');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-large', 'href', '#');
-        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
-        ie_close('img');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-medium', 'href', '#');
-        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
-        ie_close('img');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-small', 'href', '#');
-        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
-        ie_close('img');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-xsmall', 'href', '#');
-        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
-        ie_close('img');
-        ie_close('a');
-        ie_close('div');
-        $templateAlias2({ code: '<a class="avatar avatar-round avatar-photo avatar-xlarge" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-large" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-medium" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-small" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-xsmall" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Avatar Initials');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-xlarge', 'href', '#');
-        itext('a');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-large', 'href', '#');
-        itext('b');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-medium', 'href', '#');
-        itext('c');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-small', 'href', '#');
-        itext('d');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-xsmall', 'href', '#');
-        itext('e');
-        ie_close('a');
-        ie_close('div');
-        $templateAlias2({ code: '<a class="avatar avatar-round avatar-initials avatar-xlarge" href="#">a</a>\n<a class="avatar avatar-round avatar-initials avatar-large" href="#">b</a>\n<a class="avatar avatar-round avatar-initials avatar-medium" href="#">c</a>\n<a class="avatar avatar-round avatar-initials avatar-small" href="#">d</a>\n<a class="avatar avatar-round avatar-initials avatar-xsmall" href="#">e</a>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Avatar Numbers');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-xlarge', 'href', '#');
-        itext('+1');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-large', 'href', '#');
-        itext('+1');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-medium', 'href', '#');
-        itext('+1');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-small', 'href', '#');
-        itext('+1');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-xsmall', 'href', '#');
-        itext('+1');
-        ie_close('a');
-        ie_close('div');
-        $templateAlias2({ code: '<a class="avatar avatar-round avatar-number avatar-xlarge" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-large" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-medium" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-small" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-xsmall" href="#">+1</a>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Avatar Icon');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-16 avatar-large', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-globe');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-12 avatar-large', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-12-link');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-16 avatar-medium', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-bell');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-12 avatar-medium', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-12-star');
-        ie_close('a');
-        ie_close('div');
-        $templateAlias2({ code: '<a class="avatar avatar-round avatar-icon-16 avatar-large" href="#">\n    <span class="icon-16-globe"></span>\n</a>\n<a class="avatar avatar-round avatar-icon-12 avatar-large" href="#">\n    <span class="icon-12-link"></span>\n</a>\n<a class="avatar avatar-round avatar-icon-16 avatar-medium" href="#">\n    <span class="icon-16-bell"></span>\n</a>\n<a class="avatar avatar-round avatar-icon-12 avatar-medium" href="#">\n    <span class="icon-12-star"></span>\n</a>', mode: 'xml' }, null, opt_ijData);
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-        ie_close('input');
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-        ie_close('input');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param95 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'EJVPw.render';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var EJVPw = function (_Component) {
-    babelHelpers.inherits(EJVPw, _Component);
-
-    function EJVPw() {
-      babelHelpers.classCallCheck(this, EJVPw);
-      return babelHelpers.possibleConstructorReturn(this, (EJVPw.__proto__ || Object.getPrototypeOf(EJVPw)).apply(this, arguments));
-    }
-
-    return EJVPw;
-  }(Component);
-
-  Soy.register(EJVPw, templates);
-  this['metalNamed']['avatar'] = this['metalNamed']['avatar'] || {};
-  this['metalNamed']['avatar']['EJVPw'] = EJVPw;
-  this['metalNamed']['avatar']['templates'] = templates;
-  this['metal']['avatar'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['avatar'];
-
-  var EJVPw = function (_Component) {
-    babelHelpers.inherits(EJVPw, _Component);
-
-    function EJVPw() {
-      babelHelpers.classCallCheck(this, EJVPw);
-      return babelHelpers.possibleConstructorReturn(this, (EJVPw.__proto__ || Object.getPrototypeOf(EJVPw)).apply(this, arguments));
-    }
-
-    return EJVPw;
-  }(Component);
-
-  ;
-
-  Soy.register(EJVPw, templates);
-
-  this['metal']['EJVPw'] = EJVPw;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from button.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace ITTfx.
-     * @public
-     */
-
-    goog.module('ITTfx.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param124 = function param124() {
-        ie_open('h5');
-        itext('Button Type');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('button', null, null, 'class', 'btn btn-accent', 'href', '#');
-        itext('Accent');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-default', 'href', '#');
-        itext('Default');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-primary', 'href', '#');
-        itext('Primary');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-success', 'href', '#');
-        itext('Success');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-danger', 'href', '#');
-        itext('Danger');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-link', 'href', '#');
-        itext('Link');
-        ie_close('button');
-        ie_close('div');
-        $templateAlias2({ code: '<button class="btn btn-accent" href="#">Accent</button>\n<button class="btn btn-default" href="#">Default</button>\n<button class="btn btn-primary" href="#">Primary</button>\n<button class="btn btn-success" href="#">Success</button>\n<button class="btn btn-danger" href="#">Danger</button>\n<button class="btn btn-link" href="#">Link</button>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Disabled Button');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('button', null, null, 'class', 'btn btn-accent', 'disabled', '', 'href', '#');
-        itext('Accent');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-default', 'disabled', '', 'href', '#');
-        itext('Default');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-primary', 'disabled', '', 'href', '#');
-        itext('Primary');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-success', 'disabled', '', 'href', '#');
-        itext('Success');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-danger', 'disabled', '', 'href', '#');
-        itext('Danger');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-link', 'disabled', '', 'href', '#');
-        itext('Link');
-        ie_close('button');
-        ie_close('div');
-        $templateAlias2({ code: '<button class="btn btn-accent" disabled="" href="#">Accent</button>\n<button class="btn btn-default" disabled="" href="#">Default</button>\n<button class="btn btn-primary" disabled="" href="#">Primary</button>\n<button class="btn btn-success" disabled="" href="#">Success</button>\n<button class="btn btn-danger" disabled="" href="#">Danger</button>\n<button class="btn btn-link" disabled="" href="#">Link</button>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Button Size');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('button', null, null, 'class', 'btn btn-primary btn-sm', 'href', '#');
-        itext('Small');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-primary', 'href', '#');
-        itext('Regular');
-        ie_close('button');
-        ie_open('button', null, null, 'class', 'btn btn-primary btn-lg', 'href', '#');
-        itext('Large');
-        ie_close('button');
-        ie_close('div');
-        $templateAlias2({ code: '<button class="btn btn-primary btn-sm" href="#">Small</button>\n<button class="btn btn-primary" href="#">Regular</button>\n<button class="btn btn-primary btn-lg" href="#">Large</button>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Button Tag');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('a', null, null, 'class', 'btn btn-primary', 'href', '#');
-        itext('Link');
-        ie_close('a');
-        ie_open('button', null, null, 'class', 'btn btn-primary', 'type', 'submit');
-        itext('Button');
-        ie_close('button');
-        ie_open('input', null, null, 'class', 'btn btn-primary', 'type', 'button', 'value', 'Input');
-        ie_close('input');
-        ie_open('input', null, null, 'class', 'btn btn-primary', 'type', 'submit', 'value', 'Submit');
-        ie_close('input');
-        ie_open('input', null, null, 'class', 'btn btn-primary', 'type', 'reset', 'value', 'Reset');
-        ie_close('input');
-        ie_close('div');
-        $templateAlias2({ code: '<a class="btn btn-primary" href="#">Link</a>\n<button class="btn btn-primary" type="submit">Button</button>\n<input class="btn btn-primary" type="button" value="Input">\n<input class="btn btn-primary" type="submit" value="Submit">\n<input class="btn btn-primary" type="reset" value="Reset">', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Button + Icon');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_open('a', null, null, 'class', 'btn btn-accent', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-star');
-        itext(' Accent');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'btn btn-default', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-star');
-        itext(' Default');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'btn btn-primary', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-star');
-        itext(' Primary');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'btn btn-success', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-star');
-        itext(' Success');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'btn btn-danger', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-star');
-        itext(' Danger');
-        ie_close('a');
-        ie_open('a', null, null, 'class', 'btn btn-link', 'href', '#');
-        ie_void('span', null, null, 'class', 'icon-16-star');
-        itext(' Link');
-        ie_close('a');
-        ie_close('div');
-        $templateAlias2({ code: '<a class="btn btn-accent" href="#">\n    <span class="icon-16-star"></span> Accent\n</a>\n<a class="btn btn-default" href="#">\n    <span class="icon-16-star"></span> Default\n</a>\n<a class="btn btn-primary" href="#">\n    <span class="icon-16-star"></span> Primary\n</a>\n<a class="btn btn-success" href="#">\n    <span class="icon-16-star"></span> Success\n</a>\n<a class="btn btn-danger" href="#">\n    <span class="icon-16-star"></span> Danger\n</a>\n<a class="btn btn-link" href="#">\n    <span class="icon-16-star"></span> Link\n</a>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Transparent Button');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_void('button', null, null, 'class', 'btn-transparent icon-16-flash');
-        ie_void('button', null, null, 'class', 'btn-transparent icon-16-ellipsis');
-        ie_close('div');
-        $templateAlias2({ code: '<button class="btn-transparent icon-16-flash"></button>\n<button class="btn-transparent icon-16-ellipsis"></button>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Only Icon Button');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'group-demo');
-        ie_void('button', null, null, 'class', 'btn-icon btn-squared icon-16-ellipsis');
-        ie_void('button', null, null, 'class', 'btn-icon icon-16-ellipsis');
-        ie_close('div');
-        $templateAlias2({ code: '<button class="btn-icon btn-squared icon-16-ellipsis"></button>\n<button class="btn-icon icon-16-ellipsis"></button>', mode: 'xml' }, null, opt_ijData);
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-        ie_close('input');
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-        ie_close('input');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param124 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'ITTfx.render';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var ITTfx = function (_Component) {
-    babelHelpers.inherits(ITTfx, _Component);
-
-    function ITTfx() {
-      babelHelpers.classCallCheck(this, ITTfx);
-      return babelHelpers.possibleConstructorReturn(this, (ITTfx.__proto__ || Object.getPrototypeOf(ITTfx)).apply(this, arguments));
-    }
-
-    return ITTfx;
-  }(Component);
-
-  Soy.register(ITTfx, templates);
-  this['metalNamed']['button'] = this['metalNamed']['button'] || {};
-  this['metalNamed']['button']['ITTfx'] = ITTfx;
-  this['metalNamed']['button']['templates'] = templates;
-  this['metal']['button'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['button'];
-
-  var ITTfx = function (_Component) {
-    babelHelpers.inherits(ITTfx, _Component);
-
-    function ITTfx() {
-      babelHelpers.classCallCheck(this, ITTfx);
-      return babelHelpers.possibleConstructorReturn(this, (ITTfx.__proto__ || Object.getPrototypeOf(ITTfx)).apply(this, arguments));
-    }
-
-    return ITTfx;
-  }(Component);
-
-  ;
-
-  Soy.register(ITTfx, templates);
-
-  this['metal']['ITTfx'] = ITTfx;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from form.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace IoHxN.
-     * @public
-     */
-
-    goog.module('IoHxN.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param197 = function param197() {
-        ie_open('h5');
-        itext('Default Input');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label', null, null, 'for', 'input-regular');
-        itext('Label');
-        ie_close('label');
-        ie_open('input', null, null, 'id', 'input-regular', 'class', 'form-control', 'type', 'text', 'placeholder', 'Write something here...');
-        ie_close('input');
-        ie_open('p', null, null, 'class', 'help-block');
-        itext('A block of auxiliar text');
-        ie_close('p');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<form>\n    <div class="form-group">\n        <label for="input-regular">Label</label>\n        <input id="input-regular" class="form-control" type="text" placeholder="Write something here...">\n        <p class="help-block">A block of auxiliar text</p>\n    </div>\n</form>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('File Input');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label', null, null, 'for', 'input-regular');
-        itext('File selector');
-        ie_close('label');
-        ie_open('input', null, null, 'id', 'input-regular', 'class', 'form-control', 'type', 'file', 'placeholder', 'Select a file here...');
-        ie_close('input');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<input id="input-regular" class="form-control" type="file" placeholder="Select a file here...">', mode: 'htmlmixex' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input + Copy to Clipboard');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label');
-        itext('Example');
-        ie_close('label');
-        ie_open('div', null, null, 'class', 'has-action-button');
-        ie_open('input', null, null, 'class', 'form-control', 'type', 'text', 'onfocus', 'this.select();', 'onmouseup', 'return false;', 'value', 'Click to copy to clipboard');
-        ie_close('input');
-        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
-        ie_void('span', null, null, 'class', 'icon-12-overlap');
-        ie_open('div', null, null, 'class', 'btn-tooltip');
-        itext('Copy to clipboard');
-        ie_close('div');
-        ie_close('button');
-        ie_close('div');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="text" value="Click to copy to clipboard">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-overlap"></span>\n        <div class="btn-tooltip">Copy to clipboard</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Disabled');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label', null, null, 'for', 'input-disabled');
-        itext('Example');
-        ie_close('label');
-        ie_open('input', null, null, 'id', 'input-disabled', 'class', 'form-control', 'type', 'text', 'placeholder', 'Write something here...', 'disabled', '');
-        ie_close('input');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="form-group">\n    <label for="input-disabled">Example</label>\n    <input id="input-disabled" class="form-control" type="text" placeholder="Write something here..." disabled="">\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Read Only');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label', null, null, 'for', 'input-readonly');
-        itext('Example');
-        ie_close('label');
-        ie_open('input', null, null, 'id', 'input-readonly', 'class', 'form-control', 'type', 'text', 'value', 'Something to read', 'readonly', '');
-        ie_close('input');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="form-group">\n    <label for="input-readonly">Example</label>\n    <input id="input-readonly" class="form-control" type="text" value="Something to read" readonly="">\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Read Only + Copy to Clipboard');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label');
-        itext('Example');
-        ie_close('label');
-        ie_open('div', null, null, 'class', 'has-action-button');
-        ie_open('input', null, null, 'class', 'form-control', 'type', 'text', 'onfocus', 'this.select();', 'onmouseup', 'return false;', 'value', 'Click to copy to clipboard', 'readonly', '');
-        ie_close('input');
-        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
-        ie_void('span', null, null, 'class', 'icon-12-overlap');
-        ie_open('div', null, null, 'class', 'btn-tooltip');
-        itext('Copy to clipboard');
-        ie_close('div');
-        ie_close('button');
-        ie_close('div');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="text" value="Click to copy to clipboard" readonly="">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-overlap"></span>\n        <div class="btn-tooltip">Copy to clipboard</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Read Only + Click to Show');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label');
-        itext('Example');
-        ie_close('label');
-        ie_open('div', null, null, 'class', 'has-action-button');
-        ie_open('input', null, null, 'class', 'form-control', 'type', 'password', 'value', 'B76BABB1377E5CDC8364AF4355659', 'readonly', '');
-        ie_close('input');
-        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
-        ie_void('span', null, null, 'class', 'icon-12-eye');
-        ie_open('div', null, null, 'class', 'btn-tooltip');
-        itext('Show');
-        ie_close('div');
-        ie_close('button');
-        ie_close('div');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="password" value="B76BABB1377E5CDC8364AF4355659" readonly="">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-eye"></span>\n        <div class="btn-tooltip">Show</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Read Only + Click to Hide');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group');
-        ie_open('label');
-        itext('Example');
-        ie_close('label');
-        ie_open('div', null, null, 'class', 'has-action-button');
-        ie_open('input', null, null, 'class', 'form-control', 'type', 'text', 'value', 'B76BABB1377E5CDC8364AF4355659', 'readonly', '');
-        ie_close('input');
-        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
-        ie_void('span', null, null, 'class', 'icon-12-eye-off');
-        ie_open('div', null, null, 'class', 'btn-tooltip');
-        itext('Hide');
-        ie_close('div');
-        ie_close('button');
-        ie_close('div');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="text" value="B76BABB1377E5CDC8364AF4355659" readonly="">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-eye-off"></span>\n        <div class="btn-tooltip">Hide</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Success');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group has-success');
-        ie_open('label', null, null, 'for', 'input-success');
-        itext('Success');
-        ie_close('label');
-        ie_open('input', null, null, 'id', 'input-success', 'class', 'form-control', 'type', 'text');
-        ie_close('input');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="form-group has-success">\n    <label for="input-success">Success</label>\n    <input id="input-success" class="form-control" type="text">\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Warning');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group has-warning');
-        ie_open('label', null, null, 'for', 'input-warning');
-        itext('Warning');
-        ie_close('label');
-        ie_open('input', null, null, 'id', 'input-warning', 'class', 'form-control', 'type', 'text');
-        ie_close('input');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="form-group has-warning">\n    <label for="input-warning">Warning</label>\n    <input id="input-warning" class="form-control" type="text">\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Input Error');
-        ie_close('h5');
-        ie_open('form');
-        ie_open('div', null, null, 'class', 'form-group has-error');
-        ie_open('label', null, null, 'for', 'input-error');
-        itext('Error');
-        ie_close('label');
-        ie_open('input', null, null, 'id', 'input-error', 'class', 'form-control', 'type', 'text');
-        ie_close('input');
-        ie_close('div');
-        ie_close('form');
-        $templateAlias2({ code: '<div class="form-group has-error">\n    <label for="input-error">Error</label>\n    <input id="input-error" class="form-control" type="text">\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-        ie_close('input');
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-        ie_close('input');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param197 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'IoHxN.render';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var IoHxN = function (_Component) {
-    babelHelpers.inherits(IoHxN, _Component);
-
-    function IoHxN() {
-      babelHelpers.classCallCheck(this, IoHxN);
-      return babelHelpers.possibleConstructorReturn(this, (IoHxN.__proto__ || Object.getPrototypeOf(IoHxN)).apply(this, arguments));
-    }
-
-    return IoHxN;
-  }(Component);
-
-  Soy.register(IoHxN, templates);
-  this['metalNamed']['form'] = this['metalNamed']['form'] || {};
-  this['metalNamed']['form']['IoHxN'] = IoHxN;
-  this['metalNamed']['form']['templates'] = templates;
-  this['metal']['form'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['form'];
-
-  var IoHxN = function (_Component) {
-    babelHelpers.inherits(IoHxN, _Component);
-
-    function IoHxN() {
-      babelHelpers.classCallCheck(this, IoHxN);
-      return babelHelpers.possibleConstructorReturn(this, (IoHxN.__proto__ || Object.getPrototypeOf(IoHxN)).apply(this, arguments));
-    }
-
-    return IoHxN;
-  }(Component);
-
-  ;
-
-  Soy.register(IoHxN, templates);
-
-  this['metal']['IoHxN'] = IoHxN;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from table.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace KLaAR.
-     * @public
-     */
-
-    goog.module('KLaAR.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('styleguideFull.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param524 = function param524() {
-        ie_open('h5');
-        itext('Table');
-        ie_close('h5');
-        ie_open('table');
-        ie_open('thead');
-        ie_open('tr');
-        ie_open('th');
-        itext('#');
-        ie_close('th');
-        ie_open('th');
-        itext('First Name');
-        ie_close('th');
-        ie_open('th');
-        itext('Last Name');
-        ie_close('td');
-        ie_open('th');
-        itext('Username');
-        ie_close('td');
-        ie_open('th', null, null, 'class', 'text-center');
-        itext('Required');
-        ie_close('td');
-        ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-        ie_open('tr');
-        ie_open('td');
-        itext('1');
-        ie_close('td');
-        ie_open('td');
-        itext('Mark');
-        ie_close('td');
-        ie_open('td');
-        itext('Otto');
-        ie_close('td');
-        ie_open('td');
-        itext('@mdo');
-        ie_close('td');
-        ie_open('td', null, null, 'class', 'text-center');
-        ie_void('span', null, null, 'style', 'color: #77d55a;', 'class', 'icon-12-check');
-        ie_close('td');
-        ie_close('tr');
-        ie_open('tr');
-        ie_open('td');
-        itext('2');
-        ie_close('td');
-        ie_open('td');
-        itext('Jacob');
-        ie_close('td');
-        ie_open('td');
-        itext('Thornton');
-        ie_close('td');
-        ie_open('td');
-        itext('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam asperiores repudiandae architecto eaque veritatis officia dicta quam ex natus, aliquam reprehenderit ipsam. Tempore eius ducimus cum aspernatur minus ipsum non?');
-        ie_close('td');
-        ie_open('td', null, null, 'class', 'text-center');
-        ie_void('span', null, null, 'style', 'color: #77d55a;', 'class', 'icon-12-check');
-        ie_close('td');
-        ie_close('tr');
-        ie_open('tr');
-        ie_open('td');
-        itext('3');
-        ie_close('td');
-        ie_open('td');
-        itext('Larry');
-        ie_close('td');
-        ie_open('td');
-        itext('the Bird');
-        ie_close('td');
-        ie_open('td');
-        itext('@twitter');
-        ie_close('td');
-        ie_open('td', null, null, 'class', 'text-center');
-        ie_void('span', null, null, 'style', 'color: #77d55a;', 'class', 'icon-12-check');
-        ie_close('td');
-        ie_close('tr');
-        ie_close('tbody');
-        ie_close('table');
-        $templateAlias2({ code: '<table>\n    <thead>\n        <tr>\n            <th>#</th>\n            <th>First Name</th>\n            <th>Last Name</td>\n            <th>Username</td>\n            <th class="text-center">Required</td>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>1</td>\n            <td>Mark</td>\n            <td>Otto</td>\n            <td>@mdo</td>\n            <td class="text-center">\n                <span class="icon-12-check"></span>\n            </td>\n        </tr>\n        [...]\n    </tbody>\n</table>', mode: 'xml' }, null, opt_ijData);
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-        ie_close('input');
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-        ie_close('input');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param524 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'KLaAR.render';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var KLaAR = function (_Component) {
-    babelHelpers.inherits(KLaAR, _Component);
-
-    function KLaAR() {
-      babelHelpers.classCallCheck(this, KLaAR);
-      return babelHelpers.possibleConstructorReturn(this, (KLaAR.__proto__ || Object.getPrototypeOf(KLaAR)).apply(this, arguments));
-    }
-
-    return KLaAR;
-  }(Component);
-
-  Soy.register(KLaAR, templates);
-  this['metalNamed']['table'] = this['metalNamed']['table'] || {};
-  this['metalNamed']['table']['KLaAR'] = KLaAR;
-  this['metalNamed']['table']['templates'] = templates;
-  this['metal']['table'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['table'];
-
-  var KLaAR = function (_Component) {
-    babelHelpers.inherits(KLaAR, _Component);
-
-    function KLaAR() {
-      babelHelpers.classCallCheck(this, KLaAR);
-      return babelHelpers.possibleConstructorReturn(this, (KLaAR.__proto__ || Object.getPrototypeOf(KLaAR)).apply(this, arguments));
-    }
-
-    return KLaAR;
-  }(Component);
-
-  ;
-
-  Soy.register(KLaAR, templates);
-
-  this['metal']['KLaAR'] = KLaAR;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from grid.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace WVNOO.
-     * @public
-     */
-
-    goog.module('WVNOO.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('styleguideFull.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param261 = function param261() {
-        ie_open('h5');
-        itext('Grid breakpoints');
-        ie_close('h5');
-        ie_open('p');
-        itext('Extra Small (360px)');
-        ie_close('p');
-        ie_open('div', null, null, 'class', 'demo container-hybrid container-xs');
-        ie_open('div', null, null, 'class', 'row');
-        ie_open('div', null, null, 'class', 'col-xs-8');
-        itext('xs');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8');
-        itext('xs');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8">xs</div>\n        <div class="col-xs-8">xs</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('p');
-        itext('Small (600px)');
-        ie_close('p');
-        ie_open('div', null, null, 'class', 'demo container-hybrid container-sm');
-        ie_open('div', null, null, 'class', 'row');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
-        itext('sm');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
-        itext('sm');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
-        itext('sm');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
-        itext('sm');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8 col-sm-4">sm</div>\n        <div class="col-xs-8 col-sm-4">sm</div>\n        <div class="col-xs-8 col-sm-4">sm</div>\n        <div class="col-xs-8 col-sm-4">sm</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('p');
-        itext('Medium (960px)');
-        ie_close('p');
-        ie_open('div', null, null, 'class', 'demo container-hybrid container-md');
-        ie_open('div', null, null, 'class', 'row');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
-        itext('md');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n        [...]\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('p');
-        itext('Large (1280px)');
-        ie_close('p');
-        ie_open('div', null, null, 'class', 'demo container-hybrid container-lg');
-        ie_open('div', null, null, 'class', 'row');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
-        itext('lg');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n        [...]\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-        ie_close('input');
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-        ie_close('input');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param261 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'WVNOO.render';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var WVNOO = function (_Component) {
-    babelHelpers.inherits(WVNOO, _Component);
-
-    function WVNOO() {
-      babelHelpers.classCallCheck(this, WVNOO);
-      return babelHelpers.possibleConstructorReturn(this, (WVNOO.__proto__ || Object.getPrototypeOf(WVNOO)).apply(this, arguments));
-    }
-
-    return WVNOO;
-  }(Component);
-
-  Soy.register(WVNOO, templates);
-  this['metalNamed']['grid'] = this['metalNamed']['grid'] || {};
-  this['metalNamed']['grid']['WVNOO'] = WVNOO;
-  this['metalNamed']['grid']['templates'] = templates;
-  this['metal']['grid'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['grid'];
-
-  var WVNOO = function (_Component) {
-    babelHelpers.inherits(WVNOO, _Component);
-
-    function WVNOO() {
-      babelHelpers.classCallCheck(this, WVNOO);
-      return babelHelpers.possibleConstructorReturn(this, (WVNOO.__proto__ || Object.getPrototypeOf(WVNOO)).apply(this, arguments));
-    }
-
-    return WVNOO;
-  }(Component);
-
-  ;
-
-  Soy.register(WVNOO, templates);
-
-  this['metal']['WVNOO'] = WVNOO;
-}).call(this);
-'use strict';
-
-(function () {
-    /* jshint ignore:start */
-    var Component = this['metal']['component'];
-    var Soy = this['metal']['Soy'];
-
-    var templates;
-    goog.loadModule(function (exports) {
-
-        // This file was automatically generated from icon.soy.
-        // Please don't edit this file by hand.
-
-        /**
-         * @fileoverview Templates in namespace amftb.
-         * @public
-         */
-
-        goog.module('amftb.incrementaldom');
-
-        /** @suppress {extraRequire} */
-        var soy = goog.require('soy');
-        /** @suppress {extraRequire} */
-        var soydata = goog.require('soydata');
-        /** @suppress {extraRequire} */
-        goog.require('goog.i18n.bidi');
-        /** @suppress {extraRequire} */
-        goog.require('goog.asserts');
-        /** @suppress {extraRequire} */
-        goog.require('goog.string');
-        var IncrementalDom = goog.require('incrementaldom');
-        var ie_open = IncrementalDom.elementOpen;
-        var ie_close = IncrementalDom.elementClose;
-        var ie_void = IncrementalDom.elementVoid;
-        var ie_open_start = IncrementalDom.elementOpenStart;
-        var ie_open_end = IncrementalDom.elementOpenEnd;
-        var itext = IncrementalDom.text;
-        var iattr = IncrementalDom.attr;
-
-        var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-        var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-        /**
-         * @param {Object<string, *>=} opt_data
-         * @param {(null|undefined)=} opt_ignored
-         * @param {Object<string, *>=} opt_ijData
-         * @return {void}
-         * @suppress {checkTypes}
-         */
-        function $render(opt_data, opt_ignored, opt_ijData) {
-            var param290 = function param290() {
-                ie_open('h5');
-                itext('Icon 12');
-                ie_close('h5');
-                ie_open('div', null, null, 'class', 'group-demo');
-                ie_void('span', null, null, 'title', 'icon-12-alert', 'class', 'icon-12-alert');
-                ie_void('span', null, null, 'title', 'icon-12-apps', 'class', 'icon-12-apps');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-down-rod', 'class', 'icon-12-arrow-down-rod');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-down-short', 'class', 'icon-12-arrow-down-short');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-increase', 'class', 'icon-12-arrow-increase');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-left-rod', 'class', 'icon-12-arrow-left-rod');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-left-short', 'class', 'icon-12-arrow-left-short');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-right-rod', 'class', 'icon-12-arrow-right-rod');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-right-short', 'class', 'icon-12-arrow-right-short');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-up-rod', 'class', 'icon-12-arrow-up-rod');
-                ie_void('span', null, null, 'title', 'icon-12-arrow-up-short', 'class', 'icon-12-arrow-up-short');
-                ie_void('span', null, null, 'title', 'icon-12-arrows-expand', 'class', 'icon-12-arrows-expand');
-                ie_void('span', null, null, 'title', 'icon-12-arrows', 'class', 'icon-12-arrows');
-                ie_void('span', null, null, 'title', 'icon-12-balloon-topic', 'class', 'icon-12-balloon-topic');
-                ie_void('span', null, null, 'title', 'icon-12-bell-off', 'class', 'icon-12-bell-off');
-                ie_void('span', null, null, 'title', 'icon-12-bell', 'class', 'icon-12-bell');
-                ie_void('span', null, null, 'title', 'icon-12-bookmark', 'class', 'icon-12-bookmark');
-                ie_void('span', null, null, 'title', 'icon-12-briefcase', 'class', 'icon-12-briefcase');
-                ie_void('span', null, null, 'title', 'icon-12-bug', 'class', 'icon-12-bug');
-                ie_void('span', null, null, 'title', 'icon-12-building', 'class', 'icon-12-building');
-                ie_void('span', null, null, 'title', 'icon-12-camera', 'class', 'icon-12-camera');
-                ie_void('span', null, null, 'title', 'icon-12-card', 'class', 'icon-12-card');
-                ie_void('span', null, null, 'title', 'icon-12-cart', 'class', 'icon-12-cart');
-                ie_void('span', null, null, 'title', 'icon-12-check', 'class', 'icon-12-check');
-                ie_void('span', null, null, 'title', 'icon-12-clock', 'class', 'icon-12-clock');
-                ie_void('span', null, null, 'title', 'icon-12-close-short', 'class', 'icon-12-close-short');
-                ie_void('span', null, null, 'title', 'icon-12-cloud', 'class', 'icon-12-cloud');
-                ie_void('span', null, null, 'title', 'icon-12-code-file', 'class', 'icon-12-code-file');
-                ie_void('span', null, null, 'title', 'icon-12-collections', 'class', 'icon-12-collections');
-                ie_void('span', null, null, 'title', 'icon-12-database', 'class', 'icon-12-database');
-                ie_void('span', null, null, 'title', 'icon-12-download', 'class', 'icon-12-download');
-                ie_void('span', null, null, 'title', 'icon-12-ellipses', 'class', 'icon-12-ellipses');
-                ie_void('span', null, null, 'title', 'icon-12-exclamation', 'class', 'icon-12-exclamation');
-                ie_void('span', null, null, 'title', 'icon-12-external', 'class', 'icon-12-external');
-                ie_void('span', null, null, 'title', 'icon-12-eye-off', 'class', 'icon-12-eye-off');
-                ie_void('span', null, null, 'title', 'icon-12-eye', 'class', 'icon-12-eye');
-                ie_void('span', null, null, 'title', 'icon-12-facebook', 'class', 'icon-12-facebook');
-                ie_void('span', null, null, 'title', 'icon-12-file', 'class', 'icon-12-file');
-                ie_void('span', null, null, 'title', 'icon-12-flag', 'class', 'icon-12-flag');
-                ie_void('span', null, null, 'title', 'icon-12-flash-off', 'class', 'icon-12-flash-off');
-                ie_void('span', null, null, 'title', 'icon-12-flash', 'class', 'icon-12-flash');
-                ie_void('span', null, null, 'title', 'icon-12-folder', 'class', 'icon-12-folder');
-                ie_void('span', null, null, 'title', 'icon-12-forbidden', 'class', 'icon-12-forbidden');
-                ie_void('span', null, null, 'title', 'icon-12-fork', 'class', 'icon-12-fork');
-                ie_void('span', null, null, 'title', 'icon-12-gear', 'class', 'icon-12-gear');
-                ie_void('span', null, null, 'title', 'icon-12-github', 'class', 'icon-12-github');
-                ie_void('span', null, null, 'title', 'icon-12-google', 'class', 'icon-12-google');
-                ie_void('span', null, null, 'title', 'icon-12-graph', 'class', 'icon-12-graph');
-                ie_void('span', null, null, 'title', 'icon-12-groups', 'class', 'icon-12-groups');
-                ie_void('span', null, null, 'title', 'icon-12-hash', 'class', 'icon-12-hash');
-                ie_void('span', null, null, 'title', 'icon-12-heart-full', 'class', 'icon-12-heart-full');
-                ie_void('span', null, null, 'title', 'icon-12-house', 'class', 'icon-12-house');
-                ie_void('span', null, null, 'title', 'icon-12-image', 'class', 'icon-12-image');
-                ie_void('span', null, null, 'title', 'icon-12-info-card', 'class', 'icon-12-info-card');
-                ie_void('span', null, null, 'title', 'icon-12-info', 'class', 'icon-12-info');
-                ie_void('span', null, null, 'title', 'icon-12-leave', 'class', 'icon-12-leave');
-                ie_void('span', null, null, 'title', 'icon-12-link', 'class', 'icon-12-link');
-                ie_void('span', null, null, 'title', 'icon-12-lock', 'class', 'icon-12-lock');
-                ie_void('span', null, null, 'title', 'icon-12-magnifier', 'class', 'icon-12-magnifier');
-                ie_void('span', null, null, 'title', 'icon-12-mail', 'class', 'icon-12-mail');
-                ie_void('span', null, null, 'title', 'icon-12-map', 'class', 'icon-12-map');
-                ie_void('span', null, null, 'title', 'icon-12-menu', 'class', 'icon-12-menu');
-                ie_void('span', null, null, 'title', 'icon-12-minus', 'class', 'icon-12-minus');
-                ie_void('span', null, null, 'title', 'icon-12-module', 'class', 'icon-12-module');
-                ie_void('span', null, null, 'title', 'icon-12-overlap', 'class', 'icon-12-overlap');
-                ie_void('span', null, null, 'title', 'icon-12-pause', 'class', 'icon-12-pause');
-                ie_void('span', null, null, 'title', 'icon-12-pen', 'class', 'icon-12-pen');
-                ie_void('span', null, null, 'title', 'icon-12-people', 'class', 'icon-12-people');
-                ie_void('span', null, null, 'title', 'icon-12-person-card-2', 'class', 'icon-12-person-card-2');
-                ie_void('span', null, null, 'title', 'icon-12-person-card-3', 'class', 'icon-12-person-card-3');
-                ie_void('span', null, null, 'title', 'icon-12-person', 'class', 'icon-12-person');
-                ie_void('span', null, null, 'title', 'icon-12-persons', 'class', 'icon-12-persons');
-                ie_void('span', null, null, 'title', 'icon-12-pin', 'class', 'icon-12-pin');
-                ie_void('span', null, null, 'title', 'icon-12-play', 'class', 'icon-12-play');
-                ie_void('span', null, null, 'title', 'icon-12-plus', 'class', 'icon-12-plus');
-                ie_void('span', null, null, 'title', 'icon-12-post', 'class', 'icon-12-post');
-                ie_void('span', null, null, 'title', 'icon-12-rocket', 'class', 'icon-12-rocket');
-                ie_void('span', null, null, 'title', 'icon-12-spinner-double-arrow', 'class', 'icon-12-spinner-double-arrow');
-                ie_void('span', null, null, 'title', 'icon-12-star', 'class', 'icon-12-star');
-                ie_void('span', null, null, 'title', 'icon-12-table', 'class', 'icon-12-table');
-                ie_void('span', null, null, 'title', 'icon-12-trash', 'class', 'icon-12-trash');
-                ie_void('span', null, null, 'title', 'icon-12-twitter', 'class', 'icon-12-twitter');
-                ie_void('span', null, null, 'title', 'icon-12-upload', 'class', 'icon-12-upload');
-                ie_close('div');
-                $templateAlias2({ code: '<span class="icon-12-alert"></span>\n<span class="icon-12-apps"></span>\n[...]\n<span class="icon-12-trash"></span>\n<span class="icon-12-upload"></span>', mode: 'xml' }, null, opt_ijData);
-                ie_open('h5');
-                itext('Icon 16');
-                ie_close('h5');
-                ie_open('div', null, null, 'class', 'group-demo');
-                ie_void('span', null, null, 'title', 'icon-16-alert', 'class', 'icon-16-alert');
-                ie_void('span', null, null, 'title', 'icon-16-apps', 'class', 'icon-16-apps');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-down-rod', 'class', 'icon-16-arrow-down-rod');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-down-short', 'class', 'icon-16-arrow-down-short');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-left-rod', 'class', 'icon-16-arrow-left-rod');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-left-short', 'class', 'icon-16-arrow-left-short');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-right-rod', 'class', 'icon-16-arrow-right-rod');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-right-short', 'class', 'icon-16-arrow-right-short');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-up-rod', 'class', 'icon-16-arrow-up-rod');
-                ie_void('span', null, null, 'title', 'icon-16-arrow-up-short', 'class', 'icon-16-arrow-up-short');
-                ie_void('span', null, null, 'title', 'icon-16-balloon-topic', 'class', 'icon-16-balloon-topic');
-                ie_void('span', null, null, 'title', 'icon-16-bell-off', 'class', 'icon-16-bell-off');
-                ie_void('span', null, null, 'title', 'icon-16-bell', 'class', 'icon-16-bell');
-                ie_void('span', null, null, 'title', 'icon-16-bookmark', 'class', 'icon-16-bookmark');
-                ie_void('span', null, null, 'title', 'icon-16-building', 'class', 'icon-16-building');
-                ie_void('span', null, null, 'title', 'icon-16-bullhorn', 'class', 'icon-16-bullhorn');
-                ie_void('span', null, null, 'title', 'icon-16-calendar', 'class', 'icon-16-calendar');
-                ie_void('span', null, null, 'title', 'icon-16-camera', 'class', 'icon-16-camera');
-                ie_void('span', null, null, 'title', 'icon-16-cancel', 'class', 'icon-16-cancel');
-                ie_void('span', null, null, 'title', 'icon-16-cart', 'class', 'icon-16-cart');
-                ie_void('span', null, null, 'title', 'icon-16-checkbox-checked', 'class', 'icon-16-checkbox-checked');
-                ie_void('span', null, null, 'title', 'icon-16-checkbox-indeterminate', 'class', 'icon-16-checkbox-indeterminate');
-                ie_void('span', null, null, 'title', 'icon-16-checkbox-unchecked', 'class', 'icon-16-checkbox-unchecked');
-                ie_void('span', null, null, 'title', 'icon-16-checkmark', 'class', 'icon-16-checkmark');
-                ie_void('span', null, null, 'title', 'icon-16-circle-arrow', 'class', 'icon-16-circle-arrow');
-                ie_void('span', null, null, 'title', 'icon-16-clear', 'class', 'icon-16-clear');
-                ie_void('span', null, null, 'title', 'icon-16-clip', 'class', 'icon-16-clip');
-                ie_void('span', null, null, 'title', 'icon-16-clock', 'class', 'icon-16-clock');
-                ie_void('span', null, null, 'title', 'icon-16-cloud', 'class', 'icon-16-cloud');
-                ie_void('span', null, null, 'title', 'icon-16-code-file', 'class', 'icon-16-code-file');
-                ie_void('span', null, null, 'title', 'icon-16-command-line', 'class', 'icon-16-command-line');
-                ie_void('span', null, null, 'title', 'icon-16-contract', 'class', 'icon-16-contract');
-                ie_void('span', null, null, 'title', 'icon-16-cup', 'class', 'icon-16-cup');
-                ie_void('span', null, null, 'title', 'icon-16-database', 'class', 'icon-16-database');
-                ie_void('span', null, null, 'title', 'icon-16-download', 'class', 'icon-16-download');
-                ie_void('span', null, null, 'title', 'icon-16-dribbble', 'class', 'icon-16-dribbble');
-                ie_void('span', null, null, 'title', 'icon-16-ellipsis-vertical', 'class', 'icon-16-ellipsis-vertical');
-                ie_void('span', null, null, 'title', 'icon-16-ellipsis', 'class', 'icon-16-ellipsis');
-                ie_void('span', null, null, 'title', 'icon-16-expand', 'class', 'icon-16-expand');
-                ie_void('span', null, null, 'title', 'icon-16-external', 'class', 'icon-16-external');
-                ie_void('span', null, null, 'title', 'icon-16-eye', 'class', 'icon-16-eye');
-                ie_void('span', null, null, 'title', 'icon-16-facebook', 'class', 'icon-16-facebook');
-                ie_void('span', null, null, 'title', 'icon-16-filter', 'class', 'icon-16-filter');
-                ie_void('span', null, null, 'title', 'icon-16-flash-off', 'class', 'icon-16-flash-off');
-                ie_void('span', null, null, 'title', 'icon-16-flash', 'class', 'icon-16-flash');
-                ie_void('span', null, null, 'title', 'icon-16-folder', 'class', 'icon-16-folder');
-                ie_void('span', null, null, 'title', 'icon-16-fork', 'class', 'icon-16-fork');
-                ie_void('span', null, null, 'title', 'icon-16-gear', 'class', 'icon-16-gear');
-                ie_void('span', null, null, 'title', 'icon-16-github', 'class', 'icon-16-github');
-                ie_void('span', null, null, 'title', 'icon-16-globe', 'class', 'icon-16-globe');
-                ie_void('span', null, null, 'title', 'icon-16-google', 'class', 'icon-16-google');
-                ie_void('span', null, null, 'title', 'icon-16-graph', 'class', 'icon-16-graph');
-                ie_void('span', null, null, 'title', 'icon-16-groups', 'class', 'icon-16-groups');
-                ie_void('span', null, null, 'title', 'icon-16-hammer', 'class', 'icon-16-hammer');
-                ie_void('span', null, null, 'title', 'icon-16-hash', 'class', 'icon-16-hash');
-                ie_void('span', null, null, 'title', 'icon-16-heart-full', 'class', 'icon-16-heart-full');
-                ie_void('span', null, null, 'title', 'icon-16-house', 'class', 'icon-16-house');
-                ie_void('span', null, null, 'title', 'icon-16-image', 'class', 'icon-16-image');
-                ie_void('span', null, null, 'title', 'icon-16-info', 'class', 'icon-16-info');
-                ie_void('span', null, null, 'title', 'icon-16-layout', 'class', 'icon-16-layout');
-                ie_void('span', null, null, 'title', 'icon-16-liferay-logo-2-tiny', 'class', 'icon-16-liferay-logo-2-tiny');
-                ie_void('span', null, null, 'title', 'icon-16-link', 'class', 'icon-16-link');
-                ie_void('span', null, null, 'title', 'icon-16-linkedin', 'class', 'icon-16-linkedin');
-                ie_void('span', null, null, 'title', 'icon-16-lock', 'class', 'icon-16-lock');
-                ie_void('span', null, null, 'title', 'icon-16-loop', 'class', 'icon-16-loop');
-                ie_void('span', null, null, 'title', 'icon-16-magnifier', 'class', 'icon-16-magnifier');
-                ie_void('span', null, null, 'title', 'icon-16-mail-full', 'class', 'icon-16-mail-full');
-                ie_void('span', null, null, 'title', 'icon-16-mail-off', 'class', 'icon-16-mail-off');
-                ie_void('span', null, null, 'title', 'icon-16-markdown', 'class', 'icon-16-markdown');
-                ie_void('span', null, null, 'title', 'icon-16-menu', 'class', 'icon-16-menu');
-                ie_void('span', null, null, 'title', 'icon-16-minus', 'class', 'icon-16-minus');
-                ie_void('span', null, null, 'title', 'icon-16-module', 'class', 'icon-16-module');
-                ie_void('span', null, null, 'title', 'icon-16-nodejs', 'class', 'icon-16-nodejs');
-                ie_void('span', null, null, 'title', 'icon-16-org_chart', 'class', 'icon-16-org_chart');
-                ie_void('span', null, null, 'title', 'icon-16-pause', 'class', 'icon-16-pause');
-                ie_void('span', null, null, 'title', 'icon-16-pen', 'class', 'icon-16-pen');
-                ie_void('span', null, null, 'title', 'icon-16-people', 'class', 'icon-16-people');
-                ie_void('span', null, null, 'title', 'icon-16-person-card', 'class', 'icon-16-person-card');
-                ie_void('span', null, null, 'title', 'icon-16-person', 'class', 'icon-16-person');
-                ie_void('span', null, null, 'title', 'icon-16-persons', 'class', 'icon-16-persons');
-                ie_void('span', null, null, 'title', 'icon-16-phone-business', 'class', 'icon-16-phone-business');
-                ie_void('span', null, null, 'title', 'icon-16-phone-house', 'class', 'icon-16-phone-house');
-                ie_void('span', null, null, 'title', 'icon-16-phone-work', 'class', 'icon-16-phone-work');
-                ie_void('span', null, null, 'title', 'icon-16-phone', 'class', 'icon-16-phone');
-                ie_void('span', null, null, 'title', 'icon-16-play', 'class', 'icon-16-play');
-                ie_void('span', null, null, 'title', 'icon-16-plus', 'class', 'icon-16-plus');
-                ie_void('span', null, null, 'title', 'icon-16-power-button', 'class', 'icon-16-power-button');
-                ie_void('span', null, null, 'title', 'icon-16-radio-checked', 'class', 'icon-16-radio-checked');
-                ie_void('span', null, null, 'title', 'icon-16-radio-unchecked', 'class', 'icon-16-radio-unchecked');
-                ie_void('span', null, null, 'title', 'icon-16-send', 'class', 'icon-16-send');
-                ie_void('span', null, null, 'title', 'icon-16-server', 'class', 'icon-16-server');
-                ie_void('span', null, null, 'title', 'icon-16-skype', 'class', 'icon-16-skype');
-                ie_void('span', null, null, 'title', 'icon-16-speaker_off', 'class', 'icon-16-speaker_off');
-                ie_void('span', null, null, 'title', 'icon-16-speaker_on', 'class', 'icon-16-speaker_on');
-                ie_void('span', null, null, 'title', 'icon-16-speedometer', 'class', 'icon-16-speedometer');
-                ie_void('span', null, null, 'title', 'icon-16-spinner-double-arrows', 'class', 'icon-16-spinner-double-arrows');
-                ie_void('span', null, null, 'title', 'icon-16-spinner-single-arrow', 'class', 'icon-16-spinner-single-arrow');
-                ie_void('span', null, null, 'title', 'icon-16-star', 'class', 'icon-16-star');
-                ie_void('span', null, null, 'title', 'icon-16-streams', 'class', 'icon-16-streams');
-                ie_void('span', null, null, 'title', 'icon-16-swift', 'class', 'icon-16-swift');
-                ie_void('span', null, null, 'title', 'icon-16-table', 'class', 'icon-16-table');
-                ie_void('span', null, null, 'title', 'icon-16-tag', 'class', 'icon-16-tag');
-                ie_void('span', null, null, 'title', 'icon-16-thumb-down', 'class', 'icon-16-thumb-down');
-                ie_void('span', null, null, 'title', 'icon-16-thumb-up', 'class', 'icon-16-thumb-up');
-                ie_void('span', null, null, 'title', 'icon-16-trash', 'class', 'icon-16-trash');
-                ie_void('span', null, null, 'title', 'icon-16-twitter', 'class', 'icon-16-twitter');
-                ie_void('span', null, null, 'title', 'icon-16-upload-file', 'class', 'icon-16-upload-file');
-                ie_void('span', null, null, 'title', 'icon-16-upload', 'class', 'icon-16-upload');
-                ie_close('div');
-                $templateAlias2({ code: '<span class="icon-16-apps"></span>\n<span class="icon-16-arrow-down-rod"></span>\n[...]\n<span class="icon-16-upload-file"></span>\n<span class="icon-16-upload"></span>\n``', mode: 'xml' }, null, opt_ijData);
-                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-                ie_close('input');
-                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-                ie_close('input');
-            };
-            $templateAlias1(soy.$$assignDefaults({ content: param290 }, opt_data), null, opt_ijData);
-        }
-        exports.render = $render;
-        if (goog.DEBUG) {
-            $render.soyTemplateName = 'amftb.render';
-        }
-
-        exports.render.params = ["page", "site"];
-        exports.render.types = { "page": "any", "site": "any" };
-        templates = exports;
-        return exports;
-    });
-
-    var amftb = function (_Component) {
-        babelHelpers.inherits(amftb, _Component);
-
-        function amftb() {
-            babelHelpers.classCallCheck(this, amftb);
-            return babelHelpers.possibleConstructorReturn(this, (amftb.__proto__ || Object.getPrototypeOf(amftb)).apply(this, arguments));
-        }
-
-        return amftb;
-    }(Component);
-
-    Soy.register(amftb, templates);
-    this['metalNamed']['icon'] = this['metalNamed']['icon'] || {};
-    this['metalNamed']['icon']['amftb'] = amftb;
-    this['metalNamed']['icon']['templates'] = templates;
-    this['metal']['icon'] = templates;
-    /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['icon'];
-
-  var amftb = function (_Component) {
-    babelHelpers.inherits(amftb, _Component);
-
-    function amftb() {
-      babelHelpers.classCallCheck(this, amftb);
-      return babelHelpers.possibleConstructorReturn(this, (amftb.__proto__ || Object.getPrototypeOf(amftb)).apply(this, arguments));
-    }
-
-    return amftb;
-  }(Component);
-
-  ;
-
-  Soy.register(amftb, templates);
-
-  this['metal']['amftb'] = amftb;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from ribbon.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace bBpmz.
-     * @public
-     */
-
-    goog.module('bBpmz.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param461 = function param461() {
-        ie_open('h5');
-        itext('Default');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'demo');
-        ie_open('div', null, null, 'class', 'box-ws');
-        ie_open('div', null, null, 'class', 'ribbon-container');
-        ie_open('div', null, null, 'class', 'ribbon');
-        itext('New');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Accent');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'demo');
-        ie_open('div', null, null, 'class', 'box-ws');
-        ie_open('div', null, null, 'class', 'ribbon-container');
-        ie_open('div', null, null, 'class', 'ribbon ribbon-accent');
-        itext('New');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-accent">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Success');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'demo');
-        ie_open('div', null, null, 'class', 'box-ws');
-        ie_open('div', null, null, 'class', 'ribbon-container');
-        ie_open('div', null, null, 'class', 'ribbon ribbon-success');
-        itext('New');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-success">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Warning');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'demo');
-        ie_open('div', null, null, 'class', 'box-ws');
-        ie_open('div', null, null, 'class', 'ribbon-container');
-        ie_open('div', null, null, 'class', 'ribbon ribbon-warning');
-        itext('New');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-warning">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Danger');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'demo');
-        ie_open('div', null, null, 'class', 'box-ws');
-        ie_open('div', null, null, 'class', 'ribbon-container');
-        ie_open('div', null, null, 'class', 'ribbon ribbon-danger');
-        itext('New');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-danger">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-        ie_close('input');
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-        ie_close('input');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param461 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'bBpmz.render';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var bBpmz = function (_Component) {
-    babelHelpers.inherits(bBpmz, _Component);
-
-    function bBpmz() {
-      babelHelpers.classCallCheck(this, bBpmz);
-      return babelHelpers.possibleConstructorReturn(this, (bBpmz.__proto__ || Object.getPrototypeOf(bBpmz)).apply(this, arguments));
-    }
-
-    return bBpmz;
-  }(Component);
-
-  Soy.register(bBpmz, templates);
-  this['metalNamed']['ribbon'] = this['metalNamed']['ribbon'] || {};
-  this['metalNamed']['ribbon']['bBpmz'] = bBpmz;
-  this['metalNamed']['ribbon']['templates'] = templates;
-  this['metal']['ribbon'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-  var templates = this['metal']['ribbon'];
-
-  var bBpmz = function (_Component) {
-    babelHelpers.inherits(bBpmz, _Component);
-
-    function bBpmz() {
-      babelHelpers.classCallCheck(this, bBpmz);
-      return babelHelpers.possibleConstructorReturn(this, (bBpmz.__proto__ || Object.getPrototypeOf(bBpmz)).apply(this, arguments));
-    }
-
-    return bBpmz;
-  }(Component);
-
-  ;
-
-  Soy.register(bBpmz, templates);
-
-  this['metal']['bBpmz'] = bBpmz;
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from datatable.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace petCl.
-     * @public
-     */
-
-    goog.module('petCl.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
-
-    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {
-      var param168 = function param168() {
-        ie_open('h5');
-        itext('No Collections');
-        ie_close('h5');
-        ie_open('div', null, null, 'style', 'position: relative; z-index: 1; height: 240px; width: 100%; border: 1px solid rgba(14, 20, 26, 0.2);', 'class', 'no-collections');
-        ie_open('div', null, null, 'class', 'empty-collection');
-        ie_open('div', null, null, 'class', 'notfound');
-        ie_open('div', null, null, 'class', 'notfound-icon');
-        ie_void('span', null, null, 'class', 'icon-16-database');
-        ie_close('div');
-        ie_open('p', null, null, 'class', 'notfound-text');
-        itext('You have no collections.');
-        ie_close('p');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="no-collections">\n    <div class="empty-collection">\n        <div class="notfound">\n            <div class="notfound-icon">\n                <span class="icon-16-database"></span>\n            </div>\n            <p class="notfound-text">You have no collections.</p>\n        </div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Empty Collection');
-        ie_close('h5');
-        ie_open('div', null, null, 'style', 'position: relative; z-index: 1; height: 240px; width: 100%; border: 1px solid rgba(14, 20, 26, 0.2);', 'class', 'no-data');
-        ie_open('div', null, null, 'class', 'empty-data');
-        ie_open('div', null, null, 'class', 'notfound');
-        ie_open('div', null, null, 'class', 'notfound-icon');
-        ie_void('span', null, null, 'class', 'icon-16-database');
-        ie_close('div');
-        ie_open('p', null, null, 'class', 'notfound-text');
-        itext('This collection is empty.');
-        ie_close('p');
-        ie_close('div');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="no-data">\n    <div class="empty-data">\n        <div class="notfound">\n            <div class="notfound-icon">\n                <span class="icon-16-database"></span>\n            </div>\n            <p class="notfound-text">This collection is empty.</p>\n        </div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Loading');
-        ie_close('h5');
-        ie_open('div', null, null, 'style', 'position: relative; z-index: 1; height: 200px; width: 100%; border: 1px solid rgba(14, 20, 26, 0.2);', 'class', 'loading');
-        ie_open('div', null, null, 'class', 'light-loader');
-        ie_void('span', null, null, 'class', 'spinner spinner-medium');
-        ie_close('div');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="loading">\n    <div class="light-loader">\n        <span class="spinner spinner-medium"></span>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('h5');
-        itext('Populated');
-        ie_close('h5');
-        ie_open('div', null, null, 'class', 'datatable');
-        ie_open('table', null, null, 'class', 'table');
-        ie_open('thead');
-        ie_open('tr');
-        ie_open('th');
-        itext('#');
-        ie_close('th');
-        ie_open('th');
-        itext('First Name');
-        ie_close('th');
-        ie_open('th');
-        itext('Last Name');
-        ie_close('th');
-        ie_open('th');
-        itext('Username');
-        ie_close('th');
-        ie_open('th', null, null, 'class', 'text-center');
-        itext('Required');
-        ie_close('th');
-        ie_close('tr');
-        ie_close('thead');
-        ie_open('tbody');
-        ie_open('tr');
-        ie_open('td');
-        itext('1');
-        ie_close('td');
-        ie_open('td');
-        itext('Mark');
-        ie_close('td');
-        ie_open('td');
-        itext('Otto');
-        ie_close('td');
-        ie_open('td');
-        itext('@mdo');
-        ie_close('td');
-        ie_open('td', null, null, 'class', 'text-center');
-        ie_void('span', null, null, 'class', 'icon-16-checkmark');
-        ie_close('td');
-        ie_close('tr');
-        ie_open('tr');
-        ie_open('td');
-        itext('2');
-        ie_close('td');
-        ie_open('td');
-        itext('Jacob');
-        ie_close('td');
-        ie_open('td');
-        itext('Thornton');
-        ie_close('td');
-        ie_open('td');
-        itext('@fat');
-        ie_close('td');
-        ie_open('td', null, null, 'class', 'text-center');
-        ie_void('span', null, null, 'class', 'icon-16-checkmark');
-        ie_close('td');
-        ie_close('tr');
-        ie_open('tr');
-        ie_open('td');
-        itext('3');
-        ie_close('td');
-        ie_open('td');
-        itext('Larry');
-        ie_close('td');
-        ie_open('td');
-        itext('the Bird');
-        ie_close('td');
-        ie_open('td');
-        itext('@twitter');
-        ie_close('td');
-        ie_open('td', null, null, 'class', 'text-center');
-        ie_void('span', null, null, 'class', 'icon-16-checkmark');
-        ie_close('td');
-        ie_close('tr');
-        ie_close('tbody');
-        ie_close('table');
-        ie_close('div');
-        $templateAlias2({ code: '<div class="datatable">\n    <table class="table">\n        <thead>\n            <tr>\n                <th>#</th>\n                <th>First Name</th>\n                <th>Last Name</th>\n                <th>Username</th>\n                <th class="text-center">Required</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td>1</td>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@mdo</td>\n                <td class="text-center">\n                    <span class="icon-16-checkmark"></span>\n                </td>\n            </tr>\n            [...]\n        </tbody>\n    </table>\n</div>', mode: 'xml' }, null, opt_ijData);
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
-        ie_close('input');
-        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
-        ie_close('input');
-      };
-      $templateAlias1(soy.$$assignDefaults({ content: param168 }, opt_data), null, opt_ijData);
-    }
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'petCl.render';
-    }
-
-    exports.render.params = ["page", "site"];
-    exports.render.types = { "page": "any", "site": "any" };
-    templates = exports;
-    return exports;
-  });
-
-  var petCl = function (_Component) {
-    babelHelpers.inherits(petCl, _Component);
-
-    function petCl() {
-      babelHelpers.classCallCheck(this, petCl);
-      return babelHelpers.possibleConstructorReturn(this, (petCl.__proto__ || Object.getPrototypeOf(petCl)).apply(this, arguments));
-    }
-
-    return petCl;
-  }(Component);
-
-  Soy.register(petCl, templates);
-  this['metalNamed']['datatable'] = this['metalNamed']['datatable'] || {};
-  this['metalNamed']['datatable']['petCl'] = petCl;
-  this['metalNamed']['datatable']['templates'] = templates;
-  this['metal']['datatable'] = templates;
-  /* jshint ignore:end */
-}).call(this);
-'use strict';
-
-(function () {
-  /* jshint ignore:start */
-  var Component = this['metal']['component'];
-  var Soy = this['metal']['Soy'];
-
-  var templates;
-  goog.loadModule(function (exports) {
-
-    // This file was automatically generated from index.soy.
-    // Please don't edit this file by hand.
-
-    /**
-     * @fileoverview Templates in namespace pageDocsComponentsIndex.
-     * @public
-     */
-
-    goog.module('pageDocsComponentsIndex.incrementaldom');
-
-    /** @suppress {extraRequire} */
-    var soy = goog.require('soy');
-    /** @suppress {extraRequire} */
-    var soydata = goog.require('soydata');
-    /** @suppress {extraRequire} */
-    goog.require('goog.i18n.bidi');
-    /** @suppress {extraRequire} */
-    goog.require('goog.asserts');
-    /** @suppress {extraRequire} */
-    goog.require('goog.string');
-    var IncrementalDom = goog.require('incrementaldom');
-    var ie_open = IncrementalDom.elementOpen;
-    var ie_close = IncrementalDom.elementClose;
-    var ie_void = IncrementalDom.elementVoid;
-    var ie_open_start = IncrementalDom.elementOpenStart;
-    var ie_open_end = IncrementalDom.elementOpenEnd;
-    var itext = IncrementalDom.text;
-    var iattr = IncrementalDom.attr;
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $render(opt_data, opt_ignored, opt_ijData) {}
-    exports.render = $render;
-    if (goog.DEBUG) {
-      $render.soyTemplateName = 'pageDocsComponentsIndex.render';
-    }
-
-    /**
-     * @param {Object<string, *>=} opt_data
-     * @param {(null|undefined)=} opt_ignored
-     * @param {Object<string, *>=} opt_ijData
-     * @return {void}
-     * @suppress {checkTypes}
-     */
-    function $soyweb(opt_data, opt_ignored, opt_ijData) {
-      ie_open('!DOCTYPE', null, null, 'html', '');
-      ie_open('html', null, null, 'lang', 'en');
-      ie_open('head');
-      ie_open('meta', null, null, 'charset', 'UTF-8');
-      ie_close('meta');
-      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'/docs/components/avatar.html\'');
-      ie_close('meta');
-      ie_close('head');
-      ie_close('html');
-    }
-    exports.soyweb = $soyweb;
-    if (goog.DEBUG) {
-      $soyweb.soyTemplateName = 'pageDocsComponentsIndex.soyweb';
-    }
-
-    exports.render.params = [];
-    exports.render.types = {};
-    exports.soyweb.params = [];
-    exports.soyweb.types = {};
-    templates = exports;
-    return exports;
-  });
-
-  var pageDocsComponentsIndex = function (_Component) {
-    babelHelpers.inherits(pageDocsComponentsIndex, _Component);
-
-    function pageDocsComponentsIndex() {
-      babelHelpers.classCallCheck(this, pageDocsComponentsIndex);
-      return babelHelpers.possibleConstructorReturn(this, (pageDocsComponentsIndex.__proto__ || Object.getPrototypeOf(pageDocsComponentsIndex)).apply(this, arguments));
-    }
-
-    return pageDocsComponentsIndex;
-  }(Component);
-
-  Soy.register(pageDocsComponentsIndex, templates);
-  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
-  this['metalNamed']['index']['pageDocsComponentsIndex'] = pageDocsComponentsIndex;
-  this['metalNamed']['index']['templates'] = templates;
-  this['metal']['index'] = templates;
-  /* jshint ignore:end */
+  this['metal']['BJbny'] = BJbny;
 }).call(this);
 'use strict';
 
@@ -31390,11 +29239,11 @@ babelHelpers;
     // Please don't edit this file by hand.
 
     /**
-     * @fileoverview Templates in namespace jhdOJ.
+     * @fileoverview Templates in namespace DUzjP.
      * @public
      */
 
-    goog.module('jhdOJ.incrementaldom');
+    goog.module('DUzjP.incrementaldom');
 
     /** @suppress {extraRequire} */
     var soy = goog.require('soy');
@@ -31427,7 +29276,7 @@ babelHelpers;
      * @suppress {checkTypes}
      */
     function $render(opt_data, opt_ignored, opt_ijData) {
-      var param313 = function param313() {
+      var param494 = function param494() {
         ie_open('h5');
         itext('Addons');
         ie_close('h5');
@@ -31843,11 +29692,11 @@ babelHelpers;
         ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
         ie_close('input');
       };
-      $templateAlias1(soy.$$assignDefaults({ content: param313 }, opt_data), null, opt_ijData);
+      $templateAlias1(soy.$$assignDefaults({ content: param494 }, opt_data), null, opt_ijData);
     }
     exports.render = $render;
     if (goog.DEBUG) {
-      $render.soyTemplateName = 'jhdOJ.render';
+      $render.soyTemplateName = 'DUzjP.render';
     }
 
     exports.render.params = ["page", "site"];
@@ -31856,20 +29705,20 @@ babelHelpers;
     return exports;
   });
 
-  var jhdOJ = function (_Component) {
-    babelHelpers.inherits(jhdOJ, _Component);
+  var DUzjP = function (_Component) {
+    babelHelpers.inherits(DUzjP, _Component);
 
-    function jhdOJ() {
-      babelHelpers.classCallCheck(this, jhdOJ);
-      return babelHelpers.possibleConstructorReturn(this, (jhdOJ.__proto__ || Object.getPrototypeOf(jhdOJ)).apply(this, arguments));
+    function DUzjP() {
+      babelHelpers.classCallCheck(this, DUzjP);
+      return babelHelpers.possibleConstructorReturn(this, (DUzjP.__proto__ || Object.getPrototypeOf(DUzjP)).apply(this, arguments));
     }
 
-    return jhdOJ;
+    return DUzjP;
   }(Component);
 
-  Soy.register(jhdOJ, templates);
+  Soy.register(DUzjP, templates);
   this['metalNamed']['input-group'] = this['metalNamed']['input-group'] || {};
-  this['metalNamed']['input-group']['jhdOJ'] = jhdOJ;
+  this['metalNamed']['input-group']['DUzjP'] = DUzjP;
   this['metalNamed']['input-group']['templates'] = templates;
   this['metal']['input-group'] = templates;
   /* jshint ignore:end */
@@ -31881,22 +29730,2310 @@ babelHelpers;
   var Soy = this['metal']['Soy'];
   var templates = this['metal']['input-group'];
 
-  var jhdOJ = function (_Component) {
-    babelHelpers.inherits(jhdOJ, _Component);
+  var DUzjP = function (_Component) {
+    babelHelpers.inherits(DUzjP, _Component);
 
-    function jhdOJ() {
-      babelHelpers.classCallCheck(this, jhdOJ);
-      return babelHelpers.possibleConstructorReturn(this, (jhdOJ.__proto__ || Object.getPrototypeOf(jhdOJ)).apply(this, arguments));
+    function DUzjP() {
+      babelHelpers.classCallCheck(this, DUzjP);
+      return babelHelpers.possibleConstructorReturn(this, (DUzjP.__proto__ || Object.getPrototypeOf(DUzjP)).apply(this, arguments));
     }
 
-    return jhdOJ;
+    return DUzjP;
   }(Component);
 
   ;
 
-  Soy.register(jhdOJ, templates);
+  Soy.register(DUzjP, templates);
 
-  this['metal']['jhdOJ'] = jhdOJ;
+  this['metal']['DUzjP'] = DUzjP;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from form.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace DmPvs.
+     * @public
+     */
+
+    goog.module('DmPvs.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param378 = function param378() {
+        ie_open('h5');
+        itext('Default Input');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label', null, null, 'for', 'input-regular');
+        itext('Label');
+        ie_close('label');
+        ie_open('input', null, null, 'id', 'input-regular', 'class', 'form-control', 'type', 'text', 'placeholder', 'Write something here...');
+        ie_close('input');
+        ie_open('p', null, null, 'class', 'help-block');
+        itext('A block of auxiliar text');
+        ie_close('p');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<form>\n    <div class="form-group">\n        <label for="input-regular">Label</label>\n        <input id="input-regular" class="form-control" type="text" placeholder="Write something here...">\n        <p class="help-block">A block of auxiliar text</p>\n    </div>\n</form>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('File Input');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label', null, null, 'for', 'input-regular');
+        itext('File selector');
+        ie_close('label');
+        ie_open('input', null, null, 'id', 'input-regular', 'class', 'form-control', 'type', 'file', 'placeholder', 'Select a file here...');
+        ie_close('input');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<input id="input-regular" class="form-control" type="file" placeholder="Select a file here...">', mode: 'htmlmixex' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input + Copy to Clipboard');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label');
+        itext('Example');
+        ie_close('label');
+        ie_open('div', null, null, 'class', 'has-action-button');
+        ie_open('input', null, null, 'class', 'form-control', 'type', 'text', 'onfocus', 'this.select();', 'onmouseup', 'return false;', 'value', 'Click to copy to clipboard');
+        ie_close('input');
+        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
+        ie_void('span', null, null, 'class', 'icon-12-overlap');
+        ie_open('div', null, null, 'class', 'btn-tooltip');
+        itext('Copy to clipboard');
+        ie_close('div');
+        ie_close('button');
+        ie_close('div');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="text" value="Click to copy to clipboard">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-overlap"></span>\n        <div class="btn-tooltip">Copy to clipboard</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Disabled');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label', null, null, 'for', 'input-disabled');
+        itext('Example');
+        ie_close('label');
+        ie_open('input', null, null, 'id', 'input-disabled', 'class', 'form-control', 'type', 'text', 'placeholder', 'Write something here...', 'disabled', '');
+        ie_close('input');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="form-group">\n    <label for="input-disabled">Example</label>\n    <input id="input-disabled" class="form-control" type="text" placeholder="Write something here..." disabled="">\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Read Only');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label', null, null, 'for', 'input-readonly');
+        itext('Example');
+        ie_close('label');
+        ie_open('input', null, null, 'id', 'input-readonly', 'class', 'form-control', 'type', 'text', 'value', 'Something to read', 'readonly', '');
+        ie_close('input');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="form-group">\n    <label for="input-readonly">Example</label>\n    <input id="input-readonly" class="form-control" type="text" value="Something to read" readonly="">\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Read Only + Copy to Clipboard');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label');
+        itext('Example');
+        ie_close('label');
+        ie_open('div', null, null, 'class', 'has-action-button');
+        ie_open('input', null, null, 'class', 'form-control', 'type', 'text', 'onfocus', 'this.select();', 'onmouseup', 'return false;', 'value', 'Click to copy to clipboard', 'readonly', '');
+        ie_close('input');
+        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
+        ie_void('span', null, null, 'class', 'icon-12-overlap');
+        ie_open('div', null, null, 'class', 'btn-tooltip');
+        itext('Copy to clipboard');
+        ie_close('div');
+        ie_close('button');
+        ie_close('div');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="text" value="Click to copy to clipboard" readonly="">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-overlap"></span>\n        <div class="btn-tooltip">Copy to clipboard</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Read Only + Click to Show');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label');
+        itext('Example');
+        ie_close('label');
+        ie_open('div', null, null, 'class', 'has-action-button');
+        ie_open('input', null, null, 'class', 'form-control', 'type', 'password', 'value', 'B76BABB1377E5CDC8364AF4355659', 'readonly', '');
+        ie_close('input');
+        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
+        ie_void('span', null, null, 'class', 'icon-12-eye');
+        ie_open('div', null, null, 'class', 'btn-tooltip');
+        itext('Show');
+        ie_close('div');
+        ie_close('button');
+        ie_close('div');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="password" value="B76BABB1377E5CDC8364AF4355659" readonly="">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-eye"></span>\n        <div class="btn-tooltip">Show</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Read Only + Click to Hide');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group');
+        ie_open('label');
+        itext('Example');
+        ie_close('label');
+        ie_open('div', null, null, 'class', 'has-action-button');
+        ie_open('input', null, null, 'class', 'form-control', 'type', 'text', 'value', 'B76BABB1377E5CDC8364AF4355659', 'readonly', '');
+        ie_close('input');
+        ie_open('button', null, null, 'class', 'btn btn-sm btn-primary', 'type', 'button');
+        ie_void('span', null, null, 'class', 'icon-12-eye-off');
+        ie_open('div', null, null, 'class', 'btn-tooltip');
+        itext('Hide');
+        ie_close('div');
+        ie_close('button');
+        ie_close('div');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="has-action-button">\n    <input class="form-control" type="text" value="B76BABB1377E5CDC8364AF4355659" readonly="">\n    <button class="btn btn-sm btn-primary" type="button">\n        <span class="icon-12-eye-off"></span>\n        <div class="btn-tooltip">Hide</div>\n    </button>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Success');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group has-success');
+        ie_open('label', null, null, 'for', 'input-success');
+        itext('Success');
+        ie_close('label');
+        ie_open('input', null, null, 'id', 'input-success', 'class', 'form-control', 'type', 'text');
+        ie_close('input');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="form-group has-success">\n    <label for="input-success">Success</label>\n    <input id="input-success" class="form-control" type="text">\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Warning');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group has-warning');
+        ie_open('label', null, null, 'for', 'input-warning');
+        itext('Warning');
+        ie_close('label');
+        ie_open('input', null, null, 'id', 'input-warning', 'class', 'form-control', 'type', 'text');
+        ie_close('input');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="form-group has-warning">\n    <label for="input-warning">Warning</label>\n    <input id="input-warning" class="form-control" type="text">\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Input Error');
+        ie_close('h5');
+        ie_open('form');
+        ie_open('div', null, null, 'class', 'form-group has-error');
+        ie_open('label', null, null, 'for', 'input-error');
+        itext('Error');
+        ie_close('label');
+        ie_open('input', null, null, 'id', 'input-error', 'class', 'form-control', 'type', 'text');
+        ie_close('input');
+        ie_close('div');
+        ie_close('form');
+        $templateAlias2({ code: '<div class="form-group has-error">\n    <label for="input-error">Error</label>\n    <input id="input-error" class="form-control" type="text">\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param378 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'DmPvs.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var DmPvs = function (_Component) {
+    babelHelpers.inherits(DmPvs, _Component);
+
+    function DmPvs() {
+      babelHelpers.classCallCheck(this, DmPvs);
+      return babelHelpers.possibleConstructorReturn(this, (DmPvs.__proto__ || Object.getPrototypeOf(DmPvs)).apply(this, arguments));
+    }
+
+    return DmPvs;
+  }(Component);
+
+  Soy.register(DmPvs, templates);
+  this['metalNamed']['form'] = this['metalNamed']['form'] || {};
+  this['metalNamed']['form']['DmPvs'] = DmPvs;
+  this['metalNamed']['form']['templates'] = templates;
+  this['metal']['form'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['form'];
+
+  var DmPvs = function (_Component) {
+    babelHelpers.inherits(DmPvs, _Component);
+
+    function DmPvs() {
+      babelHelpers.classCallCheck(this, DmPvs);
+      return babelHelpers.possibleConstructorReturn(this, (DmPvs.__proto__ || Object.getPrototypeOf(DmPvs)).apply(this, arguments));
+    }
+
+    return DmPvs;
+  }(Component);
+
+  ;
+
+  Soy.register(DmPvs, templates);
+
+  this['metal']['DmPvs'] = DmPvs;
+}).call(this);
+'use strict';
+
+(function () {
+    /* jshint ignore:start */
+    var Component = this['metal']['component'];
+    var Soy = this['metal']['Soy'];
+
+    var templates;
+    goog.loadModule(function (exports) {
+
+        // This file was automatically generated from icon.soy.
+        // Please don't edit this file by hand.
+
+        /**
+         * @fileoverview Templates in namespace OVgno.
+         * @public
+         */
+
+        goog.module('OVgno.incrementaldom');
+
+        /** @suppress {extraRequire} */
+        var soy = goog.require('soy');
+        /** @suppress {extraRequire} */
+        var soydata = goog.require('soydata');
+        /** @suppress {extraRequire} */
+        goog.require('goog.i18n.bidi');
+        /** @suppress {extraRequire} */
+        goog.require('goog.asserts');
+        /** @suppress {extraRequire} */
+        goog.require('goog.string');
+        var IncrementalDom = goog.require('incrementaldom');
+        var ie_open = IncrementalDom.elementOpen;
+        var ie_close = IncrementalDom.elementClose;
+        var ie_void = IncrementalDom.elementVoid;
+        var ie_open_start = IncrementalDom.elementOpenStart;
+        var ie_open_end = IncrementalDom.elementOpenEnd;
+        var itext = IncrementalDom.text;
+        var iattr = IncrementalDom.attr;
+
+        var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+        var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+        /**
+         * @param {Object<string, *>=} opt_data
+         * @param {(null|undefined)=} opt_ignored
+         * @param {Object<string, *>=} opt_ijData
+         * @return {void}
+         * @suppress {checkTypes}
+         */
+        function $render(opt_data, opt_ignored, opt_ijData) {
+            var param471 = function param471() {
+                ie_open('h5');
+                itext('Icon 12');
+                ie_close('h5');
+                ie_open('div', null, null, 'class', 'group-demo');
+                ie_void('span', null, null, 'title', 'icon-12-alert', 'class', 'icon-12-alert');
+                ie_void('span', null, null, 'title', 'icon-12-apps', 'class', 'icon-12-apps');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-down-rod', 'class', 'icon-12-arrow-down-rod');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-down-short', 'class', 'icon-12-arrow-down-short');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-increase', 'class', 'icon-12-arrow-increase');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-left-rod', 'class', 'icon-12-arrow-left-rod');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-left-short', 'class', 'icon-12-arrow-left-short');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-right-rod', 'class', 'icon-12-arrow-right-rod');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-right-short', 'class', 'icon-12-arrow-right-short');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-up-rod', 'class', 'icon-12-arrow-up-rod');
+                ie_void('span', null, null, 'title', 'icon-12-arrow-up-short', 'class', 'icon-12-arrow-up-short');
+                ie_void('span', null, null, 'title', 'icon-12-arrows-expand', 'class', 'icon-12-arrows-expand');
+                ie_void('span', null, null, 'title', 'icon-12-arrows', 'class', 'icon-12-arrows');
+                ie_void('span', null, null, 'title', 'icon-12-balloon-topic', 'class', 'icon-12-balloon-topic');
+                ie_void('span', null, null, 'title', 'icon-12-bell-off', 'class', 'icon-12-bell-off');
+                ie_void('span', null, null, 'title', 'icon-12-bell', 'class', 'icon-12-bell');
+                ie_void('span', null, null, 'title', 'icon-12-bookmark', 'class', 'icon-12-bookmark');
+                ie_void('span', null, null, 'title', 'icon-12-briefcase', 'class', 'icon-12-briefcase');
+                ie_void('span', null, null, 'title', 'icon-12-bug', 'class', 'icon-12-bug');
+                ie_void('span', null, null, 'title', 'icon-12-building', 'class', 'icon-12-building');
+                ie_void('span', null, null, 'title', 'icon-12-camera', 'class', 'icon-12-camera');
+                ie_void('span', null, null, 'title', 'icon-12-card', 'class', 'icon-12-card');
+                ie_void('span', null, null, 'title', 'icon-12-cart', 'class', 'icon-12-cart');
+                ie_void('span', null, null, 'title', 'icon-12-check', 'class', 'icon-12-check');
+                ie_void('span', null, null, 'title', 'icon-12-clock', 'class', 'icon-12-clock');
+                ie_void('span', null, null, 'title', 'icon-12-close-short', 'class', 'icon-12-close-short');
+                ie_void('span', null, null, 'title', 'icon-12-cloud', 'class', 'icon-12-cloud');
+                ie_void('span', null, null, 'title', 'icon-12-code-file', 'class', 'icon-12-code-file');
+                ie_void('span', null, null, 'title', 'icon-12-collections', 'class', 'icon-12-collections');
+                ie_void('span', null, null, 'title', 'icon-12-database', 'class', 'icon-12-database');
+                ie_void('span', null, null, 'title', 'icon-12-download', 'class', 'icon-12-download');
+                ie_void('span', null, null, 'title', 'icon-12-ellipses', 'class', 'icon-12-ellipses');
+                ie_void('span', null, null, 'title', 'icon-12-exclamation', 'class', 'icon-12-exclamation');
+                ie_void('span', null, null, 'title', 'icon-12-external', 'class', 'icon-12-external');
+                ie_void('span', null, null, 'title', 'icon-12-eye-off', 'class', 'icon-12-eye-off');
+                ie_void('span', null, null, 'title', 'icon-12-eye', 'class', 'icon-12-eye');
+                ie_void('span', null, null, 'title', 'icon-12-facebook', 'class', 'icon-12-facebook');
+                ie_void('span', null, null, 'title', 'icon-12-file', 'class', 'icon-12-file');
+                ie_void('span', null, null, 'title', 'icon-12-flag', 'class', 'icon-12-flag');
+                ie_void('span', null, null, 'title', 'icon-12-flash-off', 'class', 'icon-12-flash-off');
+                ie_void('span', null, null, 'title', 'icon-12-flash', 'class', 'icon-12-flash');
+                ie_void('span', null, null, 'title', 'icon-12-folder', 'class', 'icon-12-folder');
+                ie_void('span', null, null, 'title', 'icon-12-forbidden', 'class', 'icon-12-forbidden');
+                ie_void('span', null, null, 'title', 'icon-12-fork', 'class', 'icon-12-fork');
+                ie_void('span', null, null, 'title', 'icon-12-gear', 'class', 'icon-12-gear');
+                ie_void('span', null, null, 'title', 'icon-12-github', 'class', 'icon-12-github');
+                ie_void('span', null, null, 'title', 'icon-12-google', 'class', 'icon-12-google');
+                ie_void('span', null, null, 'title', 'icon-12-graph', 'class', 'icon-12-graph');
+                ie_void('span', null, null, 'title', 'icon-12-groups', 'class', 'icon-12-groups');
+                ie_void('span', null, null, 'title', 'icon-12-hash', 'class', 'icon-12-hash');
+                ie_void('span', null, null, 'title', 'icon-12-heart-full', 'class', 'icon-12-heart-full');
+                ie_void('span', null, null, 'title', 'icon-12-house', 'class', 'icon-12-house');
+                ie_void('span', null, null, 'title', 'icon-12-image', 'class', 'icon-12-image');
+                ie_void('span', null, null, 'title', 'icon-12-info-card', 'class', 'icon-12-info-card');
+                ie_void('span', null, null, 'title', 'icon-12-info', 'class', 'icon-12-info');
+                ie_void('span', null, null, 'title', 'icon-12-leave', 'class', 'icon-12-leave');
+                ie_void('span', null, null, 'title', 'icon-12-link', 'class', 'icon-12-link');
+                ie_void('span', null, null, 'title', 'icon-12-lock', 'class', 'icon-12-lock');
+                ie_void('span', null, null, 'title', 'icon-12-magnifier', 'class', 'icon-12-magnifier');
+                ie_void('span', null, null, 'title', 'icon-12-mail', 'class', 'icon-12-mail');
+                ie_void('span', null, null, 'title', 'icon-12-map', 'class', 'icon-12-map');
+                ie_void('span', null, null, 'title', 'icon-12-menu', 'class', 'icon-12-menu');
+                ie_void('span', null, null, 'title', 'icon-12-minus', 'class', 'icon-12-minus');
+                ie_void('span', null, null, 'title', 'icon-12-module', 'class', 'icon-12-module');
+                ie_void('span', null, null, 'title', 'icon-12-overlap', 'class', 'icon-12-overlap');
+                ie_void('span', null, null, 'title', 'icon-12-pause', 'class', 'icon-12-pause');
+                ie_void('span', null, null, 'title', 'icon-12-pen', 'class', 'icon-12-pen');
+                ie_void('span', null, null, 'title', 'icon-12-people', 'class', 'icon-12-people');
+                ie_void('span', null, null, 'title', 'icon-12-person-card-2', 'class', 'icon-12-person-card-2');
+                ie_void('span', null, null, 'title', 'icon-12-person-card-3', 'class', 'icon-12-person-card-3');
+                ie_void('span', null, null, 'title', 'icon-12-person', 'class', 'icon-12-person');
+                ie_void('span', null, null, 'title', 'icon-12-persons', 'class', 'icon-12-persons');
+                ie_void('span', null, null, 'title', 'icon-12-pin', 'class', 'icon-12-pin');
+                ie_void('span', null, null, 'title', 'icon-12-play', 'class', 'icon-12-play');
+                ie_void('span', null, null, 'title', 'icon-12-plus', 'class', 'icon-12-plus');
+                ie_void('span', null, null, 'title', 'icon-12-post', 'class', 'icon-12-post');
+                ie_void('span', null, null, 'title', 'icon-12-rocket', 'class', 'icon-12-rocket');
+                ie_void('span', null, null, 'title', 'icon-12-spinner-double-arrow', 'class', 'icon-12-spinner-double-arrow');
+                ie_void('span', null, null, 'title', 'icon-12-star', 'class', 'icon-12-star');
+                ie_void('span', null, null, 'title', 'icon-12-table', 'class', 'icon-12-table');
+                ie_void('span', null, null, 'title', 'icon-12-trash', 'class', 'icon-12-trash');
+                ie_void('span', null, null, 'title', 'icon-12-twitter', 'class', 'icon-12-twitter');
+                ie_void('span', null, null, 'title', 'icon-12-upload', 'class', 'icon-12-upload');
+                ie_close('div');
+                $templateAlias2({ code: '<span class="icon-12-alert"></span>\n<span class="icon-12-apps"></span>\n[...]\n<span class="icon-12-trash"></span>\n<span class="icon-12-upload"></span>', mode: 'xml' }, null, opt_ijData);
+                ie_open('h5');
+                itext('Icon 16');
+                ie_close('h5');
+                ie_open('div', null, null, 'class', 'group-demo');
+                ie_void('span', null, null, 'title', 'icon-16-alert', 'class', 'icon-16-alert');
+                ie_void('span', null, null, 'title', 'icon-16-apps', 'class', 'icon-16-apps');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-down-rod', 'class', 'icon-16-arrow-down-rod');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-down-short', 'class', 'icon-16-arrow-down-short');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-left-rod', 'class', 'icon-16-arrow-left-rod');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-left-short', 'class', 'icon-16-arrow-left-short');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-right-rod', 'class', 'icon-16-arrow-right-rod');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-right-short', 'class', 'icon-16-arrow-right-short');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-up-rod', 'class', 'icon-16-arrow-up-rod');
+                ie_void('span', null, null, 'title', 'icon-16-arrow-up-short', 'class', 'icon-16-arrow-up-short');
+                ie_void('span', null, null, 'title', 'icon-16-balloon-topic', 'class', 'icon-16-balloon-topic');
+                ie_void('span', null, null, 'title', 'icon-16-bell-off', 'class', 'icon-16-bell-off');
+                ie_void('span', null, null, 'title', 'icon-16-bell', 'class', 'icon-16-bell');
+                ie_void('span', null, null, 'title', 'icon-16-bookmark', 'class', 'icon-16-bookmark');
+                ie_void('span', null, null, 'title', 'icon-16-building', 'class', 'icon-16-building');
+                ie_void('span', null, null, 'title', 'icon-16-bullhorn', 'class', 'icon-16-bullhorn');
+                ie_void('span', null, null, 'title', 'icon-16-calendar', 'class', 'icon-16-calendar');
+                ie_void('span', null, null, 'title', 'icon-16-camera', 'class', 'icon-16-camera');
+                ie_void('span', null, null, 'title', 'icon-16-cancel', 'class', 'icon-16-cancel');
+                ie_void('span', null, null, 'title', 'icon-16-cart', 'class', 'icon-16-cart');
+                ie_void('span', null, null, 'title', 'icon-16-checkbox-checked', 'class', 'icon-16-checkbox-checked');
+                ie_void('span', null, null, 'title', 'icon-16-checkbox-indeterminate', 'class', 'icon-16-checkbox-indeterminate');
+                ie_void('span', null, null, 'title', 'icon-16-checkbox-unchecked', 'class', 'icon-16-checkbox-unchecked');
+                ie_void('span', null, null, 'title', 'icon-16-checkmark', 'class', 'icon-16-checkmark');
+                ie_void('span', null, null, 'title', 'icon-16-circle-arrow', 'class', 'icon-16-circle-arrow');
+                ie_void('span', null, null, 'title', 'icon-16-clear', 'class', 'icon-16-clear');
+                ie_void('span', null, null, 'title', 'icon-16-clip', 'class', 'icon-16-clip');
+                ie_void('span', null, null, 'title', 'icon-16-clock', 'class', 'icon-16-clock');
+                ie_void('span', null, null, 'title', 'icon-16-cloud', 'class', 'icon-16-cloud');
+                ie_void('span', null, null, 'title', 'icon-16-code-file', 'class', 'icon-16-code-file');
+                ie_void('span', null, null, 'title', 'icon-16-command-line', 'class', 'icon-16-command-line');
+                ie_void('span', null, null, 'title', 'icon-16-contract', 'class', 'icon-16-contract');
+                ie_void('span', null, null, 'title', 'icon-16-cup', 'class', 'icon-16-cup');
+                ie_void('span', null, null, 'title', 'icon-16-database', 'class', 'icon-16-database');
+                ie_void('span', null, null, 'title', 'icon-16-download', 'class', 'icon-16-download');
+                ie_void('span', null, null, 'title', 'icon-16-dribbble', 'class', 'icon-16-dribbble');
+                ie_void('span', null, null, 'title', 'icon-16-ellipsis-vertical', 'class', 'icon-16-ellipsis-vertical');
+                ie_void('span', null, null, 'title', 'icon-16-ellipsis', 'class', 'icon-16-ellipsis');
+                ie_void('span', null, null, 'title', 'icon-16-expand', 'class', 'icon-16-expand');
+                ie_void('span', null, null, 'title', 'icon-16-external', 'class', 'icon-16-external');
+                ie_void('span', null, null, 'title', 'icon-16-eye', 'class', 'icon-16-eye');
+                ie_void('span', null, null, 'title', 'icon-16-facebook', 'class', 'icon-16-facebook');
+                ie_void('span', null, null, 'title', 'icon-16-filter', 'class', 'icon-16-filter');
+                ie_void('span', null, null, 'title', 'icon-16-flash-off', 'class', 'icon-16-flash-off');
+                ie_void('span', null, null, 'title', 'icon-16-flash', 'class', 'icon-16-flash');
+                ie_void('span', null, null, 'title', 'icon-16-folder', 'class', 'icon-16-folder');
+                ie_void('span', null, null, 'title', 'icon-16-fork', 'class', 'icon-16-fork');
+                ie_void('span', null, null, 'title', 'icon-16-gear', 'class', 'icon-16-gear');
+                ie_void('span', null, null, 'title', 'icon-16-github', 'class', 'icon-16-github');
+                ie_void('span', null, null, 'title', 'icon-16-globe', 'class', 'icon-16-globe');
+                ie_void('span', null, null, 'title', 'icon-16-google', 'class', 'icon-16-google');
+                ie_void('span', null, null, 'title', 'icon-16-graph', 'class', 'icon-16-graph');
+                ie_void('span', null, null, 'title', 'icon-16-groups', 'class', 'icon-16-groups');
+                ie_void('span', null, null, 'title', 'icon-16-hammer', 'class', 'icon-16-hammer');
+                ie_void('span', null, null, 'title', 'icon-16-hash', 'class', 'icon-16-hash');
+                ie_void('span', null, null, 'title', 'icon-16-heart-full', 'class', 'icon-16-heart-full');
+                ie_void('span', null, null, 'title', 'icon-16-house', 'class', 'icon-16-house');
+                ie_void('span', null, null, 'title', 'icon-16-image', 'class', 'icon-16-image');
+                ie_void('span', null, null, 'title', 'icon-16-info', 'class', 'icon-16-info');
+                ie_void('span', null, null, 'title', 'icon-16-layout', 'class', 'icon-16-layout');
+                ie_void('span', null, null, 'title', 'icon-16-liferay-logo-2-tiny', 'class', 'icon-16-liferay-logo-2-tiny');
+                ie_void('span', null, null, 'title', 'icon-16-link', 'class', 'icon-16-link');
+                ie_void('span', null, null, 'title', 'icon-16-linkedin', 'class', 'icon-16-linkedin');
+                ie_void('span', null, null, 'title', 'icon-16-lock', 'class', 'icon-16-lock');
+                ie_void('span', null, null, 'title', 'icon-16-loop', 'class', 'icon-16-loop');
+                ie_void('span', null, null, 'title', 'icon-16-magnifier', 'class', 'icon-16-magnifier');
+                ie_void('span', null, null, 'title', 'icon-16-mail-full', 'class', 'icon-16-mail-full');
+                ie_void('span', null, null, 'title', 'icon-16-mail-off', 'class', 'icon-16-mail-off');
+                ie_void('span', null, null, 'title', 'icon-16-markdown', 'class', 'icon-16-markdown');
+                ie_void('span', null, null, 'title', 'icon-16-menu', 'class', 'icon-16-menu');
+                ie_void('span', null, null, 'title', 'icon-16-minus', 'class', 'icon-16-minus');
+                ie_void('span', null, null, 'title', 'icon-16-module', 'class', 'icon-16-module');
+                ie_void('span', null, null, 'title', 'icon-16-nodejs', 'class', 'icon-16-nodejs');
+                ie_void('span', null, null, 'title', 'icon-16-org_chart', 'class', 'icon-16-org_chart');
+                ie_void('span', null, null, 'title', 'icon-16-pause', 'class', 'icon-16-pause');
+                ie_void('span', null, null, 'title', 'icon-16-pen', 'class', 'icon-16-pen');
+                ie_void('span', null, null, 'title', 'icon-16-people', 'class', 'icon-16-people');
+                ie_void('span', null, null, 'title', 'icon-16-person-card', 'class', 'icon-16-person-card');
+                ie_void('span', null, null, 'title', 'icon-16-person', 'class', 'icon-16-person');
+                ie_void('span', null, null, 'title', 'icon-16-persons', 'class', 'icon-16-persons');
+                ie_void('span', null, null, 'title', 'icon-16-phone-business', 'class', 'icon-16-phone-business');
+                ie_void('span', null, null, 'title', 'icon-16-phone-house', 'class', 'icon-16-phone-house');
+                ie_void('span', null, null, 'title', 'icon-16-phone-work', 'class', 'icon-16-phone-work');
+                ie_void('span', null, null, 'title', 'icon-16-phone', 'class', 'icon-16-phone');
+                ie_void('span', null, null, 'title', 'icon-16-play', 'class', 'icon-16-play');
+                ie_void('span', null, null, 'title', 'icon-16-plus', 'class', 'icon-16-plus');
+                ie_void('span', null, null, 'title', 'icon-16-power-button', 'class', 'icon-16-power-button');
+                ie_void('span', null, null, 'title', 'icon-16-radio-checked', 'class', 'icon-16-radio-checked');
+                ie_void('span', null, null, 'title', 'icon-16-radio-unchecked', 'class', 'icon-16-radio-unchecked');
+                ie_void('span', null, null, 'title', 'icon-16-send', 'class', 'icon-16-send');
+                ie_void('span', null, null, 'title', 'icon-16-server', 'class', 'icon-16-server');
+                ie_void('span', null, null, 'title', 'icon-16-skype', 'class', 'icon-16-skype');
+                ie_void('span', null, null, 'title', 'icon-16-speaker_off', 'class', 'icon-16-speaker_off');
+                ie_void('span', null, null, 'title', 'icon-16-speaker_on', 'class', 'icon-16-speaker_on');
+                ie_void('span', null, null, 'title', 'icon-16-speedometer', 'class', 'icon-16-speedometer');
+                ie_void('span', null, null, 'title', 'icon-16-spinner-double-arrows', 'class', 'icon-16-spinner-double-arrows');
+                ie_void('span', null, null, 'title', 'icon-16-spinner-single-arrow', 'class', 'icon-16-spinner-single-arrow');
+                ie_void('span', null, null, 'title', 'icon-16-star', 'class', 'icon-16-star');
+                ie_void('span', null, null, 'title', 'icon-16-streams', 'class', 'icon-16-streams');
+                ie_void('span', null, null, 'title', 'icon-16-swift', 'class', 'icon-16-swift');
+                ie_void('span', null, null, 'title', 'icon-16-table', 'class', 'icon-16-table');
+                ie_void('span', null, null, 'title', 'icon-16-tag', 'class', 'icon-16-tag');
+                ie_void('span', null, null, 'title', 'icon-16-thumb-down', 'class', 'icon-16-thumb-down');
+                ie_void('span', null, null, 'title', 'icon-16-thumb-up', 'class', 'icon-16-thumb-up');
+                ie_void('span', null, null, 'title', 'icon-16-trash', 'class', 'icon-16-trash');
+                ie_void('span', null, null, 'title', 'icon-16-twitter', 'class', 'icon-16-twitter');
+                ie_void('span', null, null, 'title', 'icon-16-upload-file', 'class', 'icon-16-upload-file');
+                ie_void('span', null, null, 'title', 'icon-16-upload', 'class', 'icon-16-upload');
+                ie_close('div');
+                $templateAlias2({ code: '<span class="icon-16-apps"></span>\n<span class="icon-16-arrow-down-rod"></span>\n[...]\n<span class="icon-16-upload-file"></span>\n<span class="icon-16-upload"></span>\n``', mode: 'xml' }, null, opt_ijData);
+                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+                ie_close('input');
+                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+                ie_close('input');
+            };
+            $templateAlias1(soy.$$assignDefaults({ content: param471 }, opt_data), null, opt_ijData);
+        }
+        exports.render = $render;
+        if (goog.DEBUG) {
+            $render.soyTemplateName = 'OVgno.render';
+        }
+
+        exports.render.params = ["page", "site"];
+        exports.render.types = { "page": "any", "site": "any" };
+        templates = exports;
+        return exports;
+    });
+
+    var OVgno = function (_Component) {
+        babelHelpers.inherits(OVgno, _Component);
+
+        function OVgno() {
+            babelHelpers.classCallCheck(this, OVgno);
+            return babelHelpers.possibleConstructorReturn(this, (OVgno.__proto__ || Object.getPrototypeOf(OVgno)).apply(this, arguments));
+        }
+
+        return OVgno;
+    }(Component);
+
+    Soy.register(OVgno, templates);
+    this['metalNamed']['icon'] = this['metalNamed']['icon'] || {};
+    this['metalNamed']['icon']['OVgno'] = OVgno;
+    this['metalNamed']['icon']['templates'] = templates;
+    this['metal']['icon'] = templates;
+    /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['icon'];
+
+  var OVgno = function (_Component) {
+    babelHelpers.inherits(OVgno, _Component);
+
+    function OVgno() {
+      babelHelpers.classCallCheck(this, OVgno);
+      return babelHelpers.possibleConstructorReturn(this, (OVgno.__proto__ || Object.getPrototypeOf(OVgno)).apply(this, arguments));
+    }
+
+    return OVgno;
+  }(Component);
+
+  ;
+
+  Soy.register(OVgno, templates);
+
+  this['metal']['OVgno'] = OVgno;
+}).call(this);
+'use strict';
+
+(function () {
+    /* jshint ignore:start */
+    var Component = this['metal']['component'];
+    var Soy = this['metal']['Soy'];
+
+    var templates;
+    goog.loadModule(function (exports) {
+
+        // This file was automatically generated from spinner.soy.
+        // Please don't edit this file by hand.
+
+        /**
+         * @fileoverview Templates in namespace WkIkx.
+         * @public
+         */
+
+        goog.module('WkIkx.incrementaldom');
+
+        /** @suppress {extraRequire} */
+        var soy = goog.require('soy');
+        /** @suppress {extraRequire} */
+        var soydata = goog.require('soydata');
+        /** @suppress {extraRequire} */
+        goog.require('goog.i18n.bidi');
+        /** @suppress {extraRequire} */
+        goog.require('goog.asserts');
+        /** @suppress {extraRequire} */
+        goog.require('goog.string');
+        var IncrementalDom = goog.require('incrementaldom');
+        var ie_open = IncrementalDom.elementOpen;
+        var ie_close = IncrementalDom.elementClose;
+        var ie_void = IncrementalDom.elementVoid;
+        var ie_open_start = IncrementalDom.elementOpenStart;
+        var ie_open_end = IncrementalDom.elementOpenEnd;
+        var itext = IncrementalDom.text;
+        var iattr = IncrementalDom.attr;
+
+        var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+        var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+        /**
+         * @param {Object<string, *>=} opt_data
+         * @param {(null|undefined)=} opt_ignored
+         * @param {Object<string, *>=} opt_ijData
+         * @return {void}
+         * @suppress {checkTypes}
+         */
+        function $render(opt_data, opt_ignored, opt_ijData) {
+            var param695 = function param695() {
+                ie_open('h5');
+                itext('Loading - Types');
+                ie_close('h5');
+                ie_open('div', null, null, 'class', 'group-demo');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-warning');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-danger');
+                ie_close('div');
+                $templateAlias2({ code: '<span class="spinner spinner-medium"></span>\n<span class="spinner spinner-medium spinner-warning"></span>\n<span class="spinner spinner-medium spinner-danger"></span>', mode: 'xml' }, null, opt_ijData);
+                ie_open('h5');
+                itext('Loading - Sizes');
+                ie_close('h5');
+                ie_open('div', null, null, 'class', 'group-demo');
+                ie_void('span', null, null, 'class', 'spinner spinner-large');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium');
+                ie_void('span', null, null, 'class', 'spinner spinner-small');
+                ie_close('div');
+                $templateAlias2({ code: '<span class="spinner spinner-large"></span>\n<span class="spinner spinner-medium"></span>\n<span class="spinner spinner-small"></span>', mode: 'xml' }, null, opt_ijData);
+                ie_open('h5');
+                itext('Done - Types');
+                ie_close('h5');
+                ie_open('div', null, null, 'class', 'group-demo');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-done');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-warning spinner-done');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-danger spinner-done');
+                ie_close('div');
+                $templateAlias2({ code: '<span class="spinner spinner-medium spinner-done"></span>\n<span class="spinner spinner-medium spinner-warning spinner-done"></span>\n<span class="spinner spinner-medium spinner-danger spinner-done"></span>', mode: 'xml' }, null, opt_ijData);
+                ie_open('h5');
+                itext('Done - Sizes');
+                ie_close('h5');
+                ie_open('div', null, null, 'class', 'group-demo');
+                ie_void('span', null, null, 'class', 'spinner spinner-large spinner-done');
+                ie_void('span', null, null, 'class', 'spinner spinner-medium spinner-done');
+                ie_void('span', null, null, 'class', 'spinner spinner-small spinner-done');
+                ie_close('div');
+                $templateAlias2({ code: '<span class="spinner spinner-large spinner-done"></span>\n<span class="spinner spinner-medium spinner-done"></span>\n<span class="spinner spinner-small spinner-done"></span>', mode: 'xml' }, null, opt_ijData);
+                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+                ie_close('input');
+                ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+                ie_close('input');
+            };
+            $templateAlias1(soy.$$assignDefaults({ content: param695 }, opt_data), null, opt_ijData);
+        }
+        exports.render = $render;
+        if (goog.DEBUG) {
+            $render.soyTemplateName = 'WkIkx.render';
+        }
+
+        exports.render.params = ["page", "site"];
+        exports.render.types = { "page": "any", "site": "any" };
+        templates = exports;
+        return exports;
+    });
+
+    var WkIkx = function (_Component) {
+        babelHelpers.inherits(WkIkx, _Component);
+
+        function WkIkx() {
+            babelHelpers.classCallCheck(this, WkIkx);
+            return babelHelpers.possibleConstructorReturn(this, (WkIkx.__proto__ || Object.getPrototypeOf(WkIkx)).apply(this, arguments));
+        }
+
+        return WkIkx;
+    }(Component);
+
+    Soy.register(WkIkx, templates);
+    this['metalNamed']['spinner'] = this['metalNamed']['spinner'] || {};
+    this['metalNamed']['spinner']['WkIkx'] = WkIkx;
+    this['metalNamed']['spinner']['templates'] = templates;
+    this['metal']['spinner'] = templates;
+    /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['spinner'];
+
+  var WkIkx = function (_Component) {
+    babelHelpers.inherits(WkIkx, _Component);
+
+    function WkIkx() {
+      babelHelpers.classCallCheck(this, WkIkx);
+      return babelHelpers.possibleConstructorReturn(this, (WkIkx.__proto__ || Object.getPrototypeOf(WkIkx)).apply(this, arguments));
+    }
+
+    return WkIkx;
+  }(Component);
+
+  ;
+
+  Soy.register(WkIkx, templates);
+
+  this['metal']['WkIkx'] = WkIkx;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from datatable.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace XApbI.
+     * @public
+     */
+
+    goog.module('XApbI.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param349 = function param349() {
+        ie_open('h5');
+        itext('No Collections');
+        ie_close('h5');
+        ie_open('div', null, null, 'style', 'position: relative; z-index: 1; height: 240px; width: 100%; border: 1px solid rgba(14, 20, 26, 0.2);', 'class', 'no-collections');
+        ie_open('div', null, null, 'class', 'empty-collection');
+        ie_open('div', null, null, 'class', 'notfound');
+        ie_open('div', null, null, 'class', 'notfound-icon');
+        ie_void('span', null, null, 'class', 'icon-16-database');
+        ie_close('div');
+        ie_open('p', null, null, 'class', 'notfound-text');
+        itext('You have no collections.');
+        ie_close('p');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="no-collections">\n    <div class="empty-collection">\n        <div class="notfound">\n            <div class="notfound-icon">\n                <span class="icon-16-database"></span>\n            </div>\n            <p class="notfound-text">You have no collections.</p>\n        </div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Empty Collection');
+        ie_close('h5');
+        ie_open('div', null, null, 'style', 'position: relative; z-index: 1; height: 240px; width: 100%; border: 1px solid rgba(14, 20, 26, 0.2);', 'class', 'no-data');
+        ie_open('div', null, null, 'class', 'empty-data');
+        ie_open('div', null, null, 'class', 'notfound');
+        ie_open('div', null, null, 'class', 'notfound-icon');
+        ie_void('span', null, null, 'class', 'icon-16-database');
+        ie_close('div');
+        ie_open('p', null, null, 'class', 'notfound-text');
+        itext('This collection is empty.');
+        ie_close('p');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="no-data">\n    <div class="empty-data">\n        <div class="notfound">\n            <div class="notfound-icon">\n                <span class="icon-16-database"></span>\n            </div>\n            <p class="notfound-text">This collection is empty.</p>\n        </div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Loading');
+        ie_close('h5');
+        ie_open('div', null, null, 'style', 'position: relative; z-index: 1; height: 200px; width: 100%; border: 1px solid rgba(14, 20, 26, 0.2);', 'class', 'loading');
+        ie_open('div', null, null, 'class', 'light-loader');
+        ie_void('span', null, null, 'class', 'spinner spinner-medium');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="loading">\n    <div class="light-loader">\n        <span class="spinner spinner-medium"></span>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Populated');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'datatable');
+        ie_open('table', null, null, 'class', 'table');
+        ie_open('thead');
+        ie_open('tr');
+        ie_open('th');
+        itext('#');
+        ie_close('th');
+        ie_open('th');
+        itext('First Name');
+        ie_close('th');
+        ie_open('th');
+        itext('Last Name');
+        ie_close('th');
+        ie_open('th');
+        itext('Username');
+        ie_close('th');
+        ie_open('th', null, null, 'class', 'text-center');
+        itext('Required');
+        ie_close('th');
+        ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+        ie_open('tr');
+        ie_open('td');
+        itext('1');
+        ie_close('td');
+        ie_open('td');
+        itext('Mark');
+        ie_close('td');
+        ie_open('td');
+        itext('Otto');
+        ie_close('td');
+        ie_open('td');
+        itext('@mdo');
+        ie_close('td');
+        ie_open('td', null, null, 'class', 'text-center');
+        ie_void('span', null, null, 'class', 'icon-16-checkmark');
+        ie_close('td');
+        ie_close('tr');
+        ie_open('tr');
+        ie_open('td');
+        itext('2');
+        ie_close('td');
+        ie_open('td');
+        itext('Jacob');
+        ie_close('td');
+        ie_open('td');
+        itext('Thornton');
+        ie_close('td');
+        ie_open('td');
+        itext('@fat');
+        ie_close('td');
+        ie_open('td', null, null, 'class', 'text-center');
+        ie_void('span', null, null, 'class', 'icon-16-checkmark');
+        ie_close('td');
+        ie_close('tr');
+        ie_open('tr');
+        ie_open('td');
+        itext('3');
+        ie_close('td');
+        ie_open('td');
+        itext('Larry');
+        ie_close('td');
+        ie_open('td');
+        itext('the Bird');
+        ie_close('td');
+        ie_open('td');
+        itext('@twitter');
+        ie_close('td');
+        ie_open('td', null, null, 'class', 'text-center');
+        ie_void('span', null, null, 'class', 'icon-16-checkmark');
+        ie_close('td');
+        ie_close('tr');
+        ie_close('tbody');
+        ie_close('table');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="datatable">\n    <table class="table">\n        <thead>\n            <tr>\n                <th>#</th>\n                <th>First Name</th>\n                <th>Last Name</th>\n                <th>Username</th>\n                <th class="text-center">Required</th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr>\n                <td>1</td>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@mdo</td>\n                <td class="text-center">\n                    <span class="icon-16-checkmark"></span>\n                </td>\n            </tr>\n            [...]\n        </tbody>\n    </table>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param349 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'XApbI.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var XApbI = function (_Component) {
+    babelHelpers.inherits(XApbI, _Component);
+
+    function XApbI() {
+      babelHelpers.classCallCheck(this, XApbI);
+      return babelHelpers.possibleConstructorReturn(this, (XApbI.__proto__ || Object.getPrototypeOf(XApbI)).apply(this, arguments));
+    }
+
+    return XApbI;
+  }(Component);
+
+  Soy.register(XApbI, templates);
+  this['metalNamed']['datatable'] = this['metalNamed']['datatable'] || {};
+  this['metalNamed']['datatable']['XApbI'] = XApbI;
+  this['metalNamed']['datatable']['templates'] = templates;
+  this['metal']['datatable'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['datatable'];
+
+  var XApbI = function (_Component) {
+    babelHelpers.inherits(XApbI, _Component);
+
+    function XApbI() {
+      babelHelpers.classCallCheck(this, XApbI);
+      return babelHelpers.possibleConstructorReturn(this, (XApbI.__proto__ || Object.getPrototypeOf(XApbI)).apply(this, arguments));
+    }
+
+    return XApbI;
+  }(Component);
+
+  ;
+
+  Soy.register(XApbI, templates);
+
+  this['metal']['XApbI'] = XApbI;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from avatar.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace kYwSI.
+     * @public
+     */
+
+    goog.module('kYwSI.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param252 = function param252() {
+        ie_open('h5');
+        itext('Avatar Photos');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-xlarge', 'href', '#');
+        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
+        ie_close('img');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-large', 'href', '#');
+        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
+        ie_close('img');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-medium', 'href', '#');
+        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
+        ie_close('img');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-small', 'href', '#');
+        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
+        ie_close('img');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-photo avatar-xsmall', 'href', '#');
+        ie_open('img', null, null, 'src', 'http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&s=120', 'alt', 'Ygor Costa');
+        ie_close('img');
+        ie_close('a');
+        ie_close('div');
+        $templateAlias2({ code: '<a class="avatar avatar-round avatar-photo avatar-xlarge" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-large" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-medium" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-small" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>\n<a class="avatar avatar-round avatar-photo avatar-xsmall" href="#">\n    <img src="http://www.gravatar.com/avatar/25dc8725d6e5f320ca4bc1bf6db85b53?d=blank&amp;s=120" alt="Ygor Costa">\n</a>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Avatar Initials');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-xlarge', 'href', '#');
+        itext('a');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-large', 'href', '#');
+        itext('b');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-medium', 'href', '#');
+        itext('c');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-small', 'href', '#');
+        itext('d');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-initials avatar-xsmall', 'href', '#');
+        itext('e');
+        ie_close('a');
+        ie_close('div');
+        $templateAlias2({ code: '<a class="avatar avatar-round avatar-initials avatar-xlarge" href="#">a</a>\n<a class="avatar avatar-round avatar-initials avatar-large" href="#">b</a>\n<a class="avatar avatar-round avatar-initials avatar-medium" href="#">c</a>\n<a class="avatar avatar-round avatar-initials avatar-small" href="#">d</a>\n<a class="avatar avatar-round avatar-initials avatar-xsmall" href="#">e</a>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Avatar Numbers');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-xlarge', 'href', '#');
+        itext('+1');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-large', 'href', '#');
+        itext('+1');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-medium', 'href', '#');
+        itext('+1');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-small', 'href', '#');
+        itext('+1');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-number avatar-xsmall', 'href', '#');
+        itext('+1');
+        ie_close('a');
+        ie_close('div');
+        $templateAlias2({ code: '<a class="avatar avatar-round avatar-number avatar-xlarge" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-large" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-medium" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-small" href="#">+1</a>\n<a class="avatar avatar-round avatar-number avatar-xsmall" href="#">+1</a>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Avatar Icon');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-16 avatar-large', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-globe');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-12 avatar-large', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-12-link');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-16 avatar-medium', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-bell');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'avatar avatar-round avatar-icon-12 avatar-medium', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-12-star');
+        ie_close('a');
+        ie_close('div');
+        $templateAlias2({ code: '<a class="avatar avatar-round avatar-icon-16 avatar-large" href="#">\n    <span class="icon-16-globe"></span>\n</a>\n<a class="avatar avatar-round avatar-icon-12 avatar-large" href="#">\n    <span class="icon-12-link"></span>\n</a>\n<a class="avatar avatar-round avatar-icon-16 avatar-medium" href="#">\n    <span class="icon-16-bell"></span>\n</a>\n<a class="avatar avatar-round avatar-icon-12 avatar-medium" href="#">\n    <span class="icon-12-star"></span>\n</a>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param252 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'kYwSI.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var kYwSI = function (_Component) {
+    babelHelpers.inherits(kYwSI, _Component);
+
+    function kYwSI() {
+      babelHelpers.classCallCheck(this, kYwSI);
+      return babelHelpers.possibleConstructorReturn(this, (kYwSI.__proto__ || Object.getPrototypeOf(kYwSI)).apply(this, arguments));
+    }
+
+    return kYwSI;
+  }(Component);
+
+  Soy.register(kYwSI, templates);
+  this['metalNamed']['avatar'] = this['metalNamed']['avatar'] || {};
+  this['metalNamed']['avatar']['kYwSI'] = kYwSI;
+  this['metalNamed']['avatar']['templates'] = templates;
+  this['metal']['avatar'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from button.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace qWSpD.
+     * @public
+     */
+
+    goog.module('qWSpD.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param281 = function param281() {
+        ie_open('h5');
+        itext('Button Type');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('button', null, null, 'class', 'btn btn-accent', 'href', '#');
+        itext('Accent');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-default', 'href', '#');
+        itext('Default');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-primary', 'href', '#');
+        itext('Primary');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-success', 'href', '#');
+        itext('Success');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-danger', 'href', '#');
+        itext('Danger');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-link', 'href', '#');
+        itext('Link');
+        ie_close('button');
+        ie_close('div');
+        $templateAlias2({ code: '<button class="btn btn-accent" href="#">Accent</button>\n<button class="btn btn-default" href="#">Default</button>\n<button class="btn btn-primary" href="#">Primary</button>\n<button class="btn btn-success" href="#">Success</button>\n<button class="btn btn-danger" href="#">Danger</button>\n<button class="btn btn-link" href="#">Link</button>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Disabled Button');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('button', null, null, 'class', 'btn btn-accent', 'disabled', '', 'href', '#');
+        itext('Accent');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-default', 'disabled', '', 'href', '#');
+        itext('Default');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-primary', 'disabled', '', 'href', '#');
+        itext('Primary');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-success', 'disabled', '', 'href', '#');
+        itext('Success');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-danger', 'disabled', '', 'href', '#');
+        itext('Danger');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-link', 'disabled', '', 'href', '#');
+        itext('Link');
+        ie_close('button');
+        ie_close('div');
+        $templateAlias2({ code: '<button class="btn btn-accent" disabled="" href="#">Accent</button>\n<button class="btn btn-default" disabled="" href="#">Default</button>\n<button class="btn btn-primary" disabled="" href="#">Primary</button>\n<button class="btn btn-success" disabled="" href="#">Success</button>\n<button class="btn btn-danger" disabled="" href="#">Danger</button>\n<button class="btn btn-link" disabled="" href="#">Link</button>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Button Size');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('button', null, null, 'class', 'btn btn-primary btn-sm', 'href', '#');
+        itext('Small');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-primary', 'href', '#');
+        itext('Regular');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn btn-primary btn-lg', 'href', '#');
+        itext('Large');
+        ie_close('button');
+        ie_close('div');
+        $templateAlias2({ code: '<button class="btn btn-primary btn-sm" href="#">Small</button>\n<button class="btn btn-primary" href="#">Regular</button>\n<button class="btn btn-primary btn-lg" href="#">Large</button>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Button Tag');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('a', null, null, 'class', 'btn btn-primary', 'href', '#');
+        itext('Link');
+        ie_close('a');
+        ie_open('button', null, null, 'class', 'btn btn-primary', 'type', 'submit');
+        itext('Button');
+        ie_close('button');
+        ie_open('input', null, null, 'class', 'btn btn-primary', 'type', 'button', 'value', 'Input');
+        ie_close('input');
+        ie_open('input', null, null, 'class', 'btn btn-primary', 'type', 'submit', 'value', 'Submit');
+        ie_close('input');
+        ie_open('input', null, null, 'class', 'btn btn-primary', 'type', 'reset', 'value', 'Reset');
+        ie_close('input');
+        ie_close('div');
+        $templateAlias2({ code: '<a class="btn btn-primary" href="#">Link</a>\n<button class="btn btn-primary" type="submit">Button</button>\n<input class="btn btn-primary" type="button" value="Input">\n<input class="btn btn-primary" type="submit" value="Submit">\n<input class="btn btn-primary" type="reset" value="Reset">', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Button + Icon');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('a', null, null, 'class', 'btn btn-accent', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-star');
+        itext(' Accent');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'btn btn-default', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-star');
+        itext(' Default');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'btn btn-primary', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-star');
+        itext(' Primary');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'btn btn-success', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-star');
+        itext(' Success');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'btn btn-danger', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-star');
+        itext(' Danger');
+        ie_close('a');
+        ie_open('a', null, null, 'class', 'btn btn-link', 'href', '#');
+        ie_void('span', null, null, 'class', 'icon-16-star');
+        itext(' Link');
+        ie_close('a');
+        ie_close('div');
+        $templateAlias2({ code: '<a class="btn btn-accent" href="#">\n    <span class="icon-16-star"></span> Accent\n</a>\n<a class="btn btn-default" href="#">\n    <span class="icon-16-star"></span> Default\n</a>\n<a class="btn btn-primary" href="#">\n    <span class="icon-16-star"></span> Primary\n</a>\n<a class="btn btn-success" href="#">\n    <span class="icon-16-star"></span> Success\n</a>\n<a class="btn btn-danger" href="#">\n    <span class="icon-16-star"></span> Danger\n</a>\n<a class="btn btn-link" href="#">\n    <span class="icon-16-star"></span> Link\n</a>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Transparent Button');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_void('button', null, null, 'class', 'btn-transparent icon-16-flash');
+        ie_void('button', null, null, 'class', 'btn-transparent icon-16-ellipsis');
+        ie_close('div');
+        $templateAlias2({ code: '<button class="btn-transparent icon-16-flash"></button>\n<button class="btn-transparent icon-16-ellipsis"></button>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Only Icon Button');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_void('button', null, null, 'class', 'btn-icon btn-squared icon-16-ellipsis');
+        ie_void('button', null, null, 'class', 'btn-icon icon-16-ellipsis');
+        ie_close('div');
+        $templateAlias2({ code: '<button class="btn-icon btn-squared icon-16-ellipsis"></button>\n<button class="btn-icon icon-16-ellipsis"></button>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param281 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'qWSpD.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var qWSpD = function (_Component) {
+    babelHelpers.inherits(qWSpD, _Component);
+
+    function qWSpD() {
+      babelHelpers.classCallCheck(this, qWSpD);
+      return babelHelpers.possibleConstructorReturn(this, (qWSpD.__proto__ || Object.getPrototypeOf(qWSpD)).apply(this, arguments));
+    }
+
+    return qWSpD;
+  }(Component);
+
+  Soy.register(qWSpD, templates);
+  this['metalNamed']['button'] = this['metalNamed']['button'] || {};
+  this['metalNamed']['button']['qWSpD'] = qWSpD;
+  this['metalNamed']['button']['templates'] = templates;
+  this['metal']['button'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from grid.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace qsOgQ.
+     * @public
+     */
+
+    goog.module('qsOgQ.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguideFull.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param442 = function param442() {
+        ie_open('h5');
+        itext('Grid breakpoints');
+        ie_close('h5');
+        ie_open('p');
+        itext('Extra Small (360px)');
+        ie_close('p');
+        ie_open('div', null, null, 'class', 'demo container-hybrid container-xs');
+        ie_open('div', null, null, 'class', 'row');
+        ie_open('div', null, null, 'class', 'col-xs-8');
+        itext('xs');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8');
+        itext('xs');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8">xs</div>\n        <div class="col-xs-8">xs</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('p');
+        itext('Small (600px)');
+        ie_close('p');
+        ie_open('div', null, null, 'class', 'demo container-hybrid container-sm');
+        ie_open('div', null, null, 'class', 'row');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
+        itext('sm');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
+        itext('sm');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
+        itext('sm');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4');
+        itext('sm');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8 col-sm-4">sm</div>\n        <div class="col-xs-8 col-sm-4">sm</div>\n        <div class="col-xs-8 col-sm-4">sm</div>\n        <div class="col-xs-8 col-sm-4">sm</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('p');
+        itext('Medium (960px)');
+        ie_close('p');
+        ie_open('div', null, null, 'class', 'demo container-hybrid container-md');
+        ie_open('div', null, null, 'class', 'row');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2');
+        itext('md');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n        [...]\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n        <div class="col-xs-8 col-sm-4 col-md-2">md</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('p');
+        itext('Large (1280px)');
+        ie_close('p');
+        ie_open('div', null, null, 'class', 'demo container-hybrid container-lg');
+        ie_open('div', null, null, 'class', 'row');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'col-xs-8 col-sm-4 col-md-2 col-lg-1');
+        itext('lg');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="container-hybrid">\n    <div class="row">\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n        [...]\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n        <div class="col-xs-8 col-sm-4 col-md-2 col-lg-1">lg</div>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param442 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'qsOgQ.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var qsOgQ = function (_Component) {
+    babelHelpers.inherits(qsOgQ, _Component);
+
+    function qsOgQ() {
+      babelHelpers.classCallCheck(this, qsOgQ);
+      return babelHelpers.possibleConstructorReturn(this, (qsOgQ.__proto__ || Object.getPrototypeOf(qsOgQ)).apply(this, arguments));
+    }
+
+    return qsOgQ;
+  }(Component);
+
+  Soy.register(qsOgQ, templates);
+  this['metalNamed']['grid'] = this['metalNamed']['grid'] || {};
+  this['metalNamed']['grid']['qsOgQ'] = qsOgQ;
+  this['metalNamed']['grid']['templates'] = templates;
+  this['metal']['grid'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from radio.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace hWxTa.
+     * @public
+     */
+
+    goog.module('hWxTa.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param642 = function param642() {
+        ie_open('h5');
+        itext('Radio');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('div', null, null, 'class', 'radio-group');
+        ie_open('div', null, null, 'class', 'radio-item');
+        ie_open('input', null, null, 'type', 'radio', 'id', 'opt-2-1', 'name', 'pool-2', 'value', 'opt-2-1');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'opt-2-1');
+        itext('Option 1');
+        ie_close('label');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'radio-item');
+        ie_open('input', null, null, 'type', 'radio', 'id', 'opt-2-2', 'name', 'pool-2', 'value', 'opt-2-2');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'opt-2-2');
+        itext('Option 2');
+        ie_close('label');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'radio-item');
+        ie_open('input', null, null, 'type', 'radio', 'id', 'opt-2-3', 'name', 'pool-2', 'value', 'opt-2-3');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'opt-2-3');
+        itext('Option 3');
+        ie_close('label');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="radio-group">\n    <div class="radio-item">\n        <input type="radio" id="opt-2-1" name="pool-2" value="opt-2-1">\n        <label for="opt-2-1">Option 1</label>\n    </div>\n    <div class="radio-item">\n        <input type="radio" id="opt-2-2" name="pool-2" value="opt-2-2">\n        <label for="opt-2-2">Option 2</label>\n    </div>\n    <div class="radio-item">\n        <input type="radio" id="opt-2-3" name="pool-2" value="opt-2-3">\n        <label for="opt-2-3">Option 3</label>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Radio inline');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('div', null, null, 'class', 'radio-group radio-group-inline');
+        ie_open('div', null, null, 'class', 'radio-item');
+        ie_open('input', null, null, 'type', 'radio', 'id', 'opt-3-1', 'name', 'pool-3', 'value', 'opt-3-1');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'opt-3-1');
+        itext('Option 1');
+        ie_close('label');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'radio-item');
+        ie_open('input', null, null, 'type', 'radio', 'id', 'opt-3-2', 'name', 'pool-3', 'value', 'opt-3-2');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'opt-3-2');
+        itext('Option 2');
+        ie_close('label');
+        ie_close('div');
+        ie_open('div', null, null, 'class', 'radio-item');
+        ie_open('input', null, null, 'type', 'radio', 'id', 'opt-3-3', 'name', 'pool-3', 'value', 'opt-3-3');
+        ie_close('input');
+        ie_open('label', null, null, 'for', 'opt-3-3');
+        itext('Option 3');
+        ie_close('label');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="radio-group radio-group-inline">\n    <div class="radio-item">\n        <input type="radio" id="opt-3-1" name="pool-3" value="opt-3-1">\n        <label for="opt-3-1">Option 1</label>\n    </div>\n    <div class="radio-item">\n        <input type="radio" id="opt-3-2" name="pool-3" value="opt-3-2">\n        <label for="opt-3-2">Option 2</label>\n    </div>\n    <div class="radio-item">\n        <input type="radio" id="opt-3-3" name="pool-3" value="opt-3-3">\n        <label for="opt-3-3">Option 3</label>\n    </div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param642 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'hWxTa.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var hWxTa = function (_Component) {
+    babelHelpers.inherits(hWxTa, _Component);
+
+    function hWxTa() {
+      babelHelpers.classCallCheck(this, hWxTa);
+      return babelHelpers.possibleConstructorReturn(this, (hWxTa.__proto__ || Object.getPrototypeOf(hWxTa)).apply(this, arguments));
+    }
+
+    return hWxTa;
+  }(Component);
+
+  Soy.register(hWxTa, templates);
+  this['metalNamed']['radio'] = this['metalNamed']['radio'] || {};
+  this['metalNamed']['radio']['hWxTa'] = hWxTa;
+  this['metalNamed']['radio']['templates'] = templates;
+  this['metal']['radio'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['radio'];
+
+  var hWxTa = function (_Component) {
+    babelHelpers.inherits(hWxTa, _Component);
+
+    function hWxTa() {
+      babelHelpers.classCallCheck(this, hWxTa);
+      return babelHelpers.possibleConstructorReturn(this, (hWxTa.__proto__ || Object.getPrototypeOf(hWxTa)).apply(this, arguments));
+    }
+
+    return hWxTa;
+  }(Component);
+
+  ;
+
+  Soy.register(hWxTa, templates);
+
+  this['metal']['hWxTa'] = hWxTa;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from index.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace pageDocsComponentsIndex.
+     * @public
+     */
+
+    goog.module('pageDocsComponentsIndex.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {}
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'pageDocsComponentsIndex.render';
+    }
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $soyweb(opt_data, opt_ignored, opt_ijData) {
+      ie_open('!DOCTYPE', null, null, 'html', '');
+      ie_open('html', null, null, 'lang', 'en');
+      ie_open('head');
+      ie_open('meta', null, null, 'charset', 'UTF-8');
+      ie_close('meta');
+      ie_open('meta', null, null, 'http-equiv', 'refresh', 'content', '0; URL=\'/docs/components/avatar.html\'');
+      ie_close('meta');
+      ie_close('head');
+      ie_close('html');
+    }
+    exports.soyweb = $soyweb;
+    if (goog.DEBUG) {
+      $soyweb.soyTemplateName = 'pageDocsComponentsIndex.soyweb';
+    }
+
+    exports.render.params = [];
+    exports.render.types = {};
+    exports.soyweb.params = [];
+    exports.soyweb.types = {};
+    templates = exports;
+    return exports;
+  });
+
+  var pageDocsComponentsIndex = function (_Component) {
+    babelHelpers.inherits(pageDocsComponentsIndex, _Component);
+
+    function pageDocsComponentsIndex() {
+      babelHelpers.classCallCheck(this, pageDocsComponentsIndex);
+      return babelHelpers.possibleConstructorReturn(this, (pageDocsComponentsIndex.__proto__ || Object.getPrototypeOf(pageDocsComponentsIndex)).apply(this, arguments));
+    }
+
+    return pageDocsComponentsIndex;
+  }(Component);
+
+  Soy.register(pageDocsComponentsIndex, templates);
+  this['metalNamed']['index'] = this['metalNamed']['index'] || {};
+  this['metalNamed']['index']['pageDocsComponentsIndex'] = pageDocsComponentsIndex;
+  this['metalNamed']['index']['templates'] = templates;
+  this['metal']['index'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['avatar'];
+
+  var kYwSI = function (_Component) {
+    babelHelpers.inherits(kYwSI, _Component);
+
+    function kYwSI() {
+      babelHelpers.classCallCheck(this, kYwSI);
+      return babelHelpers.possibleConstructorReturn(this, (kYwSI.__proto__ || Object.getPrototypeOf(kYwSI)).apply(this, arguments));
+    }
+
+    return kYwSI;
+  }(Component);
+
+  ;
+
+  Soy.register(kYwSI, templates);
+
+  this['metal']['kYwSI'] = kYwSI;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from label.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace mMTdY.
+     * @public
+     */
+
+    goog.module('mMTdY.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param613 = function param613() {
+        ie_open('h5');
+        itext('Label Types/States');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('span', null, null, 'class', 'label label-default');
+        ie_open('span', null, null, 'class', 'label-text');
+        itext('Default');
+        ie_close('span');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-primary');
+        ie_open('span', null, null, 'class', 'label-text');
+        itext('Primary');
+        ie_close('span');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-success');
+        ie_open('span', null, null, 'class', 'label-text');
+        itext('Success');
+        ie_close('span');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-warning');
+        ie_open('span', null, null, 'class', 'label-text');
+        itext('Warning');
+        ie_close('span');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-danger');
+        ie_open('span', null, null, 'class', 'label-text');
+        itext('Danger');
+        ie_close('span');
+        ie_close('span');
+        ie_close('div');
+        $templateAlias2({ code: '<span class="label label-default">\n    <span class="label-text">Default</span>\n</span>\n<span class="label label-primary">\n    <span class="label-text">Primary</span>\n</span>\n<span class="label label-success">\n    <span class="label-text">Success</span>\n</span>\n<span class="label label-warning">\n    <span class="label-text">Warning</span>\n</span>\n<span class="label label-danger">\n    <span class="label-text">Danger</span>\n</span>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Sizes');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('span', null, null, 'class', 'label label-default label-sm');
+        itext('Small');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-primary label-sm');
+        itext('Small');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-default');
+        itext('Regular');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-primary');
+        itext('Regular');
+        ie_close('span');
+        ie_close('div');
+        $templateAlias2({ code: '<span class="label label-default label-sm">Small</span>\n<span class="label label-primary label-sm">Small</span>\n<span class="label label-default">Regular</span>\n<span class="label label-primary">Regular</span>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Icons');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('span', null, null, 'class', 'label label-default');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        itext('Default');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-primary');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        itext('Primary');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-success');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        itext('Success');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-warning');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        itext('Warning');
+        ie_close('span');
+        ie_open('span', null, null, 'class', 'label label-danger');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        itext('Danger');
+        ie_close('span');
+        ie_close('div');
+        $templateAlias2({ code: '<span class="label label-default">\n    <span class="label-icon icon-12-person"></span>Default\n</span>\n<span class="label label-primary">\n    <span class="label-icon icon-12-person"></span>Primary\n</span>\n<span class="label label-success">\n    <span class="label-icon icon-12-person"></span>Success\n</span>\n<span class="label label-warning">\n    <span class="label-icon icon-12-person"></span>Warning\n</span>\n<span class="label label-danger">\n    <span class="label-icon icon-12-person"></span>Danger\n</span>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Clickable');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'group-demo');
+        ie_open('button', null, null, 'class', 'btn-transparent label label-default label-clickable');
+        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        ie_open('span', null, null, 'class', 'label-content');
+        itext('Default');
+        ie_close('span');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn-transparent label label-primary label-clickable');
+        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        ie_open('span', null, null, 'class', 'label-content');
+        itext('Primary');
+        ie_close('span');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn-transparent label label-success label-clickable');
+        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        ie_open('span', null, null, 'class', 'label-content');
+        itext('Success');
+        ie_close('span');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn-transparent label label-warning label-clickable');
+        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        ie_open('span', null, null, 'class', 'label-content');
+        itext('Warning');
+        ie_close('span');
+        ie_close('button');
+        ie_open('button', null, null, 'class', 'btn-transparent label label-danger label-clickable');
+        ie_void('span', null, null, 'class', 'label-action icon-12-trash');
+        ie_void('span', null, null, 'class', 'label-icon icon-12-person');
+        ie_open('span', null, null, 'class', 'label-content');
+        itext('Danger');
+        ie_close('span');
+        ie_close('button');
+        ie_close('div');
+        $templateAlias2({ code: '<button class="btn-transparent label label-default label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Default</span>\n</button>\n<button class="btn-transparent label label-primary label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Primary</span>\n</button>\n<button class="btn-transparent label label-success label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Success</span>\n</button>\n<button class="btn-transparent label label-warning label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Warning</span>\n</button>\n<button class="btn-transparent label label-danger label-clickable">\n    <span class="label-action icon-12-trash"></span>\n    <span class="label-icon icon-12-person"></span>\n    <span class="label-content">Danger</span>\n</button>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param613 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'mMTdY.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var mMTdY = function (_Component) {
+    babelHelpers.inherits(mMTdY, _Component);
+
+    function mMTdY() {
+      babelHelpers.classCallCheck(this, mMTdY);
+      return babelHelpers.possibleConstructorReturn(this, (mMTdY.__proto__ || Object.getPrototypeOf(mMTdY)).apply(this, arguments));
+    }
+
+    return mMTdY;
+  }(Component);
+
+  Soy.register(mMTdY, templates);
+  this['metalNamed']['label'] = this['metalNamed']['label'] || {};
+  this['metalNamed']['label']['mMTdY'] = mMTdY;
+  this['metalNamed']['label']['templates'] = templates;
+  this['metal']['label'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['label'];
+
+  var mMTdY = function (_Component) {
+    babelHelpers.inherits(mMTdY, _Component);
+
+    function mMTdY() {
+      babelHelpers.classCallCheck(this, mMTdY);
+      return babelHelpers.possibleConstructorReturn(this, (mMTdY.__proto__ || Object.getPrototypeOf(mMTdY)).apply(this, arguments));
+    }
+
+    return mMTdY;
+  }(Component);
+
+  ;
+
+  Soy.register(mMTdY, templates);
+
+  this['metal']['mMTdY'] = mMTdY;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from ribbon.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace nTCqt.
+     * @public
+     */
+
+    goog.module('nTCqt.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguide.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param661 = function param661() {
+        ie_open('h5');
+        itext('Default');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'demo');
+        ie_open('div', null, null, 'class', 'box-ws');
+        ie_open('div', null, null, 'class', 'ribbon-container');
+        ie_open('div', null, null, 'class', 'ribbon');
+        itext('New');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Accent');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'demo');
+        ie_open('div', null, null, 'class', 'box-ws');
+        ie_open('div', null, null, 'class', 'ribbon-container');
+        ie_open('div', null, null, 'class', 'ribbon ribbon-accent');
+        itext('New');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-accent">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Success');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'demo');
+        ie_open('div', null, null, 'class', 'box-ws');
+        ie_open('div', null, null, 'class', 'ribbon-container');
+        ie_open('div', null, null, 'class', 'ribbon ribbon-success');
+        itext('New');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-success">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Warning');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'demo');
+        ie_open('div', null, null, 'class', 'box-ws');
+        ie_open('div', null, null, 'class', 'ribbon-container');
+        ie_open('div', null, null, 'class', 'ribbon ribbon-warning');
+        itext('New');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-warning">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('h5');
+        itext('Danger');
+        ie_close('h5');
+        ie_open('div', null, null, 'class', 'demo');
+        ie_open('div', null, null, 'class', 'box-ws');
+        ie_open('div', null, null, 'class', 'ribbon-container');
+        ie_open('div', null, null, 'class', 'ribbon ribbon-danger');
+        itext('New');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        ie_close('div');
+        $templateAlias2({ code: '<div class="ribbon-container">\n    <div class="ribbon ribbon-danger">New</div>\n</div>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param661 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'nTCqt.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var nTCqt = function (_Component) {
+    babelHelpers.inherits(nTCqt, _Component);
+
+    function nTCqt() {
+      babelHelpers.classCallCheck(this, nTCqt);
+      return babelHelpers.possibleConstructorReturn(this, (nTCqt.__proto__ || Object.getPrototypeOf(nTCqt)).apply(this, arguments));
+    }
+
+    return nTCqt;
+  }(Component);
+
+  Soy.register(nTCqt, templates);
+  this['metalNamed']['ribbon'] = this['metalNamed']['ribbon'] || {};
+  this['metalNamed']['ribbon']['nTCqt'] = nTCqt;
+  this['metalNamed']['ribbon']['templates'] = templates;
+  this['metal']['ribbon'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['ribbon'];
+
+  var nTCqt = function (_Component) {
+    babelHelpers.inherits(nTCqt, _Component);
+
+    function nTCqt() {
+      babelHelpers.classCallCheck(this, nTCqt);
+      return babelHelpers.possibleConstructorReturn(this, (nTCqt.__proto__ || Object.getPrototypeOf(nTCqt)).apply(this, arguments));
+    }
+
+    return nTCqt;
+  }(Component);
+
+  ;
+
+  Soy.register(nTCqt, templates);
+
+  this['metal']['nTCqt'] = nTCqt;
 }).call(this);
 'use strict';
 
@@ -31927,24 +32064,238 @@ babelHelpers;
 (function () {
   var Component = this['metal']['component'];
   var Soy = this['metal']['Soy'];
-  var templates = this['metal']['datatable'];
+  var templates = this['metal']['button'];
 
-  var petCl = function (_Component) {
-    babelHelpers.inherits(petCl, _Component);
+  var qWSpD = function (_Component) {
+    babelHelpers.inherits(qWSpD, _Component);
 
-    function petCl() {
-      babelHelpers.classCallCheck(this, petCl);
-      return babelHelpers.possibleConstructorReturn(this, (petCl.__proto__ || Object.getPrototypeOf(petCl)).apply(this, arguments));
+    function qWSpD() {
+      babelHelpers.classCallCheck(this, qWSpD);
+      return babelHelpers.possibleConstructorReturn(this, (qWSpD.__proto__ || Object.getPrototypeOf(qWSpD)).apply(this, arguments));
     }
 
-    return petCl;
+    return qWSpD;
   }(Component);
 
   ;
 
-  Soy.register(petCl, templates);
+  Soy.register(qWSpD, templates);
 
-  this['metal']['petCl'] = petCl;
+  this['metal']['qWSpD'] = qWSpD;
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['grid'];
+
+  var qsOgQ = function (_Component) {
+    babelHelpers.inherits(qsOgQ, _Component);
+
+    function qsOgQ() {
+      babelHelpers.classCallCheck(this, qsOgQ);
+      return babelHelpers.possibleConstructorReturn(this, (qsOgQ.__proto__ || Object.getPrototypeOf(qsOgQ)).apply(this, arguments));
+    }
+
+    return qsOgQ;
+  }(Component);
+
+  ;
+
+  Soy.register(qsOgQ, templates);
+
+  this['metal']['qsOgQ'] = qsOgQ;
+}).call(this);
+'use strict';
+
+(function () {
+  /* jshint ignore:start */
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+
+  var templates;
+  goog.loadModule(function (exports) {
+
+    // This file was automatically generated from table.soy.
+    // Please don't edit this file by hand.
+
+    /**
+     * @fileoverview Templates in namespace yvWQN.
+     * @public
+     */
+
+    goog.module('yvWQN.incrementaldom');
+
+    /** @suppress {extraRequire} */
+    var soy = goog.require('soy');
+    /** @suppress {extraRequire} */
+    var soydata = goog.require('soydata');
+    /** @suppress {extraRequire} */
+    goog.require('goog.i18n.bidi');
+    /** @suppress {extraRequire} */
+    goog.require('goog.asserts');
+    /** @suppress {extraRequire} */
+    goog.require('goog.string');
+    var IncrementalDom = goog.require('incrementaldom');
+    var ie_open = IncrementalDom.elementOpen;
+    var ie_close = IncrementalDom.elementClose;
+    var ie_void = IncrementalDom.elementVoid;
+    var ie_open_start = IncrementalDom.elementOpenStart;
+    var ie_open_end = IncrementalDom.elementOpenEnd;
+    var itext = IncrementalDom.text;
+    var iattr = IncrementalDom.attr;
+
+    var $templateAlias2 = Soy.getTemplate('ElectricCode.incrementaldom', 'render');
+
+    var $templateAlias1 = Soy.getTemplate('styleguideFull.incrementaldom', 'render');
+
+    /**
+     * @param {Object<string, *>=} opt_data
+     * @param {(null|undefined)=} opt_ignored
+     * @param {Object<string, *>=} opt_ijData
+     * @return {void}
+     * @suppress {checkTypes}
+     */
+    function $render(opt_data, opt_ignored, opt_ijData) {
+      var param724 = function param724() {
+        ie_open('h5');
+        itext('Table');
+        ie_close('h5');
+        ie_open('table');
+        ie_open('thead');
+        ie_open('tr');
+        ie_open('th');
+        itext('#');
+        ie_close('th');
+        ie_open('th');
+        itext('First Name');
+        ie_close('th');
+        ie_open('th');
+        itext('Last Name');
+        ie_close('td');
+        ie_open('th');
+        itext('Username');
+        ie_close('td');
+        ie_open('th', null, null, 'class', 'text-center');
+        itext('Required');
+        ie_close('td');
+        ie_close('tr');
+        ie_close('thead');
+        ie_open('tbody');
+        ie_open('tr');
+        ie_open('td');
+        itext('1');
+        ie_close('td');
+        ie_open('td');
+        itext('Mark');
+        ie_close('td');
+        ie_open('td');
+        itext('Otto');
+        ie_close('td');
+        ie_open('td');
+        itext('@mdo');
+        ie_close('td');
+        ie_open('td', null, null, 'class', 'text-center');
+        ie_void('span', null, null, 'style', 'color: #77d55a;', 'class', 'icon-12-check');
+        ie_close('td');
+        ie_close('tr');
+        ie_open('tr');
+        ie_open('td');
+        itext('2');
+        ie_close('td');
+        ie_open('td');
+        itext('Jacob');
+        ie_close('td');
+        ie_open('td');
+        itext('Thornton');
+        ie_close('td');
+        ie_open('td');
+        itext('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam asperiores repudiandae architecto eaque veritatis officia dicta quam ex natus, aliquam reprehenderit ipsam. Tempore eius ducimus cum aspernatur minus ipsum non?');
+        ie_close('td');
+        ie_open('td', null, null, 'class', 'text-center');
+        ie_void('span', null, null, 'style', 'color: #77d55a;', 'class', 'icon-12-check');
+        ie_close('td');
+        ie_close('tr');
+        ie_open('tr');
+        ie_open('td');
+        itext('3');
+        ie_close('td');
+        ie_open('td');
+        itext('Larry');
+        ie_close('td');
+        ie_open('td');
+        itext('the Bird');
+        ie_close('td');
+        ie_open('td');
+        itext('@twitter');
+        ie_close('td');
+        ie_open('td', null, null, 'class', 'text-center');
+        ie_void('span', null, null, 'style', 'color: #77d55a;', 'class', 'icon-12-check');
+        ie_close('td');
+        ie_close('tr');
+        ie_close('tbody');
+        ie_close('table');
+        $templateAlias2({ code: '<table>\n    <thead>\n        <tr>\n            <th>#</th>\n            <th>First Name</th>\n            <th>Last Name</td>\n            <th>Username</td>\n            <th class="text-center">Required</td>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>1</td>\n            <td>Mark</td>\n            <td>Otto</td>\n            <td>@mdo</td>\n            <td class="text-center">\n                <span class="icon-12-check"></span>\n            </td>\n        </tr>\n        [...]\n    </tbody>\n</table>', mode: 'xml' }, null, opt_ijData);
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.page.title);
+        ie_close('input');
+        ie_open('input', null, null, 'type', 'hidden', 'value', opt_data.site.title);
+        ie_close('input');
+      };
+      $templateAlias1(soy.$$assignDefaults({ content: param724 }, opt_data), null, opt_ijData);
+    }
+    exports.render = $render;
+    if (goog.DEBUG) {
+      $render.soyTemplateName = 'yvWQN.render';
+    }
+
+    exports.render.params = ["page", "site"];
+    exports.render.types = { "page": "any", "site": "any" };
+    templates = exports;
+    return exports;
+  });
+
+  var yvWQN = function (_Component) {
+    babelHelpers.inherits(yvWQN, _Component);
+
+    function yvWQN() {
+      babelHelpers.classCallCheck(this, yvWQN);
+      return babelHelpers.possibleConstructorReturn(this, (yvWQN.__proto__ || Object.getPrototypeOf(yvWQN)).apply(this, arguments));
+    }
+
+    return yvWQN;
+  }(Component);
+
+  Soy.register(yvWQN, templates);
+  this['metalNamed']['table'] = this['metalNamed']['table'] || {};
+  this['metalNamed']['table']['yvWQN'] = yvWQN;
+  this['metalNamed']['table']['templates'] = templates;
+  this['metal']['table'] = templates;
+  /* jshint ignore:end */
+}).call(this);
+'use strict';
+
+(function () {
+  var Component = this['metal']['component'];
+  var Soy = this['metal']['Soy'];
+  var templates = this['metal']['table'];
+
+  var yvWQN = function (_Component) {
+    babelHelpers.inherits(yvWQN, _Component);
+
+    function yvWQN() {
+      babelHelpers.classCallCheck(this, yvWQN);
+      return babelHelpers.possibleConstructorReturn(this, (yvWQN.__proto__ || Object.getPrototypeOf(yvWQN)).apply(this, arguments));
+    }
+
+    return yvWQN;
+  }(Component);
+
+  ;
+
+  Soy.register(yvWQN, templates);
+
+  this['metal']['yvWQN'] = yvWQN;
 }).call(this);
 }).call(this);
 //# sourceMappingURL=bundle.js.map
